@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/puma.js"></script>
+    <script src="js/customize.bxslider.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to puma">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="list_best.html">BEST</a></li>
+                    <li><a href="list_new.html">NEW</a></li>
+                    <li><a href="list_sale.html">SALE</a></li>
+                    <li data-panel="gnb_wish_Panel">WISHLIST</li>
+                    <li data-panel="gnb_search_Panel">SEARCH</li>
+                    <li data-panel="gnb_cart_Panel">CART</li>
+                    <li><a href="account.html" class="material-icons-outlined">account_circle</a></li>
+                    <li><a href="signin.html" class="material-icons-outlined">lock</a></li>
+                </ul>
+                <input type="button" value="drag_handle" class="material-icons" data-lnb="lnbContainer">
+            </nav>
+            <ul id="lnbContainer">
+                <li>
+                    <h2>
+                        <a href="list_lnb_clothing.html">Clothing</a>
+                        <a href="list_lnb_clothing.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Clo_01.png" alt="Tops">
+                            <figcaption>
+                                <h2>Tops</h2>
+                                <p>From relaxed tanks to form-fitting crop tops, PUMA t-shirts for women come in all shapes and sizes. Pair an oversized tee
+    with a pair of fitted leggings and sneakers to take you everywhere from the gym or a hike, to running errands on the weekend.</p>
+                                <a href="list_clo_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_shoes.html">Shoes</a>
+                        <a href="list_lnb_shoes.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_shoes_01.png" alt="Classics">
+                            <figcaption>
+                                <h2>Classics</h2>
+                                <p>Meet the next generation of classic. We’ve been kicking around since 1948, breaking the rules and changing
+    the game with instantly iconic silhouettes just as timeless as they are inherently versatile.</p>
+                                <a href="list_shoes_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_sports.html">Sport</a>
+                        <a href="list_lnb_sports.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_spo_01.png" alt="BASKETBALL">
+                            <figcaption>
+                                <h2>BASKETBALL</h2>
+                                <p>Together, we form the PUMA Fam and make PUMA Hoops what it is. See the game
+    like we do: determined to win, ready to show out, and playing for the joy of the game.</p>
+                                <a href="list_spo_bas.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_accessories.html">Accessories</a>
+                        <a href="list_lnb_accessories.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_acc_01.png" alt="Bags">
+                            <figcaption>
+                                <h2>Bags</h2>
+                                <p>With a PUMA women’s backpack for all occasions, keeping your essentials with you is both simple and stylish.
+    Our classic PUMA backpacks come in a variety of patterns and colors, and will put a spring in your step, no matter the weather.</p>
+                                <a href="list_acc_bags.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_collaborations.html">Collaborations</a>
+                        <a href="list_lnb_collaborations.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Col_01.png" alt="FENTY X PUMA">
+                            <figcaption>
+                                <h2>FENTY X PUMA</h2>
+                                <p>The newest FENTY x PUMA Avanti by Rihanna is reinvented with premium
+        leather in red and white colorways, touches of gold, and retro gum soles.   </p>
+                                <a href="list_col_fenty.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                </li>
+            </ul>
+        </div>
+        <div id="gnb_wish_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_wish_Panel">
+            <span>
+                <h3>Your Wishlist is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+        <div id="gnb_search_Panel">
+            <input type="search" placeholder="Search" title="search Field and press enter please">
+            <p>recent search terms</p>
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_search_Panel">
+        </div>
+        <div id="gnb_cart_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_cart_Panel">
+            <span>
+                <h3>Your Cart is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+    </header>
+    <section class="listContainer">
+        <div>
+            <h2>Clothing</h2>
+            <nav>
+                <ul>
+                    <li><a href="list_clo_tops.html">Tops</a></li>
+                    <li><a href="list_clo_pants.html" class="active">Pants</a></li>
+                    <li><a href="list_clo_skirts.html">Skirts</a></li>
+                    <li><a href="list_clo_hoo.html">Hoodies&Sweatshirts</a></li>
+                    <li><a href="list_clo_out.html">Outerwear</a></li>
+                    <li><a href="list_clo_spo.html">Sportwear</a></li>
+                    <li><a href="list_clo_mat.html">Matching sets</a></li>
+                </ul>
+            </nav>
+            <p>
+                Whether you’re working out or staying in, do it in comfort and style in PUMA pants, joggers or leggings.
+From super soft material for your comfort, to high-tech moisture-wicking fabrics for dryness,
+PUMA women’s lounge pants areas diverse as the women who wear them.
+            </p>
+        </div>
+        <ul>
+            <li>
+                <a href="detail_clo_pants_01.html">
+                    <img src="images/list_clo_pants_01.png" alt="PUMA x KIDSUPER Women's Pants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $190.00</em>
+                    <em>6 sizes</em>     
+                </span>
+                <h3>
+                    <strong>PUMA x KIDSUPER Women's Pants</strong>
+                    <mark class="colour_MauvedO">Mauved Out</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_02.html">
+                    <img src="images/list_clo_pants_02.png" alt="PUMA x KIDSUPER Women's Pants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $190.00</em>
+                    <em>6 sizes</em>
+                </span>     
+                <h3>
+                    <strong>PUMA x KIDSUPER Women's Pants</strong>
+                    <mark class="colour_DesertD">Desert Dust</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_03.html">
+                    <img src="images/list_clo_pants_03.png" alt="Essentials Women's Sweatpants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $60.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Essentials Women's Sweatpants</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_04.html">
+                    <img src="images/list_clo_pants_04.png" alt="Tonal Graphic Sweatpants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $90.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Tonal Graphic Sweatpants</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_05.html">
+                    <img src="images/list_clo_pants_05.png" alt="Script Logo Women's Sweatpants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $90.00</em>
+                    <em>8 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Script Logo Women's Sweatpants</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_06.html">
+                    <img src="images/list_clo_pants_06.png" alt="Essentials Women's Sweatpants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $60.00</em>
+                    <em>8 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Essentials Women's Sweatpants</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_07.html">
+                    <img src="images/list_clo_pants_07.png" alt="T7 Women's High Waist Track Pants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $90.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>T7 Women's High Waist Track Pants</strong>
+                    <mark class="colour_MidnightP">Midnight Plum</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_08.html">
+                    <img src="images/list_clo_pants_08.png" alt="T7 Women's High Waist Track Pants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $90.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>T7 Women's High Waist Track Pants</strong>
+                    <mark class="colour_Black-AS">Black-Alpine Snow</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_09.html">
+                    <img src="images/list_clo_pants_09.png" alt="BETTER CLASSICS Sweatpants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $85.00</em>
+                    <em>9 sizes</em>
+                </span>     
+                <h3>
+                    <strong>BETTER CLASSICS Sweatpants</strong>
+                    <mark class="colour_TurquoiseS">Turquoise Surf</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_10.html">
+                    <img src="images/list_clo_pants_10.png" alt="T7 Women's High Waist Track Pants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $90.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>T7 Women's High Waist Track Pants</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_11.html">
+                    <img src="images/list_clo_pants_11.png" alt="Essentials Women's Sweatpants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $60.00</em>
+                    <em>8 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Essentials Women's Sweatpants</strong>
+                    <mark class="colour_Gray">Light Gray</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_12.html">
+                    <img src="images/list_clo_pants_12.png" alt="ICONIC T7 Women's Track Pants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $70.00</em>
+                    <em>5 sizes</em>
+                </span>     
+                <h3>
+                    <strong>ICONIC T7 Women's Track Pants</strong>
+                    <mark>Midnight Plum</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_13.html">
+                    <img src="images/list_clo_pants_13.png" alt="HER Women's Pants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $85.00</em>
+                    <em>8 sizes</em>
+                </span>     
+                <h3>
+                    <strong>HER Women's Pants</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_14.html">
+                    <img src="images/list_clo_pants_14.png" alt="Script Logo Women's Sweatpants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $90.00</em>
+                    <em>8 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Script Logo Women's Sweatpants</strong>
+                    <mark>Lapis Lazuli</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_15.html">
+                    <img src="images/list_clo_pants_15.png" alt="Tonal Graphic Sweatpants">
+                </a>
+                <span>
+                    <em>Pants</em>
+                    <em>CAD $90.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Tonal Graphic Sweatpants</strong>
+                    <mark>Intense Red</mark>
+                </h3>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html">
+                    <img src="images/logo_footer.png" alt="puma">
+                </a>
+            </h2>
+            <div>
+                <form action="signup.html">
+                    <button type="submit">
+                        <em>Get the latest news. Sign up for an email!</em>
+                        <em>SIGN UP</em>
+                    </button>
+                </form>
+                <ul>
+                    <li><a href="list_best.html">Shop</a></li>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="footer_about.html">About</a></li>
+                    <li><a href="footer_usercontentterms.html">User Content Terms</a></li>
+                    <li><a href="footer_returnpolicy.html">Return Policy</a></li>
+                    <li><a href="footer_shippinganddelivery.html">Shipping and Delivery</a></li>
+                    <li><a href="footer_imprintlegaldata.html">Imprint & Legal Data</a></li>
+                    <li><a href="footer_faq.html">FAQ</a></li>
+                    <li><a href="footer_contactus.html">Contact Us</a></li>
+                </ul>
+                <p>
+                Since 1948, PUMA has made history as a creator of extraordinary product 
+designs for the fastest athletes on the planet. We aim high, and when we
+reach our goals, we aim even higher. All to achieve one thing: to be the
+Fastest Sports Brand in the World.
+                </p>
+                <p>
+                PUMA supplies athletes with the right equipment on the field,
+track and course. From football to golf to cricket,  PUMA is actively
+involved in different sports around the world.
+                </p>
+            </div>
+        </div>
+        <div>
+            <span>
+                <a href="footer_PrivacyPolicy.html">Privacy Policy</a>
+                <a href="footer_TermsConditions.html">Terms & Conditions</a>
+            </span>
+            <ul>
+                <li><a href="https://www.instagram.com/puma/" target="_blank">instagram</a></li>
+                <li><a href="https://kr.pinterest.com/puma/" target="_blank">pinterest</a></li>
+                <li><a href="https://x.com/PUMA" target="_blank">x</a></li>
+                <li><a href="https://www.youtube.com/puma" target="_blank">youtube</a></li>
+                <li><a href="https://www.facebook.com/PUMA/" target="_blank">facebook</a></li>
+            </ul>
+            <span>Current Location: <em>en-AU</em></span>
+        </div>
+    </footer>
+</body>
+</html>

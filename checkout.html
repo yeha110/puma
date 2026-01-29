@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/puma.js"></script>
+    <script src="js/customize.bxslider.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to puma">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="list_best.html">BEST</a></li>
+                    <li><a href="list_new.html">NEW</a></li>
+                    <li><a href="list_sale.html">SALE</a></li>
+                    <li data-panel="gnb_wish_Panel">WISHLIST</li>
+                    <li data-panel="gnb_search_Panel">SEARCH</li>
+                    <li data-panel="gnb_cart_Panel">CART</li>
+                    <li><a href="account.html" class="material-icons-outlined">account_circle</a></li>
+                    <li><a href="signin.html" class="material-icons-outlined">lock</a></li>
+                </ul>
+                <input type="button" value="drag_handle" class="material-icons" data-lnb="lnbContainer">
+            </nav>
+            <ul id="lnbContainer">
+                <li>
+                    <h2>
+                        <a href="list_lnb_clothing.html">Clothing</a>
+                        <a href="list_lnb_clothing.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Clo_01.png" alt="Tops">
+                            <figcaption>
+                                <h2>Tops</h2>
+                                <p>From relaxed tanks to form-fitting crop tops, PUMA t-shirts for women come in all shapes and sizes. Pair an oversized tee
+    with a pair of fitted leggings and sneakers to take you everywhere from the gym or a hike, to running errands on the weekend.</p>
+                                <a href="list_clo_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_shoes.html">Shoes</a>
+                        <a href="list_lnb_shoes.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_shoes_01.png" alt="Classics">
+                            <figcaption>
+                                <h2>Classics</h2>
+                                <p>Meet the next generation of classic. We’ve been kicking around since 1948, breaking the rules and changing
+    the game with instantly iconic silhouettes just as timeless as they are inherently versatile.</p>
+                                <a href="list_shoes_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_sports.html">Sport</a>
+                        <a href="list_lnb_sports.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_spo_01.png" alt="BASKETBALL">
+                            <figcaption>
+                                <h2>BASKETBALL</h2>
+                                <p>Together, we form the PUMA Fam and make PUMA Hoops what it is. See the game
+    like we do: determined to win, ready to show out, and playing for the joy of the game.</p>
+                                <a href="list_spo_bas.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_accessories.html">Accessories</a>
+                        <a href="list_lnb_accessories.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_acc_01.png" alt="Bags">
+                            <figcaption>
+                                <h2>Bags</h2>
+                                <p>With a PUMA women’s backpack for all occasions, keeping your essentials with you is both simple and stylish.
+    Our classic PUMA backpacks come in a variety of patterns and colors, and will put a spring in your step, no matter the weather.</p>
+                                <a href="list_acc_bags.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_collaborations.html">Collaborations</a>
+                        <a href="list_lnb_collaborations.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Col_01.png" alt="FENTY X PUMA">
+                            <figcaption>
+                                <h2>FENTY X PUMA</h2>
+                                <p>The newest FENTY x PUMA Avanti by Rihanna is reinvented with premium
+        leather in red and white colorways, touches of gold, and retro gum soles.   </p>
+                                <a href="list_col_fenty.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                </li>
+            </ul>
+        </div>
+        <div id="gnb_wish_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_wish_Panel">
+            <span>
+                <h3>Your Wishlist is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+        <div id="gnb_search_Panel">
+            <input type="search" placeholder="Search" title="search Field and press enter please">
+            <p>recent search terms</p>
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_search_Panel">
+        </div>
+        <div id="gnb_cart_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_cart_Panel">
+            <span>
+                <h3>Your Cart is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+    </header>
+    <section class="checkoutContainer">
+        <div>
+            <h2>Checkout</h2>
+            <aside>
+                <ul>
+                    <li>
+                        <input type="button" value="Customer">
+                        <span>ppaammm@gmail.com</span>
+                    </li>
+                    <li>
+                        <input type="button" value="Shipping" data-panel="SPshippingPanel">
+                        <div id="SPshippingPanel" class="cotabPage">
+                            <fieldset>
+                                <legend>Shipping Address</legend>
+                                <ul>
+                                    <li>
+                                        <label for="userFname">First Name</label>
+                                        <input type="text" id="userFname" required>
+                                    </li>
+                                    <li>
+                                        <label for="userLname">Last Name</label>
+                                        <input type="text" id="userLname" required>
+                                    </li>
+                                    <li>
+                                        <label for="userphone">Phone Number</label>
+                                        <input type="tel" id="userphone" class="onlyNumber" required>
+                                    </li>
+                                    <li>
+                                        <label for="userAddress">Address</label>
+                                        <input type="text" id="userAddress" required>
+                                    </li>
+                                    <li>
+                                        <label for="userASB">
+                                            Apartment/Suite/Building
+                                            <em>(Optional)</em>
+                                        </label>
+                                        <input type="text" id="userASB">
+                                    </li>
+                                    <li>
+                                        <label for="userCity">City</label>
+                                        <input type="text" id="userCity" required>
+                                    </li>
+                                    <li>
+                                        <label for="userSP">
+                                            State/Province
+                                            <em>(Optional)</em>
+                                        </label>
+                                        <input type="text" id="userSP" placeholder="Please write your state">
+                                    </li>
+                                    <li>
+                                        <label for="userPostalcode">Postal Code</label>
+                                        <input type="text" id="userPostalcode" class="onlyNumber" required>
+                                    </li>
+                                    <li>
+                                        <label for="selectCountry">Country</label>
+                                        <select id="selectCountry">
+                                            <option selected>Korea, Republic of</option>
+                                            <option>China</option>
+                                            <option>Japan</option>
+                                            <option>Russia</option>
+                                            <option>Taiwan</option>
+                                            <option>Vietnam</option>
+                                            <option>Thailand</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <input type="checkbox" id="shippingbox" checked>
+                                <label for="shippingbox">My billing address is the same as my shipping address.</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Shipping Method</legend>
+                                <div>
+                                    <address>
+                                        <span data-addr="userAddress"></span> 
+                                        <span data-addr="userASB"></span> 
+                                        <span data-addr="userCity"></span> 
+                                        <span data-addr="userSP"></span> 
+                                        <span data-addr="userPostalcode"></span> 
+                                        <span data-addr="selectCountry"></span> 
+                                        <span data-addr="userphone"></span> 
+                                        <span data-addr="userLname"></span> 
+                                        <span data-addr="userFname"></span> 
+                                    </address>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Comments</legend>
+                                <label for="usercomment">Order Comments</label>
+                                <input type="text" id="usercomment">
+                            </fieldset>
+                            <input type="button" value="Continue" class="Khaki" data-panel="SPbillingPanel">
+                        </div>
+                    </li>
+                    <li>
+                        <input type="button" value="Billing" data-panel="SPbillingPanel">
+                        <div id="SPbillingPanel" class="cotabPage">
+                            <form>
+                                <fieldset>
+                                    <legend>Billing  Address</legend>
+                                    <ul>
+                                        <li>
+                                            <label for="userFname2">First Name</label>
+                                            <input type="text" id="userFname2" required>
+                                        </li>
+                                        <li>
+                                            <label for="userLname2">Last Name</label>
+                                            <input type="text" id="userLname2" required>
+                                        </li>
+                                        <li>
+                                            <label for="userphone2">Phone Number</label>
+                                            <input type="tel" id="userphone2" required>
+                                        </li>
+                                        <li>
+                                            <label for="userAddress2">Address</label>
+                                            <input type="text" id="userAddress2" required>
+                                        </li>
+                                        <li>
+                                            <label for="userASB2">
+                                                Apartment/Suite/Building
+                                                <em>(Optional)</em>
+                                            </label>
+                                            <input type="text" id="userASB2">
+                                        </li>
+                                        <li>
+                                            <label for="userCity2">City</label>
+                                            <input type="text" id="userCity2" required>
+                                        </li>
+                                        <li>
+                                            <label for="userSP2">
+                                                State/Province
+                                                <em>(Optional)</em>
+                                            </label>
+                                            <input type="text" id="userSP2" placeholder="Please write your state">
+                                        </li>
+                                        <li>
+                                            <label for="userPostalcode2">Postal Code</label>
+                                            <input type="text" id="userPostalcode2" required>
+                                        </li>
+                                        <li>
+                                            <label for="selectCountry2">Country</label>
+                                            <select id="selectCountry2">
+                                                <option selected>Korea, Republic of</option>
+                                                <option>China</option>
+                                                <option>Japan</option>
+                                                <option>Russia</option>
+                                                <option>Taiwan</option>
+                                                <option>Vietnam</option>
+                                                <option>Thailand</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                    <input type="submit" value="Continue" class="Khaki" data-panel="paymentPanel">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="button" value="Payment" data-panel="paymentPanel">
+                        <div id="paymentPanel" class="cotabPage">
+                            <fieldset>
+                                <label for="Credit">
+                                    <input type="radio" name="Payment" id="Credit" checked>
+                                    <span class="radio_cus"></span>
+                                    Credit Card
+                                </label>
+                                <div>
+                                    <span>
+                                        <label for="cardnb">Card number</label>
+                                        <input type="text" id="cardnb" class="onlyNumber" value="1234 1234 1234 1234" required>
+                                    </span>
+                                    <span>
+                                        <label for="carddate">Expiration date</label>
+                                        <input type="text" id="carddate" class="onlyNumber" value="MM / YY" required>
+                                    </span>
+                                    <span>
+                                        <label for="cardcode">Security code</label>
+                                        <input type="text" id="cardcode" class="onlyNumber" value="CVC" required>
+                                    </span>
+                                </div>
+                                <input type="button" class="Khaki" value="Place Order">
+                                <span id="txtcheckPopup">
+                                    <h3>Your order has been completed</h3>
+                                    <a href="list_best.html">Keep shopping</a>
+                                </span>
+                            </fieldset>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <div id="summary">
+                <div class="sumtit">
+                    <h3>Order Summary</h3>
+                    <mark data-panel="gnb_cart">Edit Cart</mark>
+                </div>
+                <div class="item">
+                    <strong>1 Item</strong>
+                    <img src="images/checkout_test.png" alt="Easy Rider Mix Women's Sneakers">
+                    <p>
+                        <strong>Easy Rider Mix Women's Sneakers</strong>
+                        <em>Colour White-Black</em>
+                        <em>Size 6</em>
+                    </p>
+                    <mark>$110.00</mark>
+                </div>
+                <span>
+                    <strong>Subtotal</strong>
+                    <mark>$110.00</mark>
+                    <strong>Shipping</strong>
+                    <mark>--</mark>
+                    <em>Coupon/Gift Certificate</em>
+                </span>
+                <span>
+                    <strong>Total (USD)</strong> 
+                    <mark>$110.00</mark>
+                </span>
+                <div class="Total">
+                    <strong>Tax lncluded in Total:</strong>
+                    <strong>GST</strong>
+                    <mark>$110.00</mark>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html">
+                    <img src="images/logo_footer.png" alt="puma">
+                </a>
+            </h2>
+            <div>
+                <form action="signup.html">
+                    <button type="submit">
+                        <em>Get the latest news. Sign up for an email!</em>
+                        <em>SIGN UP</em>
+                    </button>
+                </form>
+                <ul>
+                    <li><a href="list_best.html">Shop</a></li>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="footer_about.html">About</a></li>
+                    <li><a href="footer_usercontentterms.html">User Content Terms</a></li>
+                    <li><a href="footer_returnpolicy.html">Return Policy</a></li>
+                    <li><a href="footer_shippinganddelivery.html">Shipping and Delivery</a></li>
+                    <li><a href="footer_imprintlegaldata.html">Imprint & Legal Data</a></li>
+                    <li><a href="footer_faq.html">FAQ</a></li>
+                    <li><a href="footer_contactus.html">Contact Us</a></li>
+                </ul>
+                <p>
+                Since 1948, PUMA has made history as a creator of extraordinary product 
+designs for the fastest athletes on the planet. We aim high, and when we
+reach our goals, we aim even higher. All to achieve one thing: to be the
+Fastest Sports Brand in the World.
+                </p>
+                <p>
+                PUMA supplies athletes with the right equipment on the field,
+track and course. From football to golf to cricket,  PUMA is actively
+involved in different sports around the world.
+                </p>
+            </div>
+        </div>
+        <div>
+            <span>
+                <a href="footer_PrivacyPolicy.html">Privacy Policy</a>
+                <a href="footer_TermsConditions.html">Terms & Conditions</a>
+            </span>
+            <ul>
+                <li><a href="https://www.instagram.com/puma/" target="_blank">instagram</a></li>
+                <li><a href="https://kr.pinterest.com/puma/" target="_blank">pinterest</a></li>
+                <li><a href="https://x.com/PUMA" target="_blank">x</a></li>
+                <li><a href="https://www.youtube.com/puma" target="_blank">youtube</a></li>
+                <li><a href="https://www.facebook.com/PUMA/" target="_blank">facebook</a></li>
+            </ul>
+            <span>Current Location: <em>en-AU</em></span>
+        </div>
+    </footer>
+</body>
+</html>

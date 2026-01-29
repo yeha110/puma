@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/puma.js"></script>
+    <script src="js/customize.bxslider.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to puma">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="list_best.html">BEST</a></li>
+                    <li><a href="list_new.html">NEW</a></li>
+                    <li><a href="list_sale.html">SALE</a></li>
+                    <li data-panel="gnb_wish_Panel">WISHLIST</li>
+                    <li data-panel="gnb_search_Panel">SEARCH</li>
+                    <li data-panel="gnb_cart_Panel">CART</li>
+                    <li><a href="account.html" class="material-icons-outlined">account_circle</a></li>
+                    <li><a href="signin.html" class="material-icons-outlined">lock</a></li>
+                </ul>
+                <input type="button" value="drag_handle" class="material-icons" data-lnb="lnbContainer">
+            </nav>
+            <ul id="lnbContainer">
+                <li>
+                    <h2>
+                        <a href="list_lnb_clothing.html">Clothing</a>
+                        <a href="list_lnb_clothing.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Clo_01.png" alt="Tops">
+                            <figcaption>
+                                <h2>Tops</h2>
+                                <p>From relaxed tanks to form-fitting crop tops, PUMA t-shirts for women come in all shapes and sizes. Pair an oversized tee
+    with a pair of fitted leggings and sneakers to take you everywhere from the gym or a hike, to running errands on the weekend.</p>
+                                <a href="list_clo_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_shoes.html">Shoes</a>
+                        <a href="list_lnb_shoes.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_shoes_01.png" alt="Classics">
+                            <figcaption>
+                                <h2>Classics</h2>
+                                <p>Meet the next generation of classic. We’ve been kicking around since 1948, breaking the rules and changing
+    the game with instantly iconic silhouettes just as timeless as they are inherently versatile.</p>
+                                <a href="list_shoes_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_sports.html">Sport</a>
+                        <a href="list_lnb_sports.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_spo_01.png" alt="BASKETBALL">
+                            <figcaption>
+                                <h2>BASKETBALL</h2>
+                                <p>Together, we form the PUMA Fam and make PUMA Hoops what it is. See the game
+    like we do: determined to win, ready to show out, and playing for the joy of the game.</p>
+                                <a href="list_spo_bas.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_accessories.html">Accessories</a>
+                        <a href="list_lnb_accessories.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_acc_01.png" alt="Bags">
+                            <figcaption>
+                                <h2>Bags</h2>
+                                <p>With a PUMA women’s backpack for all occasions, keeping your essentials with you is both simple and stylish.
+    Our classic PUMA backpacks come in a variety of patterns and colors, and will put a spring in your step, no matter the weather.</p>
+                                <a href="list_acc_bags.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_collaborations.html">Collaborations</a>
+                        <a href="list_lnb_collaborations.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Col_01.png" alt="FENTY X PUMA">
+                            <figcaption>
+                                <h2>FENTY X PUMA</h2>
+                                <p>The newest FENTY x PUMA Avanti by Rihanna is reinvented with premium
+        leather in red and white colorways, touches of gold, and retro gum soles.   </p>
+                                <a href="list_col_fenty.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                </li>
+            </ul>
+        </div>
+        <div id="gnb_wish_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_wish_Panel">
+            <span>
+                <h3>Your Wishlist is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+        <div id="gnb_search_Panel">
+            <input type="search" placeholder="Search" title="search Field and press enter please">
+            <p>recent search terms</p>
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_search_Panel">
+        </div>
+        <div id="gnb_cart_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_cart_Panel">
+            <span>
+                <h3>Your Cart is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+    </header>
+    <section class="footerContainer">
+        <aside>
+            <ul>
+                <li><a href="list_best.html">Shop</a></li>
+                <li><a href="footer_about.html">About</a></li>
+                <li><a href="footer_returnpolicy.html">Return Policy</a></li>
+                <li><a href="footer_imprintlegaldata.html">Imprint & Legal Data</a></li>
+                <li><a href="footer_contactus.html">Contact Us</a></li>
+                <li><a href="account.html">My account</a></li>
+                <li><a href="footer_usercontentterms.html">User Content Terms</a></li>
+                <li><a href="footer_shippinganddelivery.html">Shipping and Delivery</a></li>
+                <li><a href="footer_faq.html" class="active">FAQ</a></li>
+            </ul>
+        </aside>
+        <div>
+            <h2>Frequently Asked Questions</h2>
+            <u>Orders & Payment</u>
+            <strong>How do I check my order status?</strong>
+            <p>
+                To check the status of your order, including processing and shipping updates, click here. You can check your order status by logging in to your My Account or by entering your order number, email address
+    and billing zip code.
+            </p>
+            <p>Please note, once your order has shipped, you will receive an email with a tracking number for all shipping and delivery updates.</p>
+            <p>For more information and step-by-step instructions on how to check your order, click here.</p>
+            <strong>What should I do if I receive only part of my order?</strong>
+            <p>If you’ve received only part of your order, first check the shipping confirmation email. Your Order Summary will indicate which items were shipped and which may be arriving separately. If you still have
+                questions or concerns, please check your order status here.
+            </p>
+            <strong>Can I change or cancel my order once it has been placed?</strong>
+            <p>
+                Unfortunately, no. Once your order has been placed it is sent to our warehouse for processing. You will need to return the original package to obtain a refund.
+            </p>
+            <p>Visit our Returns & Exchanges page for more information.</p>
+            <strong>What types of payment are accepted?</strong>
+            <p>
+                We accept payment by debit/credit cards, Apple Pay, PayPal, and PUMA Gift Cards. Visit our Payment Options page for more information.
+            </p>
+            <strong>How do I used a promotion/coupon code?</strong>
+            <p>
+                To use your promotion or coupon code, enter the code at checkout in the appropriate field. Make sure you enter the code with the exact spelling and capitalization as shown. You must click "apply" in
+    order for the discount to be applied. The discounted amount will be displayed on the Shopping Bag and Order Summary pages. If the code is invalid, expired or you have not placed the correct products in
+    the shopping bag, the discount will not be applied.
+            </p>
+            <p>Please refer to our Terms and Conditions for more information.</p>
+            <strong>Why is my coupon code not working?</strong>
+            <p>
+                Our offer codes exclude but are not limited to new product releases, select Classic styles, select Teamsport styles, Golf, Basketball, select RS Product, clearance merchandise and new licensed and
+    replica jerseys. Offers cannot be combined with any other shipping promotion, offer or coupon. Offers cannot be applied to past purchases, redeemed for cash equivalent, used to purchase gift cards, or
+    used as payment on an account.
+            </p>
+            <strong>How is sales tax calculated?</strong>
+            <p>
+                We charge sales and use tax according to federal, state and local government guidelines. Taxes are calculated based on the shipping address provided and the appropriate rules for that tax jurisdiction.
+            </p>
+            <p>
+                Please note that the taxes presented at time of order submission are only an estimate and may not take into account applicable exemptions and tax holidays. Final calculation of applicable taxes will be
+    performed when the order ships and the final amount is charged.
+    </p>
+            <strong>How long does it take to personalize a jersey?</strong>
+            <p>
+                The time it takes to personalize a jersey varies because they need to be shipped to the screen printer before being shipped to you. Typically, the personalization process adds an additional 5 to 7 days to
+    the order's processing time before it is ready for shipment.
+            </p>
+            <strong>When will I receive shipping confirmation for my personalized jersey order?</strong>
+            <p>
+                After placing your order, the jersey will be sent to the screen printer for personalization. Once the personalization has been added, you will receive a shipping confirmation with the details of your
+    shipment.
+            </p>
+            <strong>Can I return a personalized jersey if I change my mind?</strong>
+            <p>
+                No, personalized jerseys cannot be returned unless they are defective or faulty. If you believe your personalized jersey is defective or faulty, please contact our customer service team here. Common
+    issues can include printing errors, fabric defects, or incorrect personalization details.
+            </p>
+            <div>
+                <strong>Need assistance?</strong>
+                <span>
+                    <em>Email:</em>
+                    <em>CUSTOMERSERVICE.US@PUMA.COM</em>
+                    <em>Phone Number:</em>
+                    <em>1-888-565-PUMA (7862)7AM – MIDNIGHT ET, 7 DAYS A WEEK</em>
+                    <em>Live Chat:</em>
+                    <em>START CHAT7AM – MIDNIGHT ET, 7 DAYS A WEEK</em>
+                </span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html">
+                    <img src="images/logo_footer.png" alt="puma">
+                </a>
+            </h2>
+            <div>
+                <form action="signup.html">
+                    <button type="submit">
+                        <em>Get the latest news. Sign up for an email!</em>
+                        <em>SIGN UP</em>
+                    </button>
+                </form>
+                <ul>
+                    <li><a href="list_best.html">Shop</a></li>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="footer_about.html">About</a></li>
+                    <li><a href="footer_usercontentterms.html">User Content Terms</a></li>
+                    <li><a href="footer_returnpolicy.html">Return Policy</a></li>
+                    <li><a href="footer_shippinganddelivery.html">Shipping and Delivery</a></li>
+                    <li><a href="footer_imprintlegaldata.html">Imprint & Legal Data</a></li>
+                    <li><a href="footer_faq.html">FAQ</a></li>
+                    <li><a href="footer_contactus.html">Contact Us</a></li>
+                </ul>
+                <p>
+                Since 1948, PUMA has made history as a creator of extraordinary product 
+designs for the fastest athletes on the planet. We aim high, and when we
+reach our goals, we aim even higher. All to achieve one thing: to be the
+Fastest Sports Brand in the World.
+                </p>
+                <p>
+                PUMA supplies athletes with the right equipment on the field,
+track and course. From football to golf to cricket,  PUMA is actively
+involved in different sports around the world.
+                </p>
+            </div>
+        </div>
+        <div>
+            <span>
+                <a href="footer_PrivacyPolicy.html">Privacy Policy</a>
+                <a href="footer_TermsConditions.html">Terms & Conditions</a>
+            </span>
+            <ul>
+                <li><a href="https://www.instagram.com/puma/" target="_blank">instagram</a></li>
+                <li><a href="https://kr.pinterest.com/puma/" target="_blank">pinterest</a></li>
+                <li><a href="https://x.com/PUMA" target="_blank">x</a></li>
+                <li><a href="https://www.youtube.com/puma" target="_blank">youtube</a></li>
+                <li><a href="https://www.facebook.com/PUMA/" target="_blank">facebook</a></li>
+            </ul>
+            <span>Current Location: <em>en-AU</em></span>
+        </div>
+    </footer>
+</body>
+</html>

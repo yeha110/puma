@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/puma.js"></script>
+    <script src="js/customize.bxslider.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to puma">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="list_best.html">BEST</a></li>
+                    <li><a href="list_new.html">NEW</a></li>
+                    <li><a href="list_sale.html">SALE</a></li>
+                    <li data-panel="gnb_wish_Panel">WISHLIST</li>
+                    <li data-panel="gnb_search_Panel">SEARCH</li>
+                    <li data-panel="gnb_cart_Panel">CART</li>
+                    <li><a href="signin.html" class="material-icons-outlined">lock</a></li>
+                </ul>
+                <input type="button" value="drag_handle" class="material-icons" data-lnb="lnbContainer">
+            </nav>
+            <ul id="lnbContainer">
+                <li>
+                    <h2>
+                        <a href="list_lnb_clothing.html">Clothing</a>
+                        <a href="list_lnb_clothing.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Clo_01.png" alt="Tops">
+                            <figcaption>
+                                <h2>Tops</h2>
+                                <p>From relaxed tanks to form-fitting crop tops, PUMA t-shirts for women come in all shapes and sizes. Pair an oversized tee
+    with a pair of fitted leggings and sneakers to take you everywhere from the gym or a hike, to running errands on the weekend.</p>
+                                <a href="list_clo_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_shoes.html">Shoes</a>
+                        <a href="list_lnb_shoes.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_shoes_01.png" alt="Classics">
+                            <figcaption>
+                                <h2>Classics</h2>
+                                <p>Meet the next generation of classic. We’ve been kicking around since 1948, breaking the rules and changing
+    the game with instantly iconic silhouettes just as timeless as they are inherently versatile.</p>
+                                <a href="list_shoes_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_sports.html">Sport</a>
+                        <a href="list_lnb_sports.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_spo_01.png" alt="BASKETBALL">
+                            <figcaption>
+                                <h2>BASKETBALL</h2>
+                                <p>Together, we form the PUMA Fam and make PUMA Hoops what it is. See the game
+    like we do: determined to win, ready to show out, and playing for the joy of the game.</p>
+                                <a href="list_spo_bas.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_accessories.html">Accessories</a>
+                        <a href="list_lnb_accessories.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_acc_01.png" alt="Bags">
+                            <figcaption>
+                                <h2>Bags</h2>
+                                <p>With a PUMA women’s backpack for all occasions, keeping your essentials with you is both simple and stylish.
+    Our classic PUMA backpacks come in a variety of patterns and colors, and will put a spring in your step, no matter the weather.</p>
+                                <a href="list_acc_bags.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_collaborations.html">Collaborations</a>
+                        <a href="list_lnb_collaborations.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Col_01.png" alt="FENTY X PUMA">
+                            <figcaption>
+                                <h2>FENTY X PUMA</h2>
+                                <p>The newest FENTY x PUMA Avanti by Rihanna is reinvented with premium
+        leather in red and white colorways, touches of gold, and retro gum soles.   </p>
+                                <a href="list_col_fenty.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                </li>
+            </ul>
+        </div>
+        <div id="gnb_wish_Panel">
+            <span>
+                <h3>Your Wishlist is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+                <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_wish_Panel">
+            </span>
+        </div>
+        <div id="gnb_search_Panel">
+            <input type="search" placeholder="Search" title="search Field and press enter please">
+            <p>recent search terms</p>
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_search_Panel">
+        </div>
+        <div id="gnb_cart_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_cart_Panel">
+            <span>
+                <h3>Your Cart is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+    </header>
+    <section class="footerContainer">
+        <aside>
+            <ul>
+                <li><a href="list_best.html">Shop</a></li>
+                <li><a href="footer_about.html">About</a></li>
+                <li><a href="footer_returnpolicy.html">Return Policy</a></li>
+                <li><a href="footer_imprintlegaldata.html">Imprint & Legal Data</a></li>
+                <li><a href="footer_contactus.html">Contact Us</a></li>
+                <li><a href="account.html">My account</a></li>
+                <li><a href="footer_usercontentterms.html" class="active">User Content Terms</a></li>
+                <li><a href="footer_shippinganddelivery.html">Shipping and Delivery</a></li>
+                <li><a href="footer_faq.html">FAQ</a></li>
+            </ul>
+        </aside>
+        <div>
+            <h2>User Content Terms</h2>
+            <strong>WHAT YOU NEED TO CONSIDER BEFORE YOU AGREE TO LICENSE TERMS:</strong>
+            <p>
+                You have to be the <b> owner of all the rights </b>with regard to the Content. So only give us your consent if you have taken the picture yourself or have the permission of the copyright owner to allow Us the use
+    according to the following License Terms. <br><br>
+
+    You need the  <b>permission of all the people appearing in the Content</b> and have their explicit consent to have their image and/or name used by Us. In the event, that any people pictured or mentioned are
+    minors, you must obtain the express permission of their parents or guardian to have their image and/or name used by Us. So before obtaining their permission make sure to inform them about these
+    License Terms. <br><br>
+
+    Make sure that the <b>Content does not violate any law or other regulation and is not inappropriate,</b> sexually explicit, harassing, abusive, harmful, violent, or otherwise objectionable or offensive in any way. <br><br>
+
+    <b>IF YOU CAN’T GRANT ALL OF THESE TOPICS AND/OR YOU DISAGREE WITH THE FOLLOWING LICENSE TERMS, DON’T REPLY TO OUR USAGE REQUEST.</b>
+            </p>
+            <strong>License Terms</strong>
+            <p>
+                <strong>1. Definitions</strong>
+                When it is referred to “Us” or “Our” or “We” in these License Terms it means PUMA SE, PUMA Way 1, 91074 Herzogenaurach, Germany, and its affiliates and subsidiaries.<br><br>
+
+    When We refer to “Content” in these License Terms We mean your photo/image, including but not limited to your Instagram handle and any caption or comment in connection with the photo/image that
+    we asked you to use.
+            </p>
+            <p>
+                <strong>2. Granting of rights</strong>
+                By submitting an image on puma.com, responding with @puma and #yespuma on Our usage request or by otherwise agreeing to Our use of the Content as may be available (e.g. by direct message), you
+    grant Us the free of charge, royalty-free, non-exclusive, perpetual, worldwide, irrevocable, sublicensable, transferable and unlimited in time right and license to use, adapt, copy, modify, improve, or create
+    derivative works of the Content for both any non-commercial and commercial purposes including, but not limited to, advertising, marketing, promotions, trade fairs, exhibitions, sales events, festivals,
+    competitions, sports events, products, product ideas, designs, and in connection with any other promotional purposes, as We see fit.<br><br>
+
+    The right to use shall include, without limitation, the right to:
+            </p>
+            <p>
+                • Store,(re)publish, broadcast and distribute the Content, intact or in parts, in any printed or electronic form and media, including on the internet, e.g. on websites, in social networks, social media channels,
+                as well as in applications or other services including those provided for mobile devices.
+               <br> • Reproduce, process, copy, change, transform, adapt, combine and modify the Content, intact or in parts, including its digital processing;
+               <br> • Grant sublicenses to our affiliated entities within PUMA Group and to have service providers commissioned by Us conduct tasks related to aforesaid means of use.
+            </p>
+            <p>We reserve the right to use, not use, or discontinue using any Content in our sole discretion at any time.</p>
+            <p>
+                <strong>3. Representations, Liability, Warranty</strong>
+                You hereby represent and warrant that you are of legal age and that you have all necessary right and title, and particularly have obtained all necessary consent as described above, to grant the above
+    rights to Us without violating any rights of third parties and in compliance with applicable laws.<br><br>
+
+    You hereby represent and warrant that the Content is free of any virus, worm, corrupt file or other forms of malicious code or content that may cause harm to a website or electronic device.<br><br>
+
+    You agree to indemnify, defend and hold Us harmless from and against any and all claims or causes of action related to your violation of any of these terms including, but not limited to, any and all claims
+    arising out of an alleged violation of any third-party rights.<br><br>
+
+    You will inform Us without undue delay in the event you become aware of any third party asserting any claim, actions or similar demand against you or Us as a result of Our use of the Content.
+            </p>
+            <p>
+                <strong>4. Waiver</strong>
+                You hereby explicitly waive your right to be named in the Content and allow Us to use the Content without any reference.
+            </p>
+            <p>
+                <strong>5. You disagree with Our use of your Content?</strong>
+                If you disagree with Our use of the Content or in the event you believe We have used the Content without your consent or in violation of your rights, please contact Us at contentuse@puma.com so We can
+    resolve the issue.
+            </p>
+            <p>
+                <strong>6. Data Protection</strong>
+                When you agree to the License Terms and the Content provided by you contains personal data (e.g. image, name etc. of you and/or other natural person, We and, if applicable, our affiliated entities of
+    PUMA Group may process this personal data accordingly when exercising the right of use granted to the Content as described in section 2 of the License Terms (Legal base: Art. 6 (1) 1 b) GDPR).
+            </p>
+            <p>
+                <strong>7. Applicable Law</strong>
+                When you agree to the License Terms and the Content provided by you contains personal data (e.g. image, name etc. of you and/or other natural person, We and, if applicable, our affiliated entities of
+    PUMA Group may process this personal data accordingly when exercising the right of use granted to the Content as described in section 2 of the License Terms (Legal base: Art. 6 (1) 1 b) GDPR).
+            </p>
+            <div>
+                <strong>Need assistance?</strong>
+                <span>
+                    <em>Email:</em>
+                    <em>CUSTOMERSERVICE.US@PUMA.COM</em>
+                    <em>Phone Number:</em>
+                    <em>1-888-565-PUMA (7862)7AM – MIDNIGHT ET, 7 DAYS A WEEK</em>
+                    <em>Live Chat:</em>
+                    <em>START CHAT7AM – MIDNIGHT ET, 7 DAYS A WEEK</em>
+                </span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html">
+                    <img src="images/logo_footer.png" alt="puma">
+                </a>
+            </h2>
+            <div>
+                <form action="signup.html">
+                    <button type="submit">
+                        <em>Get the latest news. Sign up for an email!</em>
+                        <em>SIGN UP</em>
+                    </button>
+                </form>
+                <ul>
+                    <li><a href="list_best.html">Shop</a></li>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="footer_about.html">About</a></li>
+                    <li><a href="footer_usercontentterms.html">User Content Terms</a></li>
+                    <li><a href="footer_returnpolicy.html">Return Policy</a></li>
+                    <li><a href="footer_shippinganddelivery.html">Shipping and Delivery</a></li>
+                    <li><a href="footer_imprintlegaldata.html">Imprint & Legal Data</a></li>
+                    <li><a href="footer_faq.html">FAQ</a></li>
+                    <li><a href="footer_contactus.html">Contact Us</a></li>
+                </ul>
+                <p>
+                Since 1948, PUMA has made history as a creator of extraordinary product 
+designs for the fastest athletes on the planet. We aim high, and when we
+reach our goals, we aim even higher. All to achieve one thing: to be the
+Fastest Sports Brand in the World.
+                </p>
+                <p>
+                PUMA supplies athletes with the right equipment on the field,
+track and course. From football to golf to cricket,  PUMA is actively
+involved in different sports around the world.
+                </p>
+            </div>
+        </div>
+        <div>
+            <span>
+                <a href="footer_PrivacyPolicy.html">Privacy Policy</a>
+                <a href="footer_TermsConditions.html">Terms & Conditions</a>
+            </span>
+            <ul>
+                <li><a href="https://www.instagram.com/puma/" target="_blank">instagram</a></li>
+                <li><a href="https://kr.pinterest.com/puma/" target="_blank">pinterest</a></li>
+                <li><a href="https://x.com/PUMA" target="_blank">x</a></li>
+                <li><a href="https://www.youtube.com/puma" target="_blank">youtube</a></li>
+                <li><a href="https://www.facebook.com/PUMA/" target="_blank">facebook</a></li>
+            </ul>
+            <span>Current Location: <em>en-AU</em></span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/puma.js"></script>
+    <script src="js/customize.bxslider.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to puma">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="list_best.html">BEST</a></li>
+                    <li><a href="list_new.html">NEW</a></li>
+                    <li><a href="list_sale.html">SALE</a></li>
+                    <li data-panel="gnb_wish_Panel">WISHLIST</li>
+                    <li data-panel="gnb_search_Panel">SEARCH</li>
+                    <li data-panel="gnb_cart_Panel">CART</li>
+                    <li><a href="account.html" class="material-icons-outlined">account_circle</a></li>
+                    <li><a href="signin.html" class="material-icons-outlined">lock</a></li>
+                </ul>
+                <input type="button" value="drag_handle" class="material-icons" data-lnb="lnbContainer">
+            </nav>
+            <ul id="lnbContainer">
+                <li>
+                    <h2>
+                        <a href="list_lnb_clothing.html">Clothing</a>
+                        <a href="list_lnb_clothing.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Clo_01.png" alt="Tops">
+                            <figcaption>
+                                <h2>Tops</h2>
+                                <p>From relaxed tanks to form-fitting crop tops, PUMA t-shirts for women come in all shapes and sizes. Pair an oversized tee
+    with a pair of fitted leggings and sneakers to take you everywhere from the gym or a hike, to running errands on the weekend.</p>
+                                <a href="list_clo_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_shoes.html">Shoes</a>
+                        <a href="list_lnb_shoes.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_shoes_01.png" alt="Classics">
+                            <figcaption>
+                                <h2>Classics</h2>
+                                <p>Meet the next generation of classic. We’ve been kicking around since 1948, breaking the rules and changing
+    the game with instantly iconic silhouettes just as timeless as they are inherently versatile.</p>
+                                <a href="list_shoes_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_sports.html">Sport</a>
+                        <a href="list_lnb_sports.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_spo_01.png" alt="BASKETBALL">
+                            <figcaption>
+                                <h2>BASKETBALL</h2>
+                                <p>Together, we form the PUMA Fam and make PUMA Hoops what it is. See the game
+    like we do: determined to win, ready to show out, and playing for the joy of the game.</p>
+                                <a href="list_spo_bas.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_accessories.html">Accessories</a>
+                        <a href="list_lnb_accessories.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_acc_01.png" alt="Bags">
+                            <figcaption>
+                                <h2>Bags</h2>
+                                <p>With a PUMA women’s backpack for all occasions, keeping your essentials with you is both simple and stylish.
+    Our classic PUMA backpacks come in a variety of patterns and colors, and will put a spring in your step, no matter the weather.</p>
+                                <a href="list_acc_bags.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_collaborations.html">Collaborations</a>
+                        <a href="list_lnb_collaborations.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Col_01.png" alt="FENTY X PUMA">
+                            <figcaption>
+                                <h2>FENTY X PUMA</h2>
+                                <p>The newest FENTY x PUMA Avanti by Rihanna is reinvented with premium
+        leather in red and white colorways, touches of gold, and retro gum soles.   </p>
+                                <a href="list_col_fenty.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                </li>
+            </ul>
+        </div>
+        <div id="gnb_wish_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_wish_Panel">
+            <span>
+                <h3>Your Wishlist is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+        <div id="gnb_search_Panel">
+            <input type="search" placeholder="Search" title="search Field and press enter please">
+            <p>recent search terms</p>
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_search_Panel">
+        </div>
+        <div id="gnb_cart_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_cart_Panel">
+            <span>
+                <h3>Your Cart is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+    </header>
+    <section class="footerContainer_se">
+        <aside>
+            <ul>
+                <li><a href="footer_PrivacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="footer_TermsConditions.html" class="active">Terms and Conditions</a></li>
+            </ul>
+        </aside>
+        <div>
+            <h2>Terms and Conditions</h2>
+            <div>
+                <p>Effective Date: August 22, 2024</p>
+                <p>
+                    PLEASE NOTE AND BE ADVISED TO READ THESE TERMS AND CONDITIONS (“TERMS”) CAREFULLY AS THEY AFFECT YOUR LEGAL RIGHTS. BY ACCESSING, BROWSING, CREATING AN ACCOUNT, PURCHASING ANY PRODUCT(S) OR OTHERWISE USING THIS SITE (AS DEFINED BELOW), YOU AGREE TO BE BOUND AND ABIDE BY THESE TERMS. THESE TERMS CONTAIN PROVISIONS THAT GOVERN HOW YOU MAY BRING CLAIMS WITH REGARD TO PUMA. <mark>THESE TERMS PROVIDE HOW SUCH CLAIMS MAY BE BROUGHT AND RESOLVED, INCLUDING, EXCEPT TO THE EXTENT PROHIBITED BY APPLICABLE LAW, ANY CLAIMS THAT AROSE OR WERE RAISED PRIOR TO THE EFFECTIVE DATE OF THESE TERMS.</mark> BY ACCESSING AND USING THE SITE, WHETHER OR NOT YOU ARE REGISTERED, YOU EXPRESSLY ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD AND AGREE TO BE BOUND BY ALL OF THESE TERMS AND HAVE TAKEN TIME TO CONSIDER THE CONSEQUENCES AND RAMIFICATIONS CONTAINED HEREIN.IF YOU DO NOT AGREE TO THESE TERMS, YOU SHOULD NOT ACCESS OR USE THIS SITE.
+                </p>
+                <strong>
+                    THESE TERMS CONTAIN A DISPUTE RESOLUTION AND ARBITRATION PROVISION SECTION 20, INCLUDING CLASS ACTION WAIVER (SECTION 1) THAT AFFECTS YOUR RIGHTS UNDER THESE TERMS AND WITH RESPECT TO DISPUTES YOU MAY HAVE WITH PUMA. YOU MAY OPT OUT OF THE BINDING INDIVIDUAL ARBITRATION PROVISION AS PROVIDED BELOW.
+                </strong>
+                <p>
+                    These Terms govern the access or use of this website, mobile application or other PUMA product or service (collectively the "Website" or “Site”) on any computer, mobile phone, tablet, console or other device (collectively, "Device"). These Terms together with any and all information and policies referred to herein (collectively, the “Terms”) govern your use of, access to, and purchase of products from the Site and access to and use of any text, data, information, software, graphics, videos, audio, photographs and other materials and programs that we may make available to you through the Site. These Terms and additional terms posted on this Site at each time of use apply to that use, and retroactively to any use or claims that arose or were raised prior to the posting of such Terms, except to the extent prohibited by applicable law. We may change these Terms at any time without notice, effective upon its posting to the Site. Your continued use of the Site shall be considered your acceptance of the revised Terms.
+                </p>
+                <p>
+                    The Site and its contents are designed, operated and administered by PUMA North America, Inc. (hereinafter “PUMA”, “we”, “us”, “our”).
+                </p>
+            </div>
+            <ol>
+                <li>
+                    <h3>1. Class Action Waiver</h3>
+                    <p>
+                        PLEASE READ THIS SECTION CAREFULLY – IT MAY SIGNIFICANTLY AFFECT YOUR LEGAL RIGHTS.
+                    </p>
+                    <p>
+                        You and we agree that, to the fullest extent permitted by applicable law, each party may bring claims against the other only in an individual capacity, and not participate as a plaintiff, claimant, or class member in any class, collective, consolidated, private attorney general, or representative proceeding. This means that you and we may not bring a claim on behalf of a class or group and may not bring a claim on behalf of any other person unless doing so as a parent, guardian, or ward of a minor or in another similar capacity for an individual who cannot otherwise bring their own individual claim. This also means that you and we may not participate in any class, collective, consolidated, private attorney general, or representative proceeding brought by any third party. Notwithstanding the foregoing, you or we may participate in a class-wide settlement. Nothing in these Terms precludes you from bringing issues to the attention of federal, state, or local government agencies and, if the applicable law allows, such agencies may seek relief against us for you.
+                    </p>
+                    <p>
+                        To the fullest extent permitted by applicable law, you and we waive any right to a jury trial.
+                    </p>
+                    <p>
+                        If this class action waiver is found to be void or unenforceable, the dispute shall be resolved in state or federal court rather than in arbitration. You may elect to opt-out (exclude yourself) from the final, binding arbitration procedures specified in Section 20 of these Terms by sending a written letter as set forth in Section 20 of these Terms.
+                    </p>
+                    <p>
+                        This section will survive after the Terms and Conditions terminate or your use of the Site ends.
+                    </p>
+                </li>
+                <li>
+                    <h3>2. Governing Law</h3>
+                    <p>
+                        By visiting this Site, you agree that the Federal Arbitration Act, applicable federal law, and the laws of the Commonwealth of Massachusetts, without giving effect to any conflict of law provisions, shall govern any proceeding that occurs in arbitration. In the event any claim is found not to be arbitrable, normal choice-of-law rules shall apply to any proceeding brought in state or federal court as set forth in Section 21 of these Terms.
+                    </p>
+                </li>
+                <li>
+                    <h3>3. Access to the Site</h3>
+                    <p>
+                        It is your responsibility to ensure your equipment (computer, laptop, netbook, tablet or other mobile device) meets all the necessary technical specifications to enable you to access and use the Site and is compatible with the Site. We grant you a personal, limited, nonexclusive, nontransferable license to access the Site and to use the information and services contained here solely for your personal, non-commercial use as described in these Terms.
+                    </p>
+                    <p>
+                        We may, from time to time, restrict access to certain features, parts or content of the Site, or the entire Site, to users who have registered with us. You must ensure that any registration details you provide are accurate. If you choose, or you are provided with, log-in credentials (such as a username and password or other identifier) as part of our security procedures, you must treat such information as confidential and must not reveal it to anyone else. You are responsible for all activities that occur under your log-in credentials and must notify us immediately of any unauthorized use or other security breach of which you become aware. We reserve the right to disable any log-in credentials, at any time, if in our opinion you have failed to comply with any of the provisions of these Terms.
+                    </p>
+                </li>
+                <li>
+                    <h3>4. Shipment and Delivery</h3>
+                    <p>
+                        Your order will be delivered to the delivery address you specify when placing your order.
+                    </p>
+                    <p>
+                        We reserve the right not to deliver to any country that is prohibited by applicable export laws. Orders cannot be delivered to P.O. Box or similar addresses. Products comprised within the same order cannot be delivered to different addresses. You are responsible for the shipping costs associated with the delivery of the Products you purchase on the Site as specified on your order confirmation.
+                    </p>
+                    <p>
+                        If you order Product(s) for international delivery, they may be opened and inspected by applicable customs authorities and may be subject to import duties and taxes which are levied when the delivery reaches the specified destination. You will be responsible for payment of any such import duties and taxes. Please note that we do not control these charges. Please contact your local customs office for further information before placing your order. In the event that you return an item, the import duties will be refunded if they were originally included in the purchase price. If they were not included in the purchase price, then you will responsible for reclaiming any duties directly from your local customs office.
+                    </p>
+                    <p>
+                        Please also note that you must comply with all applicable laws and regulations of the country for which the Product(s) are destined. We will not be liable for any breach by you of any such laws.
+                    </p>
+                    <p>
+                        You bear all risk of loss and damage to the Product(s) from the time of delivery or collection (as the case may be). Delivery is deemed complete and title to the products passes to you upon acceptance of shipment by a common carrier, provided full payment of all sums due in respect of the Product(s), including any delivery charges, has been received.
+                    </p>
+                    <p>
+                        For more information, visit <mark>Shipping & Delivery.</mark>
+                    </p>
+                </li>
+                <li>
+                    <h3>5. Product information</h3>
+                    <p>
+                        While we have tried to accurately display the colors of Products featured on the Site, the actual colors and others details you see will depend on your monitor and, as such, may not be accurate. This Site may contain typographical errors or technical inaccuracies. We do not warrant that the product descriptions are complete or error-free. The images of the products on the Site are for illustrative purposes only.
+                    </p>
+                    <p>
+                        Your information may be transferred to a third party as a part of our business assets in a sale of a part or all of PUMA, or in connection with a merger, financing or other corporate transaction.
+                    </p>
+                    <p>
+                        You may also choose to disclose certain information publicly (e.g., when you post UGC) or with specific third parties (e.g., when you interact with third party Data Technologies or other services (e.g., social media plug-ins, links to other sites, etc.). When you use certain services, you agree to publicly share a basic amount of information, which may include your username, city location, and profile picture in accordance with the terms of those services. In order to participate in certain features, you may have to adjust your privacy settings and share additional information. You may also choose to disclose your activity on other platforms, such as Instagram, Facebook and Twitter. Please read the privacy policies of those platforms, because your PUMA activity published on those platforms will no longer be governed by this Privacy Policy.
+                    </p>
+                    <p>
+                        Our digital operations are conducted, in whole or in part, in the United States and our services are intended for U.S. users. Regardless of where you live, you consent to have your information, including Personal Information, transferred, processed and stored in the United States, and other jurisdictions, and allow PUMA to collect and process your Personal Information in accordance with this Privacy Policy.
+                    </p>
+                </li>
+                <li>
+                    <h3>6. Returns</h3>
+                    <p>
+                        We do not knowingly collect or solicit “Personal Information” as defined by the U.S. Children’s Online Privacy Protection Act (“COPPA”) (“Children’s Personal Information”) online from children under the age of 13. The Services are intended for a general audience. If we obtain knowledge that we have collected Children’s Personal Information in a manner not permitted by COPPA we will remove such data to the extent required by COPPA. If you believe that we might have any information from a child under the age of 13, please contact us as directed below in the “Contact Us” section.
+                    </p>
+                </li>
+                <li>
+                    <h3>7. Permitted Use</h3>
+                    <p>
+                        You may cancel your Account or opt-out of receiving promotional e-mail messages from PUMA at any time. To unsubscribe and stop receiving SMS text or commercial e-mail communications from PUMA, you can change your Account settings or follow the instructions enclosed within the e-mail, text message, notification or other promotional message or communication. You can access, update, or correct certain information stored within your Account at any time by logging into your account and updating your preferences. However, this will only affect your account profile and not other Personal Information that we have about you. You may also request access, correction, or deletion of your personal information by contacting us as described in the Contact Us section, however how we process this request will be within our discretion subject to the rights that certain state residents have. We may require you to prove your identity if you make such a request. PUMA may keep information and content in our backup files and archives as required or permitted by applicable law.
+                    </p>
+                    <p>
+                        In addition, as discussed below, depending on where you reside, you may have broader rights such as to (i) object to or request the restriction of processing of your Personal Information, (ii) request to know more about and access the Personal Information we collect, use, and disclose about you, (iii) request deletion of your Personal Information, (iv) request correction of inaccurate Personal Information, or (v) opt out of the sale or sharing of Personal Information for the purpose of targeted advertising. For more information on these rights and how to exercise them, see our California Privacy Notice and State Notice below. These state specific rights must be exercised separately from the general rights described in the paragraph above.
+                    </p>
+                    <h4>CONTACT US</h4>
+                    <p>
+                        If you have any questions or comments relating to our Services and/or the Privacy Policy, please email us at <a href="mailto:%20customerservice.us@puma.com" target="_blank"></a>customerservice.us@puma.com or write to us:
+                    </p>
+                    <p>
+                        <em>PUMA</em>
+                        <em>Attn: Privacy Officer</em>
+                        <em>455 Grand Union Boulevard</em>
+                        <em>Somerville MA, USA 02145</em>
+                    </p>
+                    <p>
+                        You may also contact us via telephone at 1-888-565-PUMA (7862) (tel:1-888-565-7862).
+                    </p>
+                    <h4>TERMS OF USE</h4>
+                    <p>
+                        Your use of our products and services, and any disputes arising from them, is subject to this Privacy Policy as well as the <a href="footer_TermsConditions.html">Terms & Conditions</a> governing the use of the Services, and any applicable additional terms.
+                    </p>
+                    <p>
+                        Please visit the User <a href="footer_usercontentterms.html">Content Terms</a> to view License Terms for use of Instagram Content on our Services and in advertising.
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html">
+                    <img src="images/logo_footer.png" alt="puma">
+                </a>
+            </h2>
+            <div>
+                <form action="signup.html">
+                    <button type="submit">
+                        <em>Get the latest news. Sign up for an email!</em>
+                        <em>SIGN UP</em>
+                    </button>
+                </form>
+                <ul>
+                    <li><a href="list_best.html">Shop</a></li>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="footer_about.html">About</a></li>
+                    <li><a href="footer_usercontentterms.html">User Content Terms</a></li>
+                    <li><a href="footer_returnpolicy.html">Return Policy</a></li>
+                    <li><a href="footer_shippinganddelivery.html">Shipping and Delivery</a></li>
+                    <li><a href="footer_imprintlegaldata.html">Imprint & Legal Data</a></li>
+                    <li><a href="footer_faq.html">FAQ</a></li>
+                    <li><a href="footer_contactus.html">Contact Us</a></li>
+                </ul>
+                <p>
+                Since 1948, PUMA has made history as a creator of extraordinary product 
+designs for the fastest athletes on the planet. We aim high, and when we
+reach our goals, we aim even higher. All to achieve one thing: to be the
+Fastest Sports Brand in the World.
+                </p>
+                <p>
+                PUMA supplies athletes with the right equipment on the field,
+track and course. From football to golf to cricket,  PUMA is actively
+involved in different sports around the world.
+                </p>
+            </div>
+        </div>
+        <div>
+            <span>
+                <a href="footer_PrivacyPolicy.html">Privacy Policy</a>
+                <a href="footer_TermsConditions.html">Terms & Conditions</a>
+            </span>
+            <ul>
+                <li><a href="https://www.instagram.com/puma/" target="_blank">instagram</a></li>
+                <li><a href="https://kr.pinterest.com/puma/" target="_blank">pinterest</a></li>
+                <li><a href="https://x.com/PUMA" target="_blank">x</a></li>
+                <li><a href="https://www.youtube.com/puma" target="_blank">youtube</a></li>
+                <li><a href="https://www.facebook.com/PUMA/" target="_blank">facebook</a></li>
+            </ul>
+            <span>Current Location: <em>en-AU</em></span>
+        </div>
+    </footer>
+</body>
+</html>

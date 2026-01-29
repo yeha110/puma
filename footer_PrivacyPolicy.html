@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/puma.js"></script>
+    <script src="js/customize.bxslider.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to puma">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="list_best.html">BEST</a></li>
+                    <li><a href="list_new.html">NEW</a></li>
+                    <li><a href="list_sale.html">SALE</a></li>
+                    <li data-panel="gnb_wish_Panel">WISHLIST</li>
+                    <li data-panel="gnb_search_Panel">SEARCH</li>
+                    <li data-panel="gnb_cart_Panel">CART</li>
+                    <li><a href="account.html" class="material-icons-outlined">account_circle</a></li>
+                    <li><a href="signin.html" class="material-icons-outlined">lock</a></li>
+                </ul>
+                <input type="button" value="drag_handle" class="material-icons" data-lnb="lnbContainer">
+            </nav>
+            <ul id="lnbContainer">
+                <li>
+                    <h2>
+                        <a href="list_lnb_clothing.html">Clothing</a>
+                        <a href="list_lnb_clothing.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Clo_01.png" alt="Tops">
+                            <figcaption>
+                                <h2>Tops</h2>
+                                <p>From relaxed tanks to form-fitting crop tops, PUMA t-shirts for women come in all shapes and sizes. Pair an oversized tee
+    with a pair of fitted leggings and sneakers to take you everywhere from the gym or a hike, to running errands on the weekend.</p>
+                                <a href="list_clo_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_shoes.html">Shoes</a>
+                        <a href="list_lnb_shoes.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_shoes_01.png" alt="Classics">
+                            <figcaption>
+                                <h2>Classics</h2>
+                                <p>Meet the next generation of classic. We’ve been kicking around since 1948, breaking the rules and changing
+    the game with instantly iconic silhouettes just as timeless as they are inherently versatile.</p>
+                                <a href="list_shoes_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_sports.html">Sport</a>
+                        <a href="list_lnb_sports.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_spo_01.png" alt="BASKETBALL">
+                            <figcaption>
+                                <h2>BASKETBALL</h2>
+                                <p>Together, we form the PUMA Fam and make PUMA Hoops what it is. See the game
+    like we do: determined to win, ready to show out, and playing for the joy of the game.</p>
+                                <a href="list_spo_bas.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_accessories.html">Accessories</a>
+                        <a href="list_lnb_accessories.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_acc_01.png" alt="Bags">
+                            <figcaption>
+                                <h2>Bags</h2>
+                                <p>With a PUMA women’s backpack for all occasions, keeping your essentials with you is both simple and stylish.
+    Our classic PUMA backpacks come in a variety of patterns and colors, and will put a spring in your step, no matter the weather.</p>
+                                <a href="list_acc_bags.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_collaborations.html">Collaborations</a>
+                        <a href="list_lnb_collaborations.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Col_01.png" alt="FENTY X PUMA">
+                            <figcaption>
+                                <h2>FENTY X PUMA</h2>
+                                <p>The newest FENTY x PUMA Avanti by Rihanna is reinvented with premium
+        leather in red and white colorways, touches of gold, and retro gum soles.   </p>
+                                <a href="list_col_fenty.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                </li>
+            </ul>
+        </div>
+        <div id="gnb_wish_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_wish_Panel">
+            <span>
+                <h3>Your Wishlist is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+        <div id="gnb_search_Panel">
+            <input type="search" placeholder="Search" title="search Field and press enter please">
+            <p>recent search terms</p>
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_search_Panel">
+        </div>
+        <div id="gnb_cart_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_cart_Panel">
+            <span>
+                <h3>Your Cart is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+    </header>
+    <section class="footerContainer_se">
+        <aside>
+            <ul>
+                <li><a href="footer_PrivacyPolicy.html" class="active">Privacy Policy</a></li>
+                <li><a href="footer_TermsConditions.html">Terms and Conditions</a></li>
+            </ul>
+        </aside>
+        <div>
+            <h2>Privacy Policy</h2>
+            <div>
+                <p>Effective December, 2024</p>
+                <p>PUMA, and the PUMA group of companies (collectively, “PUMA” or "we", "us", or "our") respects the privacy of all of our visitors and pledges to provide you with the best online experience possible. This PUMA Privacy Policy (“Privacy Policy”) describes what Personal Information (defined below) we collect from you via our Services (defined below), how we may use it and the steps we take to ensure that it is protected. This Privacy Policy applies to Personal Information we may collect from you through any PUMA online services that posts this Privacy Policy, including our mobile app(s) for users located in the U.S. and Canada, as well as offline collection through our retail stores located in the U.S. and Canada, PUMA sponsored events, PUMA emails originated from the U.S. and Canada, and official PUMA operated surveys and sweepstakes entry forms, or in any other instance when you contact our operations in the U.S. and Canada (collectively “Services”). This Privacy Policy does not apply to our job applicants or current or former employees or contractors except to the extent that they use our website and with regard to our biometric retention statement and with regard to how to make a privacy rights request.</p>
+                <strong>BY ACCESSING OR USING THE SERVICES, ON ANY COMPUTER, MOBILE PHONE, TABLET, CONSOLE OR OTHER PHYSICAL OR ELECTRONIC DEVICE (COLLECTIVELY, "DEVICE"), OR BY OTHER METHOD, YOU CONSENT TO OUR PRIVACY POLICY.</strong>
+                <p>PUMA may modify this Privacy Policy at any time effective upon its posting, and additional privacy notices or policies may also apply. Your continued use of our products and services constitutes your acceptance to this Privacy Policy, applicable additional notices and policies and any updates. By using our Services, you agree to the Service’s <a href="footer_TermsConditions.html">Terms & Conditions</a> governing the use of the Services and accept our practices as outlined in this Privacy Policy. Do not use the Service if you do not ACCEPT this Privacy Policy and AGREE TO the Terms and Conditions.</p>
+                <ul>
+                    <li>• INFORMATION WE COLLECT AND HOW</li>
+                    <li>• COOKIES AND DATA TECHNOLOGIES</li>
+                    <li>• USE OF INFORMATION</li>
+                    <li>• PROTECTION AND RETENTION OF INFORMATION</li>
+                    <li>• DISCLOSING AND TRANSFERING OF INFORMATION</li>
+                    <li>• CHILDREN’S PRIVACY</li>
+                    <li>• OPT-OUT, DELETE OR MODIFY INFORMATION</li>
+                    <li>• CALIFORNIA PRIVACY NOTICE</li>
+                    <li>• ADDITIONAL STATE-SPECIFIC PRIVACY NOTICE</li>
+                </ul>
+                <ul>
+                    <li>• Disclosure of Personal Information:</li>
+                    <li>• NEVADA PRIVACY NOTICE</li>
+                </ul>
+            </div>
+            <ul>
+                <li>
+                    <h3>INFORMATION WE COLLECT AND HOW</h3>
+                    <p>We collect information you give us or permit us to access. We may also collect information regarding your interaction with, and use of, our products and services. Information we may collect includes, but is not limited to, your name, image, birth date, email and physical address, when necessary credit card information, IP address, telephone number or mobile phone identifier, gender, contact lists, social media information, location (including GPS) information, activity and performance information, Device identifier and hardware information, browser type and language, cookie information, system type, whether you have enabled software to access certain features, access times, referring website URLs, information about your purchases and other information about your interactions with us.</p>
+                    <p>For example, we collect information you provide via any of our customer service channels including via phone, email, SMS and chat, and such information and your communications may be monitored, recorded, disclosed, reviewed, accessed and used by us and our third party vendors to improve the quality of goods and services we provide and the quality of services provided by our third party vendors.</p>
+                    <p>Additionally, some of our service providers and vendors including, without limitation, customer service vendors may utilize artificial intelligence (“AI”) to provide you with user-friendly and responsive feedback. In some instances, the AI utilized by these partners is based on algorithms that learn from existing data and other data that you and other users provide.</p>
+                    <p>We also collect information about gift and eGift Card recipients provided by the giver.</p>
+                    <p>As more fully explained in the next section, we may automatically collect certain information about you when you access or use the Services, or shop in our stores, including:</p>
+                    <ul>
+                        <li>
+                            <b>• Log and Usage Information</b>: We collect information about your use of the Services, such as the type of browser you use, access times, pages viewed, items placed in your cart, links clicked, browsing behavior, and the referring URL (the webpage you visited before navigating to the Services). We also collect information regarding customer traffic patterns and site usage. This information is used to analyze and improve our Services, to provide our customers with a fulfilling shopping experience, and to personalize the Services, our communications with you, and your shopping experience.
+                        </li>
+                        <li>
+                            <b>• Device Information</b>: We collect information about the device you use to access the Services, including the hardware model, IP address, unique device identifiers and operating system and version.
+                        </li>
+                        <li>
+                            <b>• Transaction Information</b>: When you purchase or return a product, we collect information about the transaction, such as product details and the date and location of the purchase/return.
+                        </li>
+                        <li>
+                            <b>• Video Data</b>: We use video cameras in our stores for security purposes, loss prevention, and asset protection. We may also use cameras in our stores for operational purposes, such as traffic pattern analysis. We will not use cameras to personally identify you, without your consent, except when the identification is for safety, security, anti-theft, or law enforcement purposes.
+                        </li>
+                        <li>
+                            <b>• RFID Data</b>: We may use Radio Frequency Identification (RFID) for inventory management and logistics support. RFID tags consist of a small chip and antenna that provide a unique identifier for objects. RFID serves the same purpose as a bar code and must be scanned by a specific type of reader in close proximity to the tag to retrieve tag data. RFID is not used to track or monitor any items once you leave our stores.
+                        </li>
+                        <li>
+                            <b>• WiFi Data</b>: Some of our retail stores may offer free Wi-Fi services to visitors. Wi-Fi routers capture certain data, such as Device information and telemetry data related to signal strength and quality related to your use of our Wi-Fi service, and we may analyze Wi-Fi data automatically collected to provide operational insights such as foot traffic volumes, dwell times, and how customers move through our stores.
+                        </li>
+                        <li>
+                            <b>• Information Collected by Cookies and Other Technologies</b>: As more fully explained in the next section, we (and our service providers and third parties) may use cookies, web beacons (also known as "tracking pixels") and other collection or tracking technologies (“Data Technologies”) to record and collect information about you when you interact with the Services, including information about your interaction with the Services such as mouse movements, click and keystroke behavior, indicated preferences, mobile app or site visit behavior, browsing and purchasing behavior. We may combine this information with other information we collect about you and use it for various purposes, such as improving our websites and your online experience, understanding which areas and features of our sites are popular, counting visits, understanding campaign effectiveness, tailoring our communications with you, determining whether an email has been opened and links within the email have been clicked and for other business purposes. For more information about cookies and how to disable them, please see the Cookies section below.
+                        </li>
+                    </ul>
+                    <p>If you participate in a contest or sweepstakes that we sponsor, we may, in addition to the above, collect the information to administer the sweepstakes, or as otherwise disclosed at the time of collection, such as your contact information, your product size information, your preferences, your location, and other information you provide to us.</p>
+                    <p>Additionally, we may collect your mobile telephone number in connection with SMS/MMS programs, including for shipment notifications and marketing purposes. We will use mobile telephone information you provide through the Services to transmit your mobile messages and respond to you, if necessary. This includes, but is not limited to, disclosing information to platform providers, phone companies, and other vendors who assist us in the delivery of mobile messages. For more information regarding SMS/MMS programs, visit: <a href="https://www.sinch.com/privacy-policy" target="_blank">https://www.sinch.com/privacy-policy.</a></p>
+                    <p>We may also collect Personal Information in connection with the processing and evaluation of a job application and related materials submitted by you. For more information, <a href="https://about.puma.com/en/careers" target="_blank"></a>click here.</p>
+                    <p>We may derive Personal Information or draw inferences about you based on the other types of Personal Information we collect. For example, we may infer location based on IP address, or make product recommendations based on browsing or purchasing behavior in connection with the Services.</p>
+                    <p>We may combine information you give us with other information from PUMA sources, transactions and communications. This may include, but is not limited to, information from PUMA retail stores, direct mail, catalogs, promotions, collaborations, events, products and applications, or other PUMA interactions. We may also combine that information with data that is publicly available and data from third parties. To the extent non-Service information is combined with Personal Information collected via the Services, we will treat it as Personal Information under this Privacy Policy.</p>
+                </li>
+                <li>
+                    <h3>COOKIES AND DATA TECHNOLOGIES</h3>
+                    <p>We, our service providers and third parties may use cookies and other Data Technologies, including but not limited to tracking pixels, to gather information about your visits on our website, mobile apps and other Services so we can enhance your experience. This information may be combined with other information, which will enable us to analyze and better customize your visits.</p>
+                    <p>What Are Cookies? Cookies are data files stored within your browser when you interact with a website. These data files allow the website to recall important information about your visit, help better understand your preferences and improve your overall experience. For example, we use cookies to save products in your shopping cart while you browse our websites and to track the effectiveness of our marketing and advertising campaigns. Similarly, a tracking pixel or web beacon is a technology that can recognize specific cookies and convey information about that browser. We, and third parties, may also use technologies, such as our own, and third party, cookies, to provide you with personalized online display advertising tailored to your interests. Furthermore, when using Data Technologies from our advertising partners such as Facebook, Instagram, Snapchat, TikTok and others, we may use an “advanced matching” feature, in which data such as name, address, email address, telephone number, social media ID and browsing behavior is collected and shared with those partners in a pseudonymous manner in order to serve you advertising that is relevant to you based on your interactions with us. You can opt out of this collection and sharing by selecting Manage Cookies in the footer and opting out of Social Media and Advertising cookies or by adjusting your browser settings.</p>
+                    <p>There are generally three categories of cookies used on the Services:</p>
+                    <ul>
+                        <li>
+                            <b>• Functional:</b> These cookies are required for basic functionality and are therefore always enabled. If you disable them our Services may not function properly. These include cookies that allow you to be remembered as you explore and use our Services within a single session or, if you request, from session to session. They help make the shopping cart and checkout process possible as well as assist in security issues and conforming to regulations.
+                        </li>
+                        <li>
+                            <b>• Performance and Analytics:</b> These cookies allow us to improve the Services' functionality by tracking usage, including through session replay. In some cases, these cookies improve the speed with which we can process your request and allow us to remember Services preferences you have selected. These cookies also help us learn things like what pages are most attractive to all of our visitors and what promotions visitors like to see, and to gauge the success of our advertising campaigns. Refusing these cookies will limit recommendations and customizations while using the Services.
+                        </li>
+                        <li>
+                            <b>• Social Media and Advertising:</b> Social media cookies offer the possibility to connect you to your social networks and share content from the Services through social media. Advertising cookies collect information to help better tailor advertising to your interests. In some cases, these cookies involve the processing of your Personal Information. Refusing these cookies may result in seeing advertising that is not as relevant to you or you not being able to link effectively with Facebook, Twitter, or other social networks and/or not allowing you to share content on social media.
+                        </li>
+                    </ul>
+                    <p>
+                        Your browser can also help you manage cookies. Most, but not all, browsers accept cookies automatically. You may be able to set your browser to reject and/or delete cookies. You may limit or turn off cookies and other collection tools by adjusting your browser settings. If you turn off certain collection tools, you may not have access to many features that make your experience more efficient and some of our services and features may not function properly. We recommend that you leave cookies “turned on” so we can offer you a better shopping experience on our sites.
+                    </p>
+                    <p>
+                        Some information about your use of the Services and certain other online services may be collected using Data Technologies across time and services and used by PUMA and third parties for purposes such as to associate different devices you use and deliver relevant ads and/or other content to you on the Service and certain other online services. Your browser settings may allow you to automatically transmit a “Do Not Track” signal to online services you visit. Note, however, there is no consensus among industry participants as to what “Do Not Track” means in this context. Like many online services, PUMA currently does not alter our practices when we receive a “Do Not Track” signal from a visitor’s browser. To find out more about “Do Not Track,” you can visit <a href="http://www.allaboutdnt.com" target="_blank">http://www.allaboutdnt.com</a> , but we are not responsible for the completeness or accuracy of this third party information. Some third parties may, however, offer you choices regarding their tracking technologies. PUMA is not responsible for the completeness or accuracy of this tool or third-party notices or mechanisms. For specific information on some of the choice options offered by third party analytics and advertising providers, see below. We may, from time-to-time, and in certain jurisdictions, offer or point you to tools that allow you to exercise certain preferences regarding cookies and other Data Technologies associated with the Services, but such tools rely on third parties and third party information so we do not guaranty that the tools will provide complete and accurate information or be completely effective.
+                    </p>
+                    <p>
+                        Some advertising and technology partners may also collect Personal Information when you use the Services. For example, we may work with other companies, such as Google, who use tracking technologies to analyze how users use the Services and to serve advertisements on our behalf across the Internet. For more information about how data is collected and processed in connection with the Google Analytics service and how to opt out, visit <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">https://tools.google.com/dlpage/gaoptout</a>. To learn more about data Google collects and how your data may be used, and to optout of certain Google browser Interest-Based Advertising, please visit <a href="http://www.google.com/settings/ads" target="_blank">http://www.google.com/settings/ads</a>.
+                    </p>
+                    <p>
+                        Some third party Data Technology operators that may be associated with our Services may participate in the Digital Advertising Alliance’s (“DAA”) Self-Regulatory Program for Online Behavioral Advertising. To learn more about how you can exercise certain choices regarding Interest-based Advertising, including use of Cross-device Data for serving ads, visit: http://www.aboutads.info/choices/ (
+                            <a href="http://www.aboutads.info/choices/" target="_blank">http://www.aboutads.info/choices/</a>) (U.S.), 
+                            <a href="http://youradchoices.ca/choices" target="_blank">http://youradchoices.ca/choices</a> (Canada), and 
+                            <a href="http://www.aboutads.info/appchoices" target="_blank">http://www.aboutads.info/appchoices</a>  for information on the DAA’s opt-out program specifically for mobile apps (including use of precise location for third party ads). Some of these companies may also be members of the Network Advertising Initiative (“NAI”). To learn more about the NAI and your opt-out options for their members, see 
+                            <a href="http://www.networkadvertising.org/choices/" target="_blank">http://www.networkadvertising.org/choices/</a> . Please be aware that, even if you are able to opt out of certain kinds of Interest-based Advertising, you may continue to receive other types of ads. Opting out only means that those selected members should no longer deliver certain Interest-based Advertising to you but does not mean you will no longer receive any targeted content and/or ads (e.g. from other ad networks). Also, if your browsers are configured to reject cookies when you visit these opt-out webpages, or you subsequently erase your cookies, use a different device or web browser or use a non-browser-based method of access (e.g. mobile app), your NAI / DAA browser-based opt-out may not, or may no longer, be effective. PUMA supports the ad industry’s <a href="https://www.iab.com/wp-content/uploads/2015/05/ven-principles-07-01-09.pd" target="_blank">Self-regulatory Principles for Online Behavioral Advertising</a> and expects that ad networks we directly engage to serve you interest-based advertising will do so as well, though we cannot guaranty their compliance.
+                    </p>   
+                </li>
+                <li>
+                    <h3>USE OF INFORMATION</h3>
+                    <p>We may use your information subject to this Privacy Policy, including information that is defined as personal information, personally identifiable information or personal data under applicable laws (“Personal Information”) except as restricted by applicable law, including without limitation for:</p>
+                    <ul>
+                        <li>• Enhancing, personalizing and customizing user experiences, such as placing an order and other activities.</li>
+                        <li>• Communicating with you about your purchase, account information or customer service.</li>
+                        <li>• Analyzing user behavior and trends to better understand our customers and gain consumer insights.</li>
+                        <li>• Providing and conducting marketing and promotions.</li>
+                        <li>• Communicating with you about our products, services and events, and for other promotional purposes.</li>
+                        <li>• Administering contests, promotions, events, surveys or other features.</li>
+                        <li>• Displaying relevant marketing to you and other information about PUMA.</li>
+                        <li>• Processing your registration, manage your account and/or upload your user generated content (“UGC”).</li>
+                        <li>• Transacting with you.</li>
+                        <li>• Improving the Service and for any other internal business purposes.</li>
+                        <li>• Preventing and addressing fraud, breach of policies or terms, and threats or harm.</li>
+                        <li>• Fulfilling other purposes disclosed at the time you provide Personal Information or otherwise where we are legally permitted or are required to do so.</li>
+                    </ul>
+                        <p>We only send you text communications or promotional emails if you have opted to receive PUMA emails and/or SMS messages. If you no longer want to receive SMS messages, or promotional emails, or want to delete/update your Personal Information, please visit the <a href="account.html">My Account</a> page or opt-out by following the opt-out or unsubscribe instructions in the message or by <a href="footer_contactus.html">Contacting Us.</a></p>
+                        <p>You can cancel text messages at any time. To stop receiving marketing text messages from PUMA, please reply “STOP” to the PUMA marketing text message. After you send "STOP", we may send you an additional text message to confirm that you have been unsubscribed. You will no longer receive text messages from that short code, but you may receive text messages if you are subscribed to other text lists. If at any time you have questions about the text messages, text "HELP". After you send "HELP" we will respond with instructions on how to use our service as well as how to unsubscribe. Please note this preference will only apply to the phone number in receipt of the text. Message and data rates may apply.</p>
+                </li>
+                <li>
+                    <h3>PROTECTION AND RETENTION OF INFORMATION</h3>
+                    <p>
+                        PUMA uses technical and organizational measures designed to protect your Personal Information against unauthorized access, theft, and loss. While PUMA strives to protect its user's Personal Information and privacy, we cannot guarantee 100% the security or confidentiality of any information that you provide to us or that is otherwise disclosed by you online. We recommend that you take additional measures to protect yourself and your information, such as installing anti-virus software, closing browsers after use, keeping confidential your log-in credentials and passwords. We will retain your Personal Information for as long as your account is active or as needed to provide you services. We will retain and use your Personal Information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.
+                    </p>
+                    <p>
+                        We retain your Personal Information for as long as necessary to provide our products and services to you and fulfill the transactions you have requested, or for other essential purposes such as complying with our legal obligations, maintaining business and financial records, resolving disputes, maintaining security, detecting, and preventing fraud and abuse, and enforcing our agreements. The criteria used to determine retention periods includes the legal limitation of liability period, agreed contractual provisions, applicable regulatory requirements, and industry standards.
+                    </p>
+                    <p>
+                        While we do not collect biometric data from the public, in instances where we collect employee biometric data, we only retain such biometric data for as long as necessary for the purpose of the collection of the biometric data and delete such biometric data when the purpose for collecting such data has been satisfied or within one year of the employee’s last interaction with the Company, whichever is earlier to occur.
+                    </p>
+                </li>
+                <li>
+                    <h3>DISCLOSING AND TRANSFERING OF INFORMATION</h3>
+                    <p>
+                        Subject to applicable law, this Privacy Policy and any representations made by us in writing at the time of collection, we may disclose your information except as restricted by applicable law. For instance, we may disclose your information, including Personal Information, with our affiliates and subsidiaries, as well as to our partners, vendors, distributors, and suppliers, some of which may be outside the United States. We may transfer your information to certain service providers in order to conduct our business operations. For example, we may disclose your information to service providers who may provide the following services on our behalf: web hosting, credit card processing, shipping and order fulfillment, data management, email distribution, marketing, market research, analytics, customer service, website utilization, information analysis, and promotions management. We may also share some of your account details (such as your name, email address, password and date of birth) with our cloud service providers for the purposes of identification and authentication, so you can conveniently access your account. We may also disclose your information as is necessary to complete a transaction or provide a product, service, or feature that you have requested. These service providers will only use your information for the purpose of carrying out the services provided to PUMA. We may disclose information upon governmental request, in response to a court order, when required by law, to enforce our policies, or to protect our or others' rights, property or safety. We may disclose information to prevent illegal uses of PUMA's products and services or violations of the Terms & Conditions, or applicable additional terms, or to defend ourselves against third party claims. We may also disclose information to companies assisting in fraud protection or investigation. We may also disclose aggregated or de-identified information based upon your use of the Services.
+                    </p>
+                    <p>
+                        Your information may be transferred to a third party as a part of our business assets in a sale of a part or all of PUMA, or in connection with a merger, financing or other corporate transaction.
+                    </p>
+                    <p>
+                        You may also choose to disclose certain information publicly (e.g., when you post UGC) or with specific third parties (e.g., when you interact with third party Data Technologies or other services (e.g., social media plug-ins, links to other sites, etc.). When you use certain services, you agree to publicly share a basic amount of information, which may include your username, city location, and profile picture in accordance with the terms of those services. In order to participate in certain features, you may have to adjust your privacy settings and share additional information. You may also choose to disclose your activity on other platforms, such as Instagram, Facebook and Twitter. Please read the privacy policies of those platforms, because your PUMA activity published on those platforms will no longer be governed by this Privacy Policy.
+                    </p>
+                    <p>
+                        Our digital operations are conducted, in whole or in part, in the United States and our services are intended for U.S. users. Regardless of where you live, you consent to have your information, including Personal Information, transferred, processed and stored in the United States, and other jurisdictions, and allow PUMA to collect and process your Personal Information in accordance with this Privacy Policy.
+                    </p>
+                </li>
+                <li>
+                    <h3>CHILDRENS' PRIVACY</h3>
+                    <p>
+                        We do not knowingly collect or solicit “Personal Information” as defined by the U.S. Children’s Online Privacy Protection Act (“COPPA”) (“Children’s Personal Information”) online from children under the age of 13. The Services are intended for a general audience. If we obtain knowledge that we have collected Children’s Personal Information in a manner not permitted by COPPA we will remove such data to the extent required by COPPA. If you believe that we might have any information from a child under the age of 13, please contact us as directed below in the “Contact Us” section.
+                    </p>
+                </li>
+                <li>
+                    <h3>OPT-OUT, DELETE OR MODIFY INFORMATION</h3>
+                    <p>
+                        You may cancel your Account or opt-out of receiving promotional e-mail messages from PUMA at any time. To unsubscribe and stop receiving SMS text or commercial e-mail communications from PUMA, you can change your Account settings or follow the instructions enclosed within the e-mail, text message, notification or other promotional message or communication. You can access, update, or correct certain information stored within your Account at any time by logging into your account and updating your preferences. However, this will only affect your account profile and not other Personal Information that we have about you. You may also request access, correction, or deletion of your personal information by contacting us as described in the Contact Us section, however how we process this request will be within our discretion subject to the rights that certain state residents have. We may require you to prove your identity if you make such a request. PUMA may keep information and content in our backup files and archives as required or permitted by applicable law.
+                    </p>
+                    <p>
+                        In addition, as discussed below, depending on where you reside, you may have broader rights such as to (i) object to or request the restriction of processing of your Personal Information, (ii) request to know more about and access the Personal Information we collect, use, and disclose about you, (iii) request deletion of your Personal Information, (iv) request correction of inaccurate Personal Information, or (v) opt out of the sale or sharing of Personal Information for the purpose of targeted advertising. For more information on these rights and how to exercise them, see our California Privacy Notice and State Notice below. These state specific rights must be exercised separately from the general rights described in the paragraph above.
+                    </p>
+                    <h4>CONTACT US</h4>
+                    <p>
+                        If you have any questions or comments relating to our Services and/or the Privacy Policy, please email us at <a href="mailto:%20customerservice.us@puma.com" target="_blank"></a>customerservice.us@puma.com or write to us:
+                    </p>
+                    <p>
+                        <em>PUMA</em>
+                        <em>Attn: Privacy Officer</em>
+                        <em>455 Grand Union Boulevard</em>
+                        <em>Somerville MA, USA 02145</em>
+                    </p>
+                    <p>
+                        You may also contact us via telephone at 1-888-565-PUMA (7862) (tel:1-888-565-7862).
+                    </p>
+                    <h4>TERMS OF USE</h4>
+                    <p>
+                        Your use of our products and services, and any disputes arising from them, is subject to this Privacy Policy as well as the <a href="footer_TermsConditions.html">Terms & Conditions</a> governing the use of the Services, and any applicable additional terms.
+                    </p>
+                    <p>
+                        Please visit the User <a href="footer_usercontentterms.html">Content Terms</a> to view License Terms for use of Instagram Content on our Services and in advertising.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html">
+                    <img src="images/logo_footer.png" alt="puma">
+                </a>
+            </h2>
+            <div>
+                <form action="signup.html">
+                    <button type="submit">
+                        <em>Get the latest news. Sign up for an email!</em>
+                        <em>SIGN UP</em>
+                    </button>
+                </form>
+                <ul>
+                    <li><a href="list_best.html">Shop</a></li>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="footer_about.html">About</a></li>
+                    <li><a href="footer_usercontentterms.html">User Content Terms</a></li>
+                    <li><a href="footer_returnpolicy.html">Return Policy</a></li>
+                    <li><a href="footer_shippinganddelivery.html">Shipping and Delivery</a></li>
+                    <li><a href="footer_imprintlegaldata.html">Imprint & Legal Data</a></li>
+                    <li><a href="footer_faq.html">FAQ</a></li>
+                    <li><a href="footer_contactus.html">Contact Us</a></li>
+                </ul>
+                <p>
+                Since 1948, PUMA has made history as a creator of extraordinary product 
+designs for the fastest athletes on the planet. We aim high, and when we
+reach our goals, we aim even higher. All to achieve one thing: to be the
+Fastest Sports Brand in the World.
+                </p>
+                <p>
+                PUMA supplies athletes with the right equipment on the field,
+track and course. From football to golf to cricket,  PUMA is actively
+involved in different sports around the world.
+                </p>
+            </div>
+        </div>
+        <div>
+            <span>
+                <a href="footer_PrivacyPolicy.html">Privacy Policy</a>
+                <a href="footer_TermsConditions.html">Terms & Conditions</a>
+            </span>
+            <ul>
+                <li><a href="https://www.instagram.com/puma/" target="_blank">instagram</a></li>
+                <li><a href="https://kr.pinterest.com/puma/" target="_blank">pinterest</a></li>
+                <li><a href="https://x.com/PUMA" target="_blank">x</a></li>
+                <li><a href="https://www.youtube.com/puma" target="_blank">youtube</a></li>
+                <li><a href="https://www.facebook.com/PUMA/" target="_blank">facebook</a></li>
+            </ul>
+            <span>Current Location: <em>en-AU</em></span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/puma.js"></script>
+    <script src="js/customize.bxslider.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to puma">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="list_best.html">BEST</a></li>
+                    <li><a href="list_new.html">NEW</a></li>
+                    <li><a href="list_sale.html">SALE</a></li>
+                    <li data-panel="gnb_wish_Panel">WISHLIST</li>
+                    <li data-panel="gnb_search_Panel">SEARCH</li>
+                    <li data-panel="gnb_cart_Panel">CART</li>
+                    <li><a href="account.html" class="material-icons-outlined">account_circle</a></li>
+                    <li><a href="signin.html" class="material-icons-outlined">lock</a></li>
+                </ul>
+                <input type="button" value="drag_handle" class="material-icons" data-lnb="lnbContainer">
+            </nav>
+            <ul id="lnbContainer">
+                <li>
+                    <h2>
+                        <a href="list_lnb_clothing.html">Clothing</a>
+                        <a href="list_lnb_clothing.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Clo_01.png" alt="Tops">
+                            <figcaption>
+                                <h2>Tops</h2>
+                                <p>From relaxed tanks to form-fitting crop tops, PUMA t-shirts for women come in all shapes and sizes. Pair an oversized tee
+    with a pair of fitted leggings and sneakers to take you everywhere from the gym or a hike, to running errands on the weekend.</p>
+                                <a href="list_clo_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_shoes.html">Shoes</a>
+                        <a href="list_lnb_shoes.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_shoes_01.png" alt="Classics">
+                            <figcaption>
+                                <h2>Classics</h2>
+                                <p>Meet the next generation of classic. We’ve been kicking around since 1948, breaking the rules and changing
+    the game with instantly iconic silhouettes just as timeless as they are inherently versatile.</p>
+                                <a href="list_shoes_tops.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_sports.html">Sport</a>
+                        <a href="list_lnb_sports.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_spo_01.png" alt="BASKETBALL">
+                            <figcaption>
+                                <h2>BASKETBALL</h2>
+                                <p>Together, we form the PUMA Fam and make PUMA Hoops what it is. See the game
+    like we do: determined to win, ready to show out, and playing for the joy of the game.</p>
+                                <a href="list_spo_bas.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_accessories.html">Accessories</a>
+                        <a href="list_lnb_accessories.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_acc_01.png" alt="Bags">
+                            <figcaption>
+                                <h2>Bags</h2>
+                                <p>With a PUMA women’s backpack for all occasions, keeping your essentials with you is both simple and stylish.
+    Our classic PUMA backpacks come in a variety of patterns and colors, and will put a spring in your step, no matter the weather.</p>
+                                <a href="list_acc_bags.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>
+                        <a href="list_lnb_collaborations.html">Collaborations</a>
+                        <a href="list_lnb_collaborations.html" class="material-icons-outlined">keyboard_arrow_right</a>
+                    </h2>
+                    <div>
+                        <figure>
+                            <img src="images/lnb_Col_01.png" alt="FENTY X PUMA">
+                            <figcaption>
+                                <h2>FENTY X PUMA</h2>
+                                <p>The newest FENTY x PUMA Avanti by Rihanna is reinvented with premium
+        leather in red and white colorways, touches of gold, and retro gum soles.   </p>
+                                <a href="list_col_fenty.html">EXPLORE NOW</a>
+                            </figcaption>
+                        </figure>
+                    </div>  
+                </li>
+            </ul>
+        </div>
+        <div id="gnb_wish_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_wish_Panel">
+            <span>
+                <h3>Your Wishlist is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+        <div id="gnb_search_Panel">
+            <input type="search" placeholder="Search" title="search Field and press enter please">
+            <p>recent search terms</p>
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_search_Panel">
+        </div>
+        <div id="gnb_cart_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_cart_Panel">
+            <span>
+                <h3>Your Cart is empty</h3>
+                <a href="list_best.html" class="btn_shop">shop all</a>
+            </span>
+        </div>
+    </header>
+    <section class="listContainer">
+        <div>
+            <h2>Best</h2>
+            <nav>
+                <ul>
+                    <li><a href="list_best.html" class="active">Best</a></li>
+                    <li><a href="list_new.html">New</a></li>
+                    <li><a href="list_sale.html">Sale</a></li>
+                </ul>
+            </nav>
+            <p>
+                The best of the best,  what everyone’s wearing. Our women’s best sellers are exactly what everyone’s looking for. Our best sellers show what’s hot right 
+now, and what’s always been hot. Suede, Cali, and and T7 that are always in style are cozied up to some of our new arrivals that everyone wants a
+piece of. This is the perfect place to build an outfit. Find the shoes that match the pants that match the top that match the jacket, all in one best-selling place. 
+            </p>
+        </div>
+        <ul>
+            <li>
+                <a href="detail_shoes_pal_09.html">
+                    <img src="images/list_best_01.png" alt="Palermo Women's Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $120.00</em>
+                    <em>12 sizes</em>     
+                </span>
+                <h3>
+                    <strong>Palermo Women's Sneakers</strong>
+                    <mark class="colour_strawberryB-WVG">Strawberry Burst-Wood Violet-Gum</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_spo_soc_11.html">
+                    <img src="images/list_best_02.png" alt="FUTURE 7 MATCH BRILLIANCE Firm Ground/Artificial Ground Women's Soccer Cleats">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $120.00</em>
+                    <em>13 sizes</em>
+                </span>     
+                <h3>
+                    <strong>FUTURE 7 MATCH BRILLIANCE Firm Ground/Artificial Ground Women's Soccer Cleats</strong>
+                    <mark class="colour_White-Black-SL">White-Black-Spring Lavender</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_best_03.html">
+                    <img src="images/list_best_03.png" alt="Mayze Leather Women's Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $120.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Mayze Leather Women's Sneakers</strong>
+                    <mark class="colour_PUMAW-P">White-Peyote</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_best_04.html">
+                    <img src="images/list_best_04.png" alt="Rebound V6 Mid Women's Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $95.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Rebound V6 Mid Women's Sneakers</strong>
+                    <mark class="colour_PUMAW-PUMAB-MM">White-Black-Mauve Mist</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_shoes_rider_05.html">
+                    <img src="images/list_best_05.png" alt="Easy Rider SN Women's Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $110.00</em>
+                    <em>13 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Easy Rider SN Women's Sneakers</strong>
+                    <mark class="colour_HyperlinkB-CR-W">Hyperlink Blue-Clyde Royal-White</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_best_06.html">
+                    <img src="images/list_best_06.png" alt="Mayze Classic Women's Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $120.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Mayze Classic Women's Sneakers</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_spo_run_02.html">
+                    <img src="images/list_best_07.png" alt="Deviate NITRO™ 3 FADE Women's Running Shoes">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $220.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Deviate NITRO™ 3 FADE Women's Running Shoes</strong>
+                    <mark class="colour_SunS-SG-white">Sun Stream-Sunset Glow-White</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_shoes_rider_03.html">
+                    <img src="images/list_best_08.png" alt="Easy Rider Mix Women's Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $110.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Easy Rider Mix Women's Sneakers</strong>
+                    <mark class="colour_Black">White-Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_shoes_pal_11.html">
+                    <img src="images/list_best_09.png" alt="Palermo Moda Xtra Gum Sneakers Women">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $130.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Palermo Moda Xtra Gum Sneakers Women</strong>
+                    <mark class="colour_Black">Black-Frosted Ivory-Gold</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_shoes_pal_08.html">
+                    <img src="images/list_best_10.png" alt="Palermo Moda Sneakers Women">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $130.00</em>
+                    <em>14 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Palermo Moda Sneakers Women</strong>
+                    <mark class="colour_Black">White-Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_best_11.html">
+                    <img src="images/list_best_11.png" alt="Cali Court Embroidery Sneakers Women">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $120.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Cali Court Embroidery Sneakers Women</strong>
+                    <mark class="colour_PistachioG-WarmW">Pistachio Green-Warm White</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_shoes_rider_09.html">
+                    <img src="images/list_best_12.png" alt="Easy Rider Leather Women's Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $120.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Easy Rider Leather Women's Sneakers</strong>
+                    <mark class="colour_White-FI">White-Frosted Ivory</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_best_13.html">
+                    <img src="images/list_best_13.png" alt="Pulsar Wedge Monogram Women's Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $150.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Pulsar Wedge Monogram Women's Sneakers</strong>
+                    <mark class="colour_Pristine-PT">Pristine-Prairie Tan</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_spo_run_03.html">
+                    <img src="images/list_best_14.png" alt="Deviate NITRO™ Elite 3 Women's Running Shoes">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $285.00</em>
+                    <em>12 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Deviate NITRO™ Elite 3 Women's Running Shoes</strong>
+                    <mark class="colour_SunS-SunsetG">Sun Stream-Sunset Glows</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_shoes_rider_07.html">
+                    <img src="images/list_best_15.png" alt="Easy Rider SN Women's Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $110.00</em>
+                    <em>13 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Easy Rider SN Women's Sneakers</strong>
+                    <mark class="colour_MauvedO-W-G">Mauved Out-White-Gold</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_shoes_rider_08.html">
+                    <img src="images/list_best_16.png" alt="Easy Rider Vintage Sneakers">
+                </a>
+                <span>
+                    <em>SHOES</em>
+                    <em>CAD $110.00</em>
+                    <em>11 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Easy Rider Vintage Sneakers</strong>
+                    <mark class="colour_Black">Black-White</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_spo_tra_01.html">
+                    <img src="images/list_best_17.png" alt="CLOUDSPUN Women's Soft High-Waist Tights">
+                </a>
+                <span>
+                    <em>Leggings</em>
+                    <em>CAD $70.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>CLOUDSPUN Women's Soft High-Waist Tights</strong>
+                    <mark class="colour_FlatDG-FA">Flat Dark Gray-Fizzy apple</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_spo_07.html">
+                    <img src="images/list_best_18.png" alt="Classics Women's High Waist Leggings">
+                </a>
+                <span>
+                    <em>Leggings</em>
+                    <em>CAD $60.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Classics Women's High Waist Leggings</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_best_19.html">
+                    <img src="images/list_best_19.png" alt="PUMA RUN ULTRAFORM Women's Tights">
+                </a>
+                <span>
+                    <em>Leggings</em>
+                    <em>CAD $95.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>PUMA RUN ULTRAFORM Women's Tights</strong>
+                    <mark class="colour_MidnightP">Midnight Plum</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_skirst_02.html">
+                    <img src="images/list_best_20.png" alt="CLASSICS Women's Ribbed Midi Skirt">
+                </a>
+                <span>
+                    <em>skirst</em>
+                    <em>CAD $60.00</em>
+                    <em>5 sizes</em>
+                </span>     
+                <h3>
+                    <strong>CLASSICS Women's Ribbed Midi Skirt</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_hoo_08.html">
+                    <img src="images/list_best_21.png" alt="T7 Knitted V-Neck Crew Women">
+                </a>
+                <span>
+                    <em>Tops</em>
+                    <em>CAD $130.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>T7 Knitted V-Neck Crew Women</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_pants_12.html">
+                    <img src="images/list_best_22.png" alt="ICONIC T7 Women's Track Pants">
+                </a>
+                <span>
+                    <em>Tracksuits</em>
+                    <em>CAD $70.00</em>
+                    <em>5 sizes</em>
+                </span>     
+                <h3>
+                    <strong>ICONIC T7 Women's Track Pants</strong>
+                    <mark class="colour_MidnightP">Midnight Plum</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_spo_tra_11.html">
+                    <img src="images/list_best_23.png" alt="CLOUDSPUN Women's Soft High-Waist Tights">
+                </a>
+                <span>
+                    <em>Leggings</em>
+                    <em>CAD $70.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>CLOUDSPUN Women's Soft High-Waist Tights</strong>
+                    <mark class="colour_Black">Black</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_best_24.html">
+                    <img src="images/list_best_24.png" alt="DARE TO Women's Textured Leggings">
+                </a>
+                <span>
+                    <em>Leggings</em>
+                    <em>CAD $70.00</em>
+                    <em>5 sizes</em>
+                </span>     
+                <h3>
+                    <strong>DARE TO Women's Textured Leggings</strong>
+                    <mark class="colour_Black">Black-AOP</mark>
+                </h3>
+            </li>
+            <li>
+                <a href="detail_clo_tops_01.html">
+                    <img src="images/list_best_25.png" alt="Manchester City 2425 Away Replica Women's Soccer Jersey">
+                </a>
+                <span>
+                    <em>Tops</em>
+                    <em>CAD $110.00</em>
+                    <em>7 sizes</em>
+                </span>     
+                <h3>
+                    <strong>Manchester City 2425 Away Replica Women's Soccer Jersey</strong>
+                    <mark class="colour_NewNavy-Y">Yellow Glow</mark>
+                </h3>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html">
+                    <img src="images/logo_footer.png" alt="puma">
+                </a>
+            </h2>
+            <div>
+                <form action="signup.html">
+                    <button type="submit">
+                        <em>Get the latest news. Sign up for an email!</em>
+                        <em>SIGN UP</em>
+                    </button>
+                </form>
+                <ul>
+                    <li><a href="list_best.html">Shop</a></li>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="footer_about.html">About</a></li>
+                    <li><a href="footer_usercontentterms.html">User Content Terms</a></li>
+                    <li><a href="footer_returnpolicy.html">Return Policy</a></li>
+                    <li><a href="footer_shippinganddelivery.html">Shipping and Delivery</a></li>
+                    <li><a href="footer_imprintlegaldata.html">Imprint & Legal Data</a></li>
+                    <li><a href="footer_faq.html">FAQ</a></li>
+                    <li><a href="footer_contactus.html">Contact Us</a></li>
+                </ul>
+                <p>
+                Since 1948, PUMA has made history as a creator of extraordinary product 
+designs for the fastest athletes on the planet. We aim high, and when we
+reach our goals, we aim even higher. All to achieve one thing: to be the
+Fastest Sports Brand in the World.
+                </p>
+                <p>
+                PUMA supplies athletes with the right equipment on the field,
+track and course. From football to golf to cricket,  PUMA is actively
+involved in different sports around the world.
+                </p>
+            </div>
+        </div>
+        <div>
+            <span>
+                <a href="footer_PrivacyPolicy.html">Privacy Policy</a>
+                <a href="footer_TermsConditions.html">Terms & Conditions</a>
+            </span>
+            <ul>
+                <li><a href="https://www.instagram.com/puma/" target="_blank">instagram</a></li>
+                <li><a href="https://kr.pinterest.com/puma/" target="_blank">pinterest</a></li>
+                <li><a href="https://x.com/PUMA" target="_blank">x</a></li>
+                <li><a href="https://www.youtube.com/puma" target="_blank">youtube</a></li>
+                <li><a href="https://www.facebook.com/PUMA/" target="_blank">facebook</a></li>
+            </ul>
+            <span>Current Location: <em>en-AU</em></span>
+        </div>
+    </footer>
+</body>
+</html>
