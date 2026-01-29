@@ -1,0 +1,1302 @@
+header > div > nav,
+a{
+    text-decoration: none; color: black; 
+}
+header > div > nav,
+.btn_ex,
+.emGroup,
+footer > div ul li,
+footer > div:first-child > div p,
+footer > div:last-child span,
+.indexContainer > div:nth-of-type(2) > p,
+.indexContainer > div:nth-of-type(2) > div > .speed h2,
+.indexContainer > div:nth-of-type(2) > div > .speed dl dd,
+.indexContainer > div:nth-of-type(3) > div p,
+.indexContainer > div:nth-of-type(4) > p,
+.indexContainer > div:nth-of-type(4) > div div em,
+.indexContainer > div:nth-of-type(4) > div:nth-of-type(2) > div dl dd,
+.listContainer > div p,
+.listContainer > ul li span em,
+.listContainer > ul li .sale_price .sale_center del,
+.listContainer > div nav ul li a,
+.lnbContainer > ul li > figure figcaption p,
+.lnbContainer > nav ul li a,
+.lnbContainer > ul li > figure figcaption a,
+#lnbContainer > li > div figure figcaption p,
+#lnbContainer > li > div figure figcaption a,
+.signinContainer div,
+.inputBox label,
+.btn_cre,
+.accountContainer > div [id$="Popup"] input[type="button"],
+.accountContainer > div #resetpw fieldset ul li label,
+#resetpw fieldset ul li em,
+#paymentPanel,
+#order,
+.checkoutContainer > div > div .sumtit mark,
+.checkoutContainer #summary > .item,
+.checkoutContainer #summary > .Total,
+.checkoutContainer #summary > span,
+.detailContainer aside fieldset > div strong,
+.detailContainer aside fieldset > div label,
+.detailContainer figure figcaption,
+.detailContainer > div ul li span em,
+.onlyNumber,
+.Khaki,
+.btn_shop,
+.footerContainer > aside,
+.footerContainer_se > aside,
+#gnb_cart_Panel > div ul li:last-child div p,
+#gnb_cart_Panel > div ul li div:nth-child(2),
+#gnb_cart_Panel > div ul li div:nth-child(3),
+#gnb_cart_Panel > div:last-of-type fieldset,
+#gnb_wish_Panel > div ul li div:nth-of-type(1) em,
+#gnb_wish_Panel > div ul li div:nth-of-type(2) *,
+#txtcheckPopup a
+{
+    font-family: 'Inter';
+}
+.indexContainer > ul li figure figcaption p,
+.indexContainer > ul li figure figcaption a,
+.indexContainer > div:nth-of-type(2) > ul li h2,
+.indexContainer > div:nth-of-type(2) > div > .speed dl dt,
+.indexContainer > div:nth-of-type(3) > ul li h2,
+.indexContainer > div > .subtit h2,
+.indexContainer > div:nth-of-type(4) > div:nth-of-type(2) > div dl dt,
+.indexContainer > div:nth-of-type(5) figure figcaption h2,
+.listContainer > div h2,
+.listContainer > ul li h3,
+.detailContainer > div h2,
+.signinContainer h2,
+[class^="PMS"] h2,
+.accountContainer > div h2,
+.accountContainer > div aside ul li button,
+.accountContainer > div [id$="Popup"] h3,
+.accountContainer > div .tabPage fieldset legend,
+.accountContainer > div #shipping fieldset ul li label,
+.accountContainer > div #order h3,
+#deliveryPopup h3,
+#deliveryPopup dl,
+[id^="SP"] fieldset ul li,
+#returnPopup,
+#return,
+.checkoutContainer > div > h2,
+.checkoutContainer > div aside ul li > input,
+.checkoutContainer aside span,
+.checkoutContainer #SPshippingPanel,
+.checkoutContainer #SPbillingPanel,
+.checkoutContainer > div > div .sumtit h3,
+.cotabPage fieldset:first-of-type legend,
+.lnbContainer h2,
+.lnbContainer > ul li > figure figcaption h2,
+#lnbContainer > li > h2,
+#lnbContainer > li > div figure figcaption h2,
+.footerContainer > div,
+.footerContainer_se > div,
+.detailContainer aside div h2,
+.detailContainer > div ul li h3,
+#gnb_cart_Panel > div ul li:last-child div p strong,
+#gnb_cart_Panel > div > h2,
+#gnb_cart_Panel > div > strong,
+#gnb_cart_Panel > div ul li:first-child div,
+#gnb_search_Panel input[type="search"],
+#gnb_search_Panel p,
+#gnb_wish_Panel > div h2,
+#gnb_wish_Panel > div ul li h3 *,
+#txtcheckPopup h3
+{
+    font-family: 'Raleway';
+}
+/* slider */
+.bx-wrapper{
+    border: 0; margin: 0;
+}
+
+li{
+    list-style: none;
+}
+em{
+    font-style: normal;
+}
+mark{
+    background-color: transparent; font-style: normal;
+}
+[id$="Panel"],
+[id$="Popup"],
+#lnbContainer,
+.tabPage{
+    display: none;
+}
+[id$="Panel"].active,
+[id$="Popup"].active,
+#lnbContainer.active,
+.tabPage.active{
+    display: block;
+}
+.btn_shop{
+    text-transform: uppercase;
+}
+[data-panel^="gnb"]{
+  cursor: pointer;
+}
+header div input[type='button'].closeBtn{
+    background: transparent; border: none; position: absolute;
+}
+@media screen and (min-width: 1280px) {
+    header div input[type='button'].closeBtn{
+       top: 20px; right: 1.3%;
+    }
+    header{
+        position: fixed; background-color: white; padding: 30px 1.3%;
+        width: 100%; z-index: 1; top: 0; box-sizing: border-box;
+    }
+    header > div{
+        position: relative; margin: 0 auto;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div h1{
+        max-width: 75px;
+    }
+    header > div h1 *{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%; display: block;
+    }
+    header > div > nav{
+        width: calc(100% - 75px);
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+    header > div > nav ul{
+        width: calc(100% - 73px);
+    }
+    header > div > nav ul li{
+        display: inline-block; vertical-align: middle; line-height: 38px;
+    }
+    header > div > nav ul li:not(:first-child){
+        margin-left: 1.56%;
+    }
+    header > div > nav ul li a{
+        display: block;
+    }
+    header > div > nav ul li a:first-child{
+        vertical-align: middle;
+    }
+    header > div > nav ul li a:not(:first-child){
+        display: block; line-height: 22px; font-size: 16px; color: black;
+    }
+    header > div > nav input{
+        background-color: transparent; border: none; color: #000000;
+        margin-left: 1.56%;
+    }
+    header > div > nav input.material-icons:active{
+        background-image: url(../images/lnb_close.png) cover no-repeat;
+    }
+    #lnbContainer{
+        position: fixed; height: 100%; top: 97px; right: 0;
+        width: 100%; transition: width .5s ease-out;
+    }
+    #lnbContainer > li{
+        position: absolute; height: 100%; z-index: 1;
+        background-color: white; width: 12.5%;  overflow-x: hidden; overflow-y: hidden;
+        transition: all .5s ease-out; padding-top: 125px;
+    } 
+    #lnbContainer > li:nth-child(1){right: 50%;}
+    #lnbContainer > li:nth-child(2){right: 37.5%;}
+    #lnbContainer > li:nth-child(3){right: 25%;}
+    #lnbContainer > li:nth-child(4){right: 12.5%;}
+    #lnbContainer > li:nth-child(5){right: 0%;}
+    #lnbContainer > li:hover{
+        z-index: 2; width: 20%;
+    }
+    #lnbContainer > li > h2{
+        line-height: 71px; font-size: 65px; font-weight: 400; color: black;
+    } 
+    #lnbContainer > li > h2 > a:last-child{
+        display: none;
+    }
+    #lnbContainer > li.active > h2 > a:last-child{
+        display: inline-block;
+    }
+    #lnbContainer > li > div{
+        position: relative;
+    }
+    #lnbContainer > li > div figure{
+        position: absolute; top: 80px;
+    }
+    #lnbContainer > li > div figure figcaption{
+        position: absolute; color: white; top: 325px; left: 630px; width: 53%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    #lnbContainer > li > div figure figcaption h2{
+        font-size: 66px; font-weight: 400;
+    }
+    #lnbContainer > li > div figure figcaption p{
+        margin-top: 48px; font-size: 16px; font-weight: 400; 
+    }
+    #lnbContainer > li > div figure figcaption a{
+        display: block; margin-top: 38px; font-size: 10px; font-weight: 400; color: white;
+    }  
+
+    
+    [id^="gnb"]{
+        position: fixed; top: 98px; right: 0; bottom: 0; overflow: hidden;
+    }
+    [id^="gnb"] > span{
+        width: 100%; display: block; text-align: center;
+        padding: 20% 0;
+    }
+    [id^="gnb"] > span > h3{
+        line-height: 46px; font-size: 40px; font-weight: 400;
+        color: #000000; white-space: nowrap; margin-bottom: 50px;
+    }
+    [id^="gnb"] > span > a{
+        color: #000000; border-bottom: 1px solid #000000;
+    }
+    #gnb_wish_Panel{
+        background-color: #eeeeee; padding: 2% 24px;
+        width: 74%; box-sizing: border-box;
+        /* overflow-y: scroll; */
+    }
+    #gnb_wish_Panel > div{
+        width: 100%; height: 100%; max-height: 1080px;
+    }
+    #gnb_wish_Panel > div h2{
+        font-size: 38px; margin-bottom: 50px; font-weight: 400; color: #000000;
+    }
+    #gnb_wish_Panel > div h2 > sup{
+        font-size: 14px; margin-left: 14px; font-weight: 400; color: #000000;
+        vertical-align: top;
+    } 
+    #gnb_wish_Panel > div ul li{
+        margin-bottom: 36px; width: 30%;
+    }
+    #gnb_wish_Panel > div ul li::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_wish_Panel > div ul li a{
+        display: block; width: 100%; margin-bottom: 10px; 
+    }
+    #gnb_wish_Panel > div ul li a img{
+        width: 100%; display: block;
+    }
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(1){
+        font-size: 12px; font-weight: 400; color: black; margin-bottom: 30px;
+        display: flex;
+    }
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(1) em {flex: 1;}
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(1) em:nth-child(1){text-align: left;}
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(1) em:nth-child(2){text-align: center;}
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(1) em:nth-child(3){text-align: right;}
+    #gnb_wish_Panel > div ul li .bot h3{
+        margin-bottom: 20px;
+    }
+    #gnb_wish_Panel > div ul li .bot h3 strong{
+        color: black; text-transform: uppercase;
+        font-size: 18px; font-weight: 400;
+    }
+    #gnb_wish_Panel > div ul li .bot h3 mark{
+        color: #8b8c8a; margin-left: 20px; font-size: 18px; font-weight: 400;
+    } 
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(2) *{
+        float: left; width: 50%; padding: 3%; font-size: 12px; color: #000000;
+    }
+    input[value="Add To Cart"]{
+        border: 1px solid #566160;
+    }
+    input[value="Remove"]{
+        border: 1px solid #b9bbb8;
+    }
+    #gnb_wish_Panel > div > div{
+        position: absolute; right: 24px; bottom: 2%;
+    }
+    input[value="clear all"]{
+        font-size: 12px; color: black;        
+        border: none; padding: 22px 40px;
+    }
+    input[value="Share Wishlist"]{
+        font-size: 12px; color: black;         
+        border: 1px solid #b9bbb8; padding: 22px 122px;
+    }
+    #sharePopup{
+        position: absolute; right: 3%; bottom: 84px; 
+        cursor: pointer;
+    }
+    #sharePopup > li{
+        display: block; float: left; width: 44px; height: 44px; margin-left: 20px;
+        background-image: url(../images/sharewish.png); background-repeat: no-repeat;
+    }
+    #sharePopup > li:first-child{
+        margin-left: 0;
+    }
+    #sharePopup > li.instagram{background-position: 0px 0px;}
+    #sharePopup > li.pinterest{background-position: -63px 0px;}
+    #sharePopup > li.x{background-position: -126px 0px;}
+    #sharePopup > li.youtube{background-position: -189px 0px;}
+    #sharePopup > li.facebook{background-position: -253px 0px;}
+    #sharePopup > li a{
+        display: block; width: 100%;
+    }
+
+    #gnb_search_Panel{
+        width: 42%; background-color: #dedcd1; float: right;
+    }
+    #gnb_search_Panel::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_search_Panel input[type="search"]{
+        font-size: 38px; border: none; border-bottom: 1px solid #9b9a92;
+        padding-bottom: 20px; background-color: #dedcd1;
+        margin: 92px 40px 50px 40px; width: 100%;
+    }
+    #gnb_search_Panel p{
+        font-size: 16px; text-transform: uppercase; margin-left: 40px;
+    }
+    #gnb_cart_Panel{
+        background-color: #eeeeee; padding: 4% 24px; box-sizing: border-box;
+        width: 74%;
+    }
+    #gnb_cart_Panel > div{
+        width: 100%;
+    }
+    #gnb_cart_Panel > div > h2{
+        font-size: 38px; font-weight: 400; float: left; width: 50%;
+    }
+    #gnb_cart_Panel > div > strong{
+        font-size: 38px; font-weight: 400; float: left; width: 50%;
+        margin-bottom: 68px; text-align: right;
+    }
+    #gnb_cart_Panel > div ul{
+        width: 100%; position: relative; clear: both;
+    }
+    #gnb_cart_Panel > div ul li{
+        width: 100%; border-bottom: 1px solid #999999; padding-bottom: 20px;
+    }
+    #gnb_cart_Panel > div ul li::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_cart_Panel > div ul li:first-child div{
+        font-size: 16px; font-weight: 400;
+    }
+    #gnb_cart_Panel > div ul li div{
+        float: left; 
+    }
+    #gnb_cart_Panel > div ul li div:nth-child(1){
+        width: 50%;
+    }
+    #gnb_cart_Panel > div ul li div:nth-child(2){
+        width: 30%;
+    }
+    #gnb_cart_Panel > div ul li div:nth-child(3){
+        width: 20%;
+    }
+    #gnb_cart_Panel > div ul li:last-child{
+        padding: 20px 0; 
+    }
+    #gnb_cart_Panel > div ul li:last-child div::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_cart_Panel > div ul li:last-child div a{
+        width: 18%; display: block; float: left;
+    }
+    #gnb_cart_Panel > div ul li:last-child div a img{
+        width: 100%; display: block;
+    }
+    #gnb_cart_Panel > div ul li:last-child div p{
+        font-size: 14px; color: #b9bbb8; float: left; width: 78%; margin-top: 8%;
+        margin-left: 4%; box-sizing: border-box; vertical-align: middle;
+    }
+    #gnb_cart_Panel > div ul li:last-child div p strong{
+        font-size: 22px; font-weight: 400; color: #000000; display: block;
+        margin-bottom: 12px;
+    }
+    #gnb_cart_Panel > div ul li:last-child div mark:nth-of-type(1),
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(2) span:nth-of-type(1){
+        margin-top: 10%;
+    }
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(3) span{
+        margin-top: 22%;
+    }
+    #gnb_cart_Panel > div ul li:last-child div mark{
+        font-size: 14px; font-weight: 400; color: #b9bbb8; float: left; width: 30%;
+        margin-bottom: 10px;
+    }
+    #gnb_cart_Panel > div ul li:last-child div span{
+        font-size: 14px; font-weight: 400; float: left; width: 70%; margin-bottom: 10px;
+    }
+    #gnb_cart_Panel > div > div{
+        float: right; padding-top: 30px;
+    }
+    #gnb_cart_Panel > div > div fieldset *{
+        font-size: 14px; font-weight: 400;
+    }
+    #gnb_cart_Panel > div > div fieldset::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_cart_Panel > div > div fieldset span{
+        float: left; width: 50%; margin-bottom: 10px;
+    }
+    #gnb_cart_Panel > div > div fieldset mark{
+        float: left; width: 50%; margin-bottom: 10px; color: #b9bbb8;
+    }
+    #gnb_cart_Panel > div > div fieldset em{
+        float: left; width: 50%;
+    }
+    #gnb_cart_Panel > div > div fieldset p{
+        clear: both; font-size: 12px; float: left; width: 40%; padding-top: 50px;
+    }
+    #gnb_cart_Panel > div > div fieldset input{
+        float: left; width: 50%; margin-left: 10%; box-sizing: border-box;
+        margin-top: 50px;
+    }
+
+
+    footer{
+        background-color: #F9FCF8;
+    }
+    footer > div{
+        margin: 0 auto; padding: 0 1.3%;
+    }
+    footer > div:first-child h2{
+        max-width: 147px; float: left; vertical-align: top; margin-top: 165px;
+    }
+    footer > div:first-child h2 a img{
+        width: 100%; display: block;
+    }
+    footer > div:first-child::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-child > div{
+        position: relative; float: right; margin-top: 165px;
+    }
+    footer > div:first-child > div form{
+        position: relative;
+    }
+    footer > div:first-child > div button[type="submit"]{
+        padding: 30px 32vw; border: 1px solid #b9bbb8; display: block;
+        background-color: transparent;
+    }
+    footer > div:first-child > div form em{
+        position: absolute; font-size: 16px; font-weight: 400; top: 23px;
+    }
+    footer > div:first-child > div form em:nth-child(1){
+        left: 30px;
+    }
+    footer > div:first-child > div form em:nth-child(2){
+        right: 30px;
+    }
+    footer > div:first-child > div ul{
+        max-width: 466px; margin-top: 80px;
+    }
+    footer > div:first-child > div ul li{
+        display: inline-block; width: 164px; margin-bottom: 25px; font-size: 16px;
+    }
+    footer > div:first-child > div ul li:not(:nth-child(1),:nth-child(3),:nth-child(5),:nth-child(7),:nth-child(9)){
+        margin-left: 9%;
+    }
+    footer > div:first-child > div p{
+        font-size: 16px; line-height: 22px;
+    }
+    footer > div:first-child > div p:nth-of-type(1){
+        position: absolute; top: 122px; right: 0; width: 25%; text-align: right;
+    }
+    footer > div:first-child > div p:nth-of-type(2){
+        width: 496px; margin: 175px 0 108px 0;
+    }
+    footer > div:last-child{
+        font-size: 14px; text-transform: uppercase; white-space: nowrap;
+        padding-bottom: 30px; width: 100%; box-sizing: border-box;
+        border-top: 1px solid #dbdeda; padding-top: 30px;
+    }
+    footer > div:last-child span{
+        display: inline-block;
+    }
+    footer > div:last-child span a:last-child{
+        margin-left: 8%;
+    }
+    footer > div:last-child ul{
+        display: inline-block; margin-left: 345px;
+    }
+    footer > div:last-child ul li{
+        display: inline-block; 
+    }
+    footer > div:last-child ul li:not(:first-child){
+        margin-left: 8%;
+    }
+    footer > div:last-child span:nth-of-type(2){
+        float: right;
+    }   
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    header div input[type='button'].closeBtn{
+       top: 20px; right: 2%;
+    }
+    header{
+        position: fixed; background-color: white; padding: 25px 3%;
+        width: 100%; z-index: 1; top: 0; box-sizing: border-box;
+    }
+    header > div{
+        position: relative; margin: 0 auto;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div h1{
+        max-width: 75px;
+    }
+    header > div h1 *{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%; display: block;
+    }
+    header > div > nav{
+        width: calc(100% - 75px);
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+    header > div > nav ul{
+        width: calc(100% - 49px);
+    }
+    header > div > nav ul li{
+        display: inline-block; vertical-align: middle; line-height: 38px;
+    }
+    header > div > nav ul li:not(:first-child){
+        margin-left: 1.56%;
+    }
+    header > div > nav ul li a{
+        display: block;
+    }
+    header > div > nav ul li a:first-child{
+        vertical-align: middle;
+    }
+    header > div > nav ul li a:not(:first-child){
+        display: block; line-height: 22px; font-size: 16px; color: #000000;
+    }
+    header > div > nav input{
+        background-color: transparent; border: none; color: #000000;
+        margin-left: 1.56%; 
+    }
+    header > div > nav input.material-icons:active{
+        background-image: url(../images/lnb_close.png) cover no-repeat;
+    }
+    #lnbContainer{
+        position: fixed; height: 100%; top: 87px; right: 0;
+        width: 65%; transition: width .5s ease-out; padding: 0;
+    }
+    #lnbContainer > li{
+        position: absolute; height: 100%; z-index: 1; padding-top: 60px;
+        background-color: white; width: 20%; overflow-x: hidden; overflow-y: hidden;
+        transition: all .5s ease-out;
+    } 
+    #lnbContainer > li:nth-child(1){right: 80%;}
+    #lnbContainer > li:nth-child(2){right: 60%;}
+    #lnbContainer > li:nth-child(3){right: 40%;}
+    #lnbContainer > li:nth-child(4){right: 20%;}
+    #lnbContainer > li:nth-child(5){right: 0%;}
+    #lnbContainer > li:nth-child(1):hover{z-index: 2; width: 73.6%;} 
+    #lnbContainer > li:nth-child(2):hover{z-index: 2; width: 93.6%;}
+    #lnbContainer > li:nth-child(3):hover{z-index: 2; width: 113.6%;}
+    #lnbContainer > li:nth-child(4):hover{z-index: 2; width: 133.6%;}
+    #lnbContainer > li:nth-child(5):hover{z-index: 2; width: 153.6%;}
+    #lnbContainer > li > h2{
+        line-height: 46px; font-size: 40px; font-weight: 400; color: black;
+    }  
+    #lnbContainer > li > h2::after{
+        content: ''; display: block; clear: both;
+    }
+    #lnbContainer > li > h2 > a{
+        float: left; vertical-align: middle;
+    }
+    #lnbContainer > li > h2 > a:last-child{
+        display: none; margin-left: 20px; color: #0088d7; font-size: 40px;
+    }
+    #lnbContainer > li:hover> h2 > a:last-child{
+        display: inline-block;
+    }
+    #lnbContainer > li > div{
+        position: relative;
+    }
+    #lnbContainer > li > div figure{
+        position: absolute; top: 75px;
+    }
+    #lnbContainer > li > div figure figcaption{
+        position: absolute; color: white; top: 325px; left: 630px; width: 53%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    #lnbContainer > li > div figure figcaption h2{
+        font-size: 66px; font-weight: 400;
+    }
+    #lnbContainer > li > div figure figcaption p{
+        margin-top: 48px; font-size: 16px; font-weight: 400; 
+    }
+    #lnbContainer > li > div figure figcaption a{
+        display: block; margin-top: 38px; font-size: 10px; font-weight: 400; color: white;
+    }
+    [id^="gnb"]{
+        position: fixed; top: 87px; right: 0; bottom: 0; width: 100%; overflow: hidden;
+    }
+    [id^="gnb"] > span{
+        width: 100%; display: block; text-align: center;
+        padding: 30% 0;
+    }
+    [id^="gnb"] > span > h3{
+        line-height: 46px; font-size: 40px; font-weight: 400;
+        color: #000000; white-space: nowrap; margin-bottom: 50px;
+    }
+    [id^="gnb"] > span > a{
+        color: #000000; border-bottom: 1px solid #000000; font-size: 12px;
+    }
+    #gnb_wish_Panel{
+        background-color: #eeeeee; padding: 100px 24px;
+        box-sizing: border-box;
+    }
+    #gnb_wish_Panel > div{
+        width: 100%; height: 100%; max-height: 768px;
+    }
+    #gnb_wish_Panel > div h2{
+        font-size: 22px; margin-bottom: 20px; font-weight: 400; color: #000000;
+    }
+    #gnb_wish_Panel > div h2 > sup{
+        font-size: 12px; margin-left: 14px; font-weight: 400; color: #000000;
+        vertical-align: top;
+    } 
+    #gnb_wish_Panel > div ul li{
+        width: 70%; margin-bottom: 20px; 
+        position: relative;
+    }
+    #gnb_wish_Panel > div ul li a{
+        display: block; width: 26%;
+    }
+    #gnb_wish_Panel > div ul li a img{
+        width: 100%; display: block;
+    }
+    #gnb_wish_Panel > div ul li > .bot{
+        position: absolute; left: 30%; bottom: 0; width: 72%;
+    }
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(1){
+        font-size: 12px; font-weight: 400; color: black; margin-bottom: 10px;
+        display: block; 
+    }
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(1) em:not(:first-child){
+        margin-left: 13%;
+    }
+    #gnb_wish_Panel > div ul li .bot h3{
+        margin-bottom: 20px; display: block; font-size: 14px;
+    }
+    #gnb_wish_Panel > div ul li h3 strong{
+        color: black; text-transform: uppercase;
+        font-weight: 400;
+    }
+    #gnb_wish_Panel > div ul li .bot h3 mark{
+        color: #8b8c8a; margin-left: 20px; font-weight: 400;
+    } 
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(2) *{
+        float: left; width: 50%; padding: 1%; font-size: 12px; color: #000000;
+    }
+    input[value="Add To Cart"]{
+        border: 1px solid #566160; float: left; width: 50%;
+    } 
+    input[value="Remove"]{
+        border: 1px solid #b9bbb8; float: left; width: 50%;
+    }
+    #gnb_wish_Panel > div > div{
+        position: absolute; right: 24px; bottom: 4%;
+    }
+    input[value="clear all"]{
+        font-size: 12px; color: black;        
+        border: none; padding: 22px 40px;
+    }
+    input[value="Share Wishlist"]{
+        font-size: 12px; color: black;         
+        border: 1px solid #b9bbb8; padding: 22px 122px;
+    }
+    #sharePopup{
+        position: absolute; right: 3%; bottom: 100px;
+    }
+    #sharePopup > li{
+        display: block; float: left; width: 44px; height: 44px; margin-left: 20px;
+        background-image: url(../images/sharewish.png); background-repeat: no-repeat;
+    }
+    #sharePopup > li:first-child{
+        margin-left: 0;
+    }
+    #sharePopup > li.instagram{background-position: 0px 0px;}
+    #sharePopup > li.pinterest{background-position: -63px 0px;}
+    #sharePopup > li.x{background-position: -126px 0px;}
+    #sharePopup > li.youtube{background-position: -189px 0px;}
+    #sharePopup > li.facebook{background-position: -253px 0px;}
+    #sharePopup > li a{
+        display: block; width: 100%;
+    }
+
+    #gnb_search_Panel{
+        width: 100%; background-color: #dedcd1; padding: 100px 24px; box-sizing: border-box;
+    }
+    #gnb_search_Panel input[type="search"]{
+        font-size: 34px; border: none; border-bottom: 1px solid #9b9a92; margin-bottom: 30px;
+        padding-bottom: 10px; background-color: #dedcd1; width: 100%;
+    }
+    #gnb_search_Panel p{
+        font-size: 12px; text-transform: uppercase; 
+    }
+    #gnb_cart_Panel{
+        background-color: #eeeeee; padding: 100px 24px; box-sizing: border-box;
+        width: 100%;
+    }
+    #gnb_cart_Panel > div{
+        width: 100%;
+    }
+    #gnb_cart_Panel > div > h2{
+        font-size: 22px; font-weight: 400; float: left; width: 50%;
+    }
+    #gnb_cart_Panel > div > strong{
+        font-size: 22px; font-weight: 400; float: left; width: 50%;
+        margin-bottom: 68px; text-align: right;
+    }
+    #gnb_cart_Panel > div ul{
+        width: 100%; position: relative; clear: both;
+    }
+    #gnb_cart_Panel > div ul li{
+        width: 100%; border-bottom: 1px solid #999999; 
+    }
+    #gnb_cart_Panel > div ul li::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_cart_Panel > div ul li:first-child div{
+        font-size: 12px; font-weight: 400;
+        padding-bottom: 20px;
+    }
+    #gnb_cart_Panel > div ul li div{
+        float: left; 
+    }
+    #gnb_cart_Panel > div ul li div:nth-child(1){
+        width: 50%;
+    }
+    #gnb_cart_Panel > div ul li div:nth-child(2){
+        width: 30%;
+    }
+    #gnb_cart_Panel > div ul li div:nth-child(3){
+        width: 20%;
+    }
+    #gnb_cart_Panel > div ul li:last-child{
+        padding: 20px 0; 
+    }
+    #gnb_cart_Panel > div ul li:last-child div::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_cart_Panel > div ul li:last-child div a{
+        width: 18%; display: block; float: left;
+    }
+    #gnb_cart_Panel > div ul li:last-child div a img{
+        width: 100%; display: block;
+    }
+    #gnb_cart_Panel > div ul li:last-child div p{
+        font-size: 12px; color: #b9bbb8; float: left; width: 78%; margin-top: 8%;
+        margin-left: 4%; box-sizing: border-box; vertical-align: middle;
+    }
+    #gnb_cart_Panel > div ul li:last-child div p strong{
+        font-size: 16px; font-weight: 400; color: #000000; display: block;
+        margin-bottom: 12px;
+    }
+    #gnb_cart_Panel > div ul li:last-child div mark:nth-of-type(1),
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(2) span:nth-of-type(1){
+        margin-top: 10%;
+    }
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(2) *{
+       font-size: 14px; font-weight: 400; float: left; margin-bottom: 10px;
+    }
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(3) span{
+        margin-top: 26%;
+    }
+    #gnb_cart_Panel > div ul li:last-child div mark{
+        color: #b9bbb8; width: 30%;
+    }
+    #gnb_cart_Panel > div ul li:last-child div span{
+        width: 70%; display: block;
+    }
+    #gnb_cart_Panel > div > div{
+        float: right; padding-top: 30px; max-width: 250px;
+    }
+    #gnb_cart_Panel > div > div fieldset *{
+        font-size: 14px; font-weight: 400;
+    }
+    #gnb_cart_Panel > div > div fieldset div{
+        width: 100%;
+    }
+    #gnb_cart_Panel > div > div fieldset::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_cart_Panel > div > div fieldset span{
+        margin-bottom: 10px; float: left; width: 50%;
+    }
+    #gnb_cart_Panel > div > div fieldset mark{
+        margin-bottom: 10px; color: #b9bbb8; float: left; width: 50%; text-align: right;
+    }
+    #gnb_cart_Panel > div > div fieldset em{
+        margin-bottom: 10px; float: left; width: 50%; text-align: right;
+    }
+    #gnb_cart_Panel > div > div fieldset p{
+        clear: both; font-size: 12px; width: 30%; position: absolute; left: 24px; line-height: 18px;
+    }
+    #gnb_cart_Panel > div > div fieldset input{
+        margin-top: 50px; width: 100%;
+    } 
+
+
+    footer{
+        background-color: #F9FCF8;
+    }
+    footer > div{
+        margin: 0 auto; padding: 0 4%;
+    }
+    footer > div:first-child h2{
+        max-width: 75px; float: left; vertical-align: top; margin-top: 60px;
+    }
+    footer > div:first-child h2 a img{
+        width: 100%; display: block;
+    }
+    footer > div:first-child::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-child > div{
+        position: relative; float: right; margin-top: 60px;
+    }
+    footer > div:first-child > div form{
+        position: relative; 
+    }
+    footer > div:first-child > div button[type="submit"]{
+        padding: 25px 32vw; border: 1px solid #b9bbb8; display: block;
+        background-color: transparent;
+    }
+    footer > div:first-child > div button em{
+        position: absolute; font-size: 14px; font-weight: 400; color: #000000;
+        top: 18px;
+    }
+    footer > div:first-child > div button em:nth-child(1){
+        left: 30px; 
+    }
+    footer > div:first-child > div button em:nth-child(2){
+        right: 30px;
+    }
+    footer > div:first-child > div ul{
+        max-width: 280px; margin-top: 80px; 
+    }
+    footer > div:first-child > div ul li{
+        display: inline-block; width: 132px; margin-bottom: 25px; 
+        font-size: 12px; white-space: nowrap;
+    }
+    footer > div:first-child > div ul li:not(:nth-child(1),:nth-child(3),:nth-child(5),:nth-child(7),:nth-child(9)){
+        margin-left: 4%;
+    }
+    footer > div:first-child > div p{
+        font-size: 12px; line-height: 18px;
+    }
+    footer > div:first-child > div p:nth-of-type(1){
+        position: absolute; width: 193px; top: 130px; right: 0;
+    }
+    footer > div:first-child > div p:nth-of-type(2){
+        width: 292px; margin: 35px 0 60px 0;
+    }
+    footer > div:last-child{
+        font-size: 10px; text-transform: uppercase; 
+        padding-bottom: 25px; white-space: nowrap;
+        border-top: 1px solid #dbdeda; padding-top: 25px;
+    }
+    footer > div:last-child span{
+        display: inline-block; 
+    }
+    footer > div:last-child span a:last-child{
+        margin-left: 4%;
+    }
+    footer > div:last-child ul{
+        display: inline-block; margin-left: 6%;
+    }
+    footer > div:last-child ul li{
+        display: inline-block; 
+    }
+    footer > div:last-child ul li:not(:first-child){
+        margin-left: 4%;
+    }
+    footer > div:last-child span:nth-of-type(2){
+        float: right;
+    }   
+}
+@media screen and (max-width: 767px) {
+    header div input[type='button'].closeBtn{
+       top: 20px; right: 3%; font-size: 16px;
+    }
+    header{
+        position: fixed; background-color: white;
+        width: 100%; z-index: 1; top: 0;
+    }
+    header > div{
+        position: relative; margin: 0 auto;
+    }
+    header > div:not([id$="Panel"]){
+        padding: 10px 3.5%;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div h1{
+        max-width: 32px;
+    }
+    header > div h1 *{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%; display: block;
+    }
+    header > div > nav{
+        width: calc(100% - 32px);
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+    header > div > nav ul{
+        width: calc(100% - 20px);
+    }
+    header > div > nav ul li:nth-child(1),
+    header > div > nav ul li:nth-child(2),
+    header > div > nav ul li:nth-child(3){
+        display: none;
+    }
+    header > div > nav ul li{
+        display: inline-block; vertical-align: middle; line-height: 17px;
+        font-size: 8px;
+    }
+    header > div > nav ul li:not(:first-child){
+        margin-left: 5.3%;
+    }
+    header > div > nav ul li a{
+        display: block;
+    }
+    header > div > nav ul li a:first-child{
+        display: block; line-height: 14px; font-size: 12px; color: #000000;
+    }
+    header > div > nav input.material-icons{
+        background-color: transparent; border: none; color: #000000;
+        margin-left: 5.3%; font-size: 14px;
+    }
+    header > div > nav input.material-icons:active{
+        background-image: url(../images/lnb_close.png) cover no-repeat;
+    }
+    #lnbContainer{
+        transition: width .5s ease-out; padding-top: 10px; width: 100%;
+        clear: both;
+    }
+    #lnbContainer > li{
+        line-height: 35px; display: block; 
+        overflow-x: hidden; overflow-y: hidden; transition: all .5s ease-out;
+    } 
+    #lnbContainer > li:hover h2 a{
+        color: #D42E30;
+    }
+    #lnbContainer > li > h2 a{
+        font-size: 24px; font-weight: 400;
+    } 
+    #lnbContainer > li > h2 a:last-of-type{
+        display: none;
+    }
+    #lnbContainer > li > div figure{
+        display: none;
+    }
+    [id^="gnb"]{
+        position: fixed; top: 36px; right: 0; bottom: 0; width: 100%; overflow: hidden;
+    }
+    [id^="gnb"] > span{
+        width: 100%; display: block; text-align: center;
+        padding: 50% 0;
+    }
+    [id^="gnb"] > span > h3{
+        line-height: 26px; font-size: 20px; font-weight: 400;
+        color: #000000; white-space: nowrap; margin-bottom: 50px;
+    }
+    [id^="gnb"] > span > a{
+        color: #000000; border-bottom: 1px solid #000000; font-size: 12px;
+    }
+    #gnb_wish_Panel{
+        background-color: #eeeeee; padding: 50px 3.5%;
+        box-sizing: border-box;
+    }
+    #gnb_wish_Panel > div{
+        width: 100%; height: 100%;
+    }
+    #gnb_wish_Panel > div h2{
+        font-size: 18px; margin-bottom: 10px; font-weight: 400; color: #000000;
+    }
+    #gnb_wish_Panel > div h2 > sup{
+        font-size: 10px; margin-left: 10px; font-weight: 400; color: #000000;
+        vertical-align: top;
+    } 
+    #gnb_wish_Panel > div ul li{
+        width: 100%; margin-bottom: 20px; 
+        position: relative;
+    }
+    #gnb_wish_Panel > div ul li a{
+        display: block; width: 40%;
+    }
+    #gnb_wish_Panel > div ul li a img{
+        width: 100%; display: block;
+    }
+    #gnb_wish_Panel > div ul li > .bot{
+        position: absolute; left: 42%; bottom: 0; width: 58%;
+    }
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(1){
+        font-size: 10px; font-weight: 400; color: black; margin-bottom: 15px;
+        display: block; 
+    }
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(1) em{
+        display: block; margin-bottom: 5px;
+    }
+    #gnb_wish_Panel > div ul li .bot h3{
+        margin-bottom: 20px; display: block; font-size: 10px;
+    }
+    #gnb_wish_Panel > div ul li h3 strong{
+        color: black; text-transform: uppercase;
+        font-weight: 400; display: block; margin-bottom: 5px;
+    }
+    #gnb_wish_Panel > div ul li .bot h3 mark{
+        color: #8b8c8a; font-weight: 400; display: block;
+    } 
+    #gnb_wish_Panel > div ul li .bot div:nth-of-type(2) *{
+        float: left; width: 50%; padding: 2%; font-size: 12px; color: #000000;
+    }
+    input[value="Add To Cart"]{
+        border: 1px solid #566160; float: left; width: 50%;
+    } 
+    input[value="Remove"]{
+        border: 1px solid #b9bbb8; float: left; width: 50%;
+    }
+    #gnb_wish_Panel > div > div{
+        position: absolute; right: 24px; bottom: 4%;
+    }
+    input[value="clear all"]{
+        font-size: 12px; color: black;        
+        border: none; padding: 22px 40px;
+    }
+    input[value="Share Wishlist"]{
+        font-size: 12px; color: black;         
+        border: 1px solid #b9bbb8; padding: 10px 50px;
+    }
+    #sharePopup{
+        position: absolute; right: 3.5%; bottom: 90px;
+    }
+    #sharePopup > li{
+        display: block; float: left; width: 44px; height: 44px; margin-left: 20px;
+        background-image: url(../images/sharewish.png); background-repeat: no-repeat;
+    }
+    #sharePopup > li:first-child{
+        margin-left: 0;
+    }
+    #sharePopup > li.instagram{background-position: 0px 0px;}
+    #sharePopup > li.pinterest{background-position: -63px 0px;}
+    #sharePopup > li.x{background-position: -126px 0px;}
+    #sharePopup > li.youtube{background-position: -189px 0px;}
+    #sharePopup > li.facebook{background-position: -253px 0px;}
+    #sharePopup > li a{
+        display: block; width: 100%;
+    }
+
+    #gnb_search_Panel{
+        width: 100%; background-color: #dedcd1; padding: 5% 3.5%; box-sizing: border-box;
+    }
+    #gnb_search_Panel input[type="search"]{
+        font-size: 18px; border: none; border-bottom: 1px solid #9b9a92; margin-bottom: 20px;
+        padding-bottom: 10px; background-color: #dedcd1; width: 100%;
+    }
+    #gnb_search_Panel p{
+        font-size: 12px; text-transform: uppercase; 
+    }
+    #gnb_cart_Panel{
+        background-color: #eeeeee; padding: 50px 3.5%; box-sizing: border-box;
+        width: 100%;
+    }
+    #gnb_cart_Panel > div{
+        width: 100%;
+    }
+    #gnb_cart_Panel > div > h2{
+        font-size: 18px; font-weight: 400; float: left; width: 50%;
+    }
+    #gnb_cart_Panel > div > strong{
+        font-size: 18px; font-weight: 400; float: left; width: 50%;
+        margin-bottom: 30px; text-align: right;
+    }
+    #gnb_cart_Panel > div ul{
+        width: 100%; position: relative; clear: both;
+    }
+    #gnb_cart_Panel > div ul li{
+        width: 100%; border-bottom: 1px solid #999999; 
+    }
+    #gnb_cart_Panel > div ul li::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_cart_Panel > div ul li:first-child div{
+        font-size: 10px; font-weight: 400;
+        padding-bottom: 10px;
+    }
+    #gnb_cart_Panel > div ul li div:not(:last-child){
+        float: left; 
+    }
+    #gnb_cart_Panel > div ul li div:last-child{
+        float: right; width: 50%; position: relative;
+    }
+    #gnb_cart_Panel > div ul li div:nth-child(1){
+        width: 50%;
+    }
+    #gnb_cart_Panel > div ul li div:nth-child(2){
+        width: 45%; margin-left: 5%; box-sizing: border-box;
+    }
+    #gnb_cart_Panel > div ul li:first-child div:last-child{
+        position: absolute; top: 140px; left: 55%;
+    }
+    #gnb_cart_Panel > div ul li:last-child{
+        padding: 10px 0; 
+    }
+    #gnb_cart_Panel > div ul li:last-child div:last-child span{
+        position: absolute; top: 40px; left: 58px;
+        font-size: 10px;
+    }
+    #gnb_cart_Panel > div ul li:last-child div::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_cart_Panel > div ul li:last-child div a{
+        width: 40%; display: block; float: left;
+    }
+    #gnb_cart_Panel > div ul li:last-child div a img{
+        width: 100%; display: block;
+    }
+    #gnb_cart_Panel > div ul li:last-child div p{
+        font-size: 10px; color: #b9bbb8; float: left; width: 55%; margin-top: 20%;
+        margin-left: 5%; box-sizing: border-box; vertical-align: middle;
+    }
+    #gnb_cart_Panel > div ul li:last-child div p strong{
+        font-size: 12px; font-weight: 400; color: #000000; display: block;
+        margin-bottom: 5px;
+    }
+    #gnb_cart_Panel > div ul li:last-child div mark:nth-of-type(1),
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(2) span:nth-of-type(1){
+        margin-top: 16%;
+    }
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(2) *{
+        font-size: 10px; font-weight: 400; float: left; margin-bottom: 5px;
+    }
+    #gnb_cart_Panel > div ul li:last-child div mark{
+        color: #b9bbb8; width: 30%;
+    }
+    #gnb_cart_Panel > div ul li:last-child div span,
+    #gnb_cart_Panel > div ul li:last-child div em{
+        width: 60%; display: block; margin-left: 10%; box-sizing: border-box;
+    }
+    #gnb_cart_Panel > div > div{
+        padding-top: 50px; width: 100%;
+    }
+    #gnb_cart_Panel > div > div fieldset{
+        position: relative;
+    }
+    #gnb_cart_Panel > div > div fieldset *{
+        font-size: 12px; font-weight: 400;
+    }
+    #gnb_cart_Panel > div > div fieldset div{
+        width: 55%; float: right;
+    }
+    #gnb_cart_Panel > div > div fieldset::after{
+        content: ''; display: block; clear: both;
+    }
+    #gnb_cart_Panel > div > div fieldset span{
+        margin-bottom: 10px; float: left; width: 50%;
+    }
+    #gnb_cart_Panel > div > div fieldset mark{
+        margin-bottom: 10px; color: #b9bbb8; float: left; width: 50%; text-align: right;
+    }
+    #gnb_cart_Panel > div > div fieldset em{
+        margin-bottom: 10px; float: left; width: 50%; text-align: right;
+    }
+    #gnb_cart_Panel > div > div fieldset p{
+        font-size: 10px; width: 40%; position: absolute; left: 0; top: 0; line-height: 16px;
+    }
+    #gnb_cart_Panel > div > div fieldset input{
+        width: 55%; float: right; padding: 2%;
+    }
+
+
+    footer{
+        background-color: #F9FCF8;
+    }
+    footer > div{
+        margin: 0 auto; padding: 0 3.5%;
+    }
+    footer > div:first-child h2{
+        max-width: 75px; padding-top: 60px; margin-bottom: 50px;
+    }
+    footer > div:first-child h2 a img{
+        width: 100%; display: block;
+    }
+    footer > div:first-child > div form{
+        position: relative; 
+    }
+    footer > div:first-child > div button[type="submit"]{
+        padding: 16px 5px; border: 1px solid #b9bbb8; display: block;
+        background-color: transparent; width: 100%;
+    }
+    footer > div:first-child > div button em{
+        position: absolute; font-size: 10px; font-weight: 400; color: #000000;
+        top: 10px;
+    }
+    footer > div:first-child > div button em:nth-child(1){
+        left: 15px; 
+    }
+    footer > div:first-child > div button em:nth-child(2){
+        right: 15px;
+    }
+    footer > div:first-child > div ul{
+        width: 100%; margin-top: 30px; 
+    }
+    footer > div:first-child > div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-child > div ul li{
+        float: left; width: 50%; margin-bottom: 25px; 
+        font-size: 12px; 
+    }
+    footer > div:first-child > div p{
+        font-size: 12px; line-height: 18px; margin-bottom: 30px;
+    }
+    footer > div:first-child > div p:nth-of-type(1){
+        margin-top: 25px;
+    }
+    footer > div:last-child{
+        font-size: 10px; text-transform: uppercase; 
+        padding-bottom: 10px; padding-top: 10px; white-space: nowrap;
+        border-top: 1px solid #dbdeda;
+    }
+    footer > div:last-child span{
+        display: block; margin-bottom: 15px;
+    }
+    footer > div:last-child span a:last-child{
+        margin-left: 4%;
+    }
+    footer > div:last-child ul{
+        display: block; margin-bottom: 15px;
+    }
+    footer > div:last-child ul li{
+        display: inline-block;  
+    }
+    footer > div:last-child ul li:not(:first-child){
+        margin-left: 4%;
+    }
+}
