@@ -8,6 +8,7 @@ $(function(){
     // checknext();
     checkmethod();
     checkPopup();
+    accountPopup();
 });
 function lnbControl(){
     var lnb = $("#lnbContainer");
@@ -107,5 +108,24 @@ function checkPopup(){
         var activePopup = $("#txtcheckPopup"); 
         activePopup.toggleClass("active");
         console.log(activePopup);
+    });
+}
+
+function accountPopup(){
+    $(".tabPage [data-popup]").click(function(e){
+        e.preventDefault();
+
+        var activePopup = '#' + $(this).data("popup");
+        console.log(activePopup);  
+        var $popup = $(activePopup);
+        var activebg = ".popupbg";
+
+        $(activePopup).toggleClass("active");
+        $(activebg).toggleClass("active");
+
+        $popup.find("input, button").one("click", function () {
+            $popup.removeClass("active");
+            $(activebg).removeClass("active");
+        });
     });
 }
