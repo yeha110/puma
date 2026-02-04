@@ -596,11 +596,11 @@ label[for^="btn_colour_FasterY-B"]::before{
 @media screen and (min-width: 1280px) {
     .btn_ex{
     font-family: 'inter'; font-weight: 400; text-align: center; display: block;
-    font-size: 14px; border: 1px solid #b9bbb8; color: black; padding: 22px 8%;
+    font-size: 14px; border: 1px solid #b9bbb8; color: #000000; padding: 22px 8%;
     box-sizing: border-box; max-width: 449px; margin: 0 auto; white-space: nowrap;
     }
     .btn_shop{
-        font-size: 12px; font-weight: 400; color: white; 
+        font-size: 12px; font-weight: 400; color: #ffffff; 
         border-bottom: 1px solid white; padding-bottom: 5px;
         display: inline-block;
     }
@@ -629,7 +629,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
     .indexContainer .mainTopSlider li figure figcaption p{
-        font-size: 54px; font-weight: 500; color: white;
+        font-size: 54px; font-weight: 500; color: #ffffff;
         line-height: 60px; margin-bottom: 54px;
     }
     .indexContainer .mainTopSlider li figure figcaption a{
@@ -661,7 +661,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         display: flex; justify-content: space-between; margin-top: 10px;
     }
     .indexContainer > div > .index_list li .emGroup em{
-        font-size: 10px; font-weight: 400; margin-bottom: 20px;
+        font-size: 12px; font-weight: 400; margin-bottom: 20px;
     }
     .indexContainer > div > .index_list li h2{
         font-size: 18px;
@@ -688,7 +688,8 @@ label[for^="btn_colour_FasterY-B"]::before{
         float: left; width: 36%;
     }
     .indexContainer > div:nth-of-type(2) > div > .speed h2{
-        font-size: 12px; color: #dbdeda; margin-bottom: 40px; text-transform: uppercase;
+        font-size: 14px; font-weight: 500; color: #dbdeda; margin-bottom: 40px; 
+        text-transform: uppercase;
     }
     .indexContainer > div:nth-of-type(2) > div > .speed dl{
         display: block; margin-bottom: 40px; width: 449px;
@@ -826,7 +827,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         margin-left: 1.3%;
     }
     .lnbContainer > nav ul li button{
-        font-size: 16px; font-weight: 400; color: black;
+        font-size: 16px; font-weight: 400; color: #000000;
         padding: 10px 20px; background-color: #f9fcf8; border: 2px solid #dbdeda;
         border-radius: 30px; cursor: pointer;
     }
@@ -854,7 +855,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         margin-top: 48px; font-size: 16px; font-weight: 400; line-height: 21px;
     }
     .lnbContainer > ul li > figure figcaption a{
-        display: block; margin-top: 38px; font-size: 10px; font-weight: 400; color: white;
+        display: block; margin-top: 38px; font-size: 10px; font-weight: 400; color: #ffffff;
         border-bottom: 1px solid #edebdb; width: 8.5%; padding-bottom: 5px;
     }  
 
@@ -904,7 +905,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         display: flex; justify-content: space-between;
     }
     .listContainer > ul li span em{
-        font-size: 10px; margin: 10px 0 28px 0; vertical-align: top; text-transform: uppercase;
+        font-size: 12px; margin: 10px 0 28px 0; vertical-align: top; text-transform: uppercase;
     }
     .listContainer > ul li .sale_price .sale_center{
         display: flex; align-items: center; 
@@ -917,7 +918,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         text-decoration-color: red; align-self: center;
     }
     .listContainer > ul li h3{
-        font-size: 12px; line-height: 18px;
+        font-size: 14px; line-height: 18px;
     }
     .listContainer > ul li h3::after{
         content: ''; display: block; clear: both;
@@ -1069,6 +1070,7 @@ label[for^="btn_colour_FasterY-B"]::before{
     }
     .detailContainer > ul li .custom-video{
         width: 100%; height: 100%; max-width: 686px;
+        display: block; object-fit: cover;
     }
     .detailContainer > div{
         clear: both;
@@ -1854,11 +1856,11 @@ label[for^="btn_colour_FasterY-B"]::before{
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .btn_ex{
         font-family: 'inter'; font-weight: 400; text-align: center; display: block;
-        font-size: 12px; border: 1px solid #b9bbb8; color: black; padding: 16px 4%;
+        font-size: 12px; border: 1px solid #b9bbb8; color: #000000; padding: 16px 4%;
         box-sizing: border-box; max-width: 250px; margin: 0 auto; white-space: nowrap;
     }
     .btn_shop{
-        font-size: 10px; font-weight: 400; color: white; 
+        font-size: 10px; font-weight: 400; color: #ffffff; 
         border-bottom: 1px solid white; padding-bottom: 5px;
         display: inline-block;
     }
@@ -1887,7 +1889,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
     .indexContainer .mainTopSlider li figure figcaption p{
-        font-size: 24px; font-weight: 500; color: white;
+        font-size: 24px; font-weight: 500; color: #ffffff;
         line-height: 30px; margin-bottom: 15px;
     }
     .indexContainer .mainTopSlider li figure figcaption a{
@@ -2072,7 +2074,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         margin-left: 1.3%;
     }
     .lnbContainer > nav ul li button{
-        font-size: 12px; font-weight: 400; color: black;
+        font-size: 12px; font-weight: 400; color: #000000;
         padding: 2px 10px; background-color: #f9fcf8; border: 2px solid #dbdeda;
         border-radius: 20px;
     }
@@ -2089,7 +2091,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         width: 100%; display: block;
     }
     .lnbContainer > ul li > figure figcaption{
-        position: absolute; color: white; width: 72%;
+        position: absolute; color: #ffffff; width: 72%;
         left: 50%; top: 50%; transform: translate(-50%, -50%);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
@@ -2100,7 +2102,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         margin-top: 30px; font-size: 12px; font-weight: 400; line-height: 18px;
     }
     .lnbContainer > ul li > figure figcaption a{
-        display: block; margin-top: 20px; font-size: 10px; font-weight: 400; color: white;
+        display: block; margin-top: 20px; font-size: 10px; font-weight: 400; color: #ffffff;
         border-bottom: 1px solid #edebdb; width: 13%; padding-bottom: 5px;
     }  
 
@@ -3081,7 +3083,7 @@ label[for^="btn_colour_FasterY-B"]::before{
 @media screen and (max-width: 767px) {
     .btn_ex{
     font-family: 'inter'; font-weight: 400; text-align: center; display: block;
-    font-size: 12px; border: 1px solid #b9bbb8; color: black; padding: 20px 0;
+    font-size: 12px; border: 1px solid #b9bbb8; color: #000000; padding: 20px 0;
     box-sizing: border-box; margin: 0 auto; white-space: nowrap;
     margin-bottom: 30px;
     }
@@ -3260,19 +3262,20 @@ label[for^="btn_colour_FasterY-B"]::before{
         width: 100%; display: block;
     }
     .indexContainer > div:last-of-type figure figcaption{
-        color: white; text-shadow: 1px 1px 2px black; text-align: center;
-        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        color: #ffffff; text-shadow: 1px 1px 2px black; text-align: center;
+        position: absolute; top: 50%; left: 50%; 
+        transform: translate(-50%, -50%); width: 70%;
     }
     .indexContainer > div:last-of-type figure figcaption h2{
-        font-size: 16px; font-weight: 500; width: 62%;
-        line-height: 20px; margin: 0 auto; margin-bottom: 10px;
+        font-size: 14px; font-weight: 500; width: 100%;
+        line-height: 20px; margin-bottom: 10px;
     }
     .indexContainer > div:last-of-type figure figcaption p{
-        font-size: 10px; line-height: 14px; margin-bottom: 20px;
+        font-size: 8px; line-height: 12px; margin-bottom: 20px;
         width: 100%; text-align: left;
     }
     .indexContainer > div:last-of-type figure figcaption a{
-        position: absolute; top: 162px; right: 5%;
+        position: absolute; right: 5%;
     }
     
 
@@ -3296,7 +3299,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         margin-left: 2%;
     }
     .lnbContainer > nav ul li button{
-        font-size: 10px; font-weight: 400; color: black;
+        font-size: 10px; font-weight: 400; color: #000000;
         padding: 2px 10px; background-color: #f9fcf8; border: 2px solid #dbdeda;
         border-radius: 20px;
     }
