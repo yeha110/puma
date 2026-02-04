@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puma</title>
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/puma.js"></script>
@@ -147,18 +148,18 @@
             <a href="list_lnb_clothing.html">Clothing</a>
         </h2>
         <nav>
-            <ul>
-                <li><a href="" class="active">Tops</a></li>
-                <li><a href="">pants</a></li>
-                <li><a href="">Skirts</a></li>
-                <li><a href="">Hoodies&Sweatshirts</a></li>
-                <li><a href="">Outerwear</a></li>
-                <li><a href="">Sportwear</a></li>
-                <li><a href="">Matching sets</a></li>
+            <ul class="tabMenu">
+                <li><button data-tab="top" class="active">Tops</button></li>
+                <li><button data-tab="pant">Pants</button></li>
+                <li><button data-tab="skirt">Skirts</button></li>
+                <li><button data-tab="hood">Hoodies&Sweatshirts</button></li>
+                <li><button data-tab="outer">Outerwear</button></li>
+                <li><button data-tab="sport">Sportwear</button></li>
+                <li><button data-tab="matching">Matching sets</button></li>
             </ul>
         </nav>
-        <ul>
-            <li>
+        <ul class="tabContent">
+            <li id="top" class="tabPage">
                 <figure>
                     <img src="images/lnb_Clo_01.png" alt="Tops">
                     <figcaption>
@@ -169,7 +170,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="pant" class="tabPage">
                 <figure>
                     <img src="images/lnb_clo_02.png" alt="Pants">
                     <figcaption>
@@ -180,7 +181,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="skirt" class="tabPage">
                 <figure>
                     <img src="images/lnb_clo_03.png" alt="Skirts">
                     <figcaption>
@@ -191,7 +192,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="hood" class="tabPage">
                 <figure>
                     <img src="images/lnb_clo_04.png" alt="Hoodies&Sweatshirts">
                     <figcaption>
@@ -202,7 +203,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="outer" class="tabPage">
                 <figure>
                     <img src="images/lnb_clo_05.png" alt="Outerwear">
                     <figcaption>
@@ -213,7 +214,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="sport" class="tabPage">
                 <figure>
                     <img src="images/lnb_clo_06.png" alt="Sportwear">
                     <figcaption>
@@ -224,7 +225,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="matching" class="tabPage">
                 <figure>
                     <img src="images/lnb_clo_07.png" alt="Matching sets">
                     <figcaption>

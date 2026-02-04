@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puma</title>
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/puma.js"></script>
@@ -147,15 +148,15 @@
             <a href="list_lnb_sports.html">Sport</a>
         </h2>
         <nav>
-            <ul>
-                <li><a href="" class="active">Basketball</a></li>
-                <li><a href="">Running</a></li>
-                <li><a href="">Soccer</a></li>
-                <li><a href="">Training</a></li>
+            <ul class="tabMenu">
+                <li><button data-tab="baskeball" class="active">Basketball</button></li>
+                <li><button data-tab="running">Running</button></li>
+                <li><button data-tab="soccer">Soccer</button></li>
+                <li><button data-tab="training">Training</button></li>
             </ul>
         </nav>
-        <ul>
-            <li>
+        <ul class="tabContent">
+            <li id="baskeball" class="tabPage">
                 <figure>
                     <img src="images/lnb_spo_01.png" alt="BASKETBALL">
                     <figcaption>
@@ -166,7 +167,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="running" class="tabPage">
                 <figure>
                     <img src="images/lnb_spo_02.png" alt="RUNNING">
                     <figcaption>
@@ -177,7 +178,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="soccer" class="tabPage">
                 <figure>
                     <img src="images/lnb_spo_03.png" alt="SOCCER">
                     <figcaption>
@@ -188,7 +189,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="training" class="tabPage">
                 <figure>
                     <img src="images/lnb_spo_04.png" alt="Training&Gym">
                     <figcaption>

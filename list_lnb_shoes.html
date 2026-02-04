@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puma</title>
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/puma.js"></script>
@@ -147,17 +148,17 @@
             <a href="list_lnb_shoes.html">Shoes</a>
         </h2>
         <nav>
-            <ul>
-                <li><a href="" class="active">Classics</a></li>
-                <li><a href="">Lifestyle</a></li>
-                <li><a href="">palermo</a></li>
-                <li><a href="">Suede</a></li>
-                <li><a href="">Rider</a></li>
-                <li><a href="">Speedcat</a></li>
+            <ul class="tabMenu">
+                <li><button data-tab="classic" class="active">Classics</button></li>
+                <li><button data-tab="lifestyle">Lifestyle</button></li>
+                <li><button data-tab="palermo">palermo</button></li>
+                <li><button data-tab="suede">Suede</button></li>
+                <li><button data-tab="rider">Rider</button></li>
+                <li><button data-tab="speedcat2">Speedcat</button></li>
             </ul>
         </nav>
-        <ul>
-            <li>
+        <ul class="tabContent">
+            <li id="classic" class="tabPage">
                 <figure>
                     <img src="images/lnb_shoes_01.png" alt="Classics">
                     <figcaption>
@@ -168,7 +169,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="lifestyle" class="tabPage">
                 <figure>
                     <img src="images/lnb_shoes_02.png" alt="Lifestyle">
                     <figcaption>
@@ -179,7 +180,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="palermo" class="tabPage">
                 <figure>
                     <img src="images/lnb_shoes_03.png" alt="palermo">
                     <figcaption>
@@ -190,7 +191,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="suede" class="tabPage">
                 <figure>
                     <img src="images/lnb_shoes_04.png" alt="Suede">
                     <figcaption>
@@ -201,7 +202,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="rider" class="tabPage">
                 <figure>
                     <img src="images/lnb_shoes_05.png" alt="Rider">
                     <figcaption>
@@ -212,7 +213,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="speedcat2" class="tabPage">
                 <figure>
                     <img src="images/lnb_shoes_06.png" alt="Speedcat">
                     <figcaption>

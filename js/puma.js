@@ -61,8 +61,19 @@ function cartControl(){
 }
 
 function tabUI(){
+    var originalOrder = [];
+    $(".tabContent .tabPage").each(function (){
+        originalOrder.push(this);
+    });
     $(".tabMenu button").click(function(){
         var activeTab = '#' + $(this).attr("data-tab");
+        console.log(activeTab);
+
+        $(".tabMenu button").removeClass("active");
+        $(this).addClass("active"); 
+
+        $(".tabContent").append(originalOrder);
+        $(".tabContent").prepend($(activeTab));
         console.log(activeTab);
 
         $("[class^='tabPage']").removeClass("active");

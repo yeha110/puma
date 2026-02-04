@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puma</title>
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/puma.js"></script>
@@ -147,15 +148,15 @@
             <a href="list_lnb_accessories.html">Accessories</a>
         </h2>
         <nav>
-            <ul>
-                <li><a href="" class="active">Bags</a></li>
-                <li><a href="">Hats</a></li>
-                <li><a href="">Socks</a></li>
-                <li><a href="">Sport equiment</a></li>
+            <ul class="tabMenu">
+                <li><button data-tab="bag" class="active">Bags</button></li>
+                <li><button data-tab="hat">Hats</button></li>
+                <li><button data-tab="sock">Socks</button></li>
+                <li><button data-tab="equiment">Sport equiment</button></li>
             </ul>
         </nav>
-        <ul>
-            <li>
+        <ul class="tabContent">
+            <li id="bag" class="tabPage">
                 <figure>
                     <img src="images/lnb_acc_01.png" alt="Bags">
                     <figcaption>
@@ -166,7 +167,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="hat" class="tabPage">
                 <figure>
                     <img src="images/lnb_acc_02.png" alt="hats">
                     <figcaption>
@@ -177,7 +178,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="sock" class="tabPage">
                 <figure>
                     <img src="images/lnb_acc_03.png" alt="Socks">
                     <figcaption>
@@ -188,7 +189,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="equiment" class="tabPage">
                 <figure>
                     <img src="images/lnb_acc_04.png" alt="Sport equiment">
                     <figcaption>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puma</title>
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/puma.js"></script>
@@ -147,15 +148,15 @@
             <a href="list_lnb_collaborations.html">Collaborations</a>
         </h2>
         <nav>
-            <ul>
-                <li><a href="" class="active">fenty x puma</a></li>
-                <li><a href="">speedcat</a></li>
-                <li><a href="">stewie</a></li>
-                <li><a href="">palermo</a></li>
+            <ul class="tabMenu">
+                <li><button data-tab="fenty" class="active">fenty x puma</button></li>
+                <li><button data-tab="speedcat">speedcat</button></li>
+                <li><button data-tab="stewie">stewie</button></li>
+                <li><button data-tab="palermo">palermo</button></li>
             </ul>
         </nav>
-        <ul>
-            <li>
+        <ul class="tabContent">
+            <li id="fenty" class="tabPage">
                 <figure>
                     <img src="images/lnb_Col_01.png" alt="FENTY X PUMA">
                     <figcaption>
@@ -166,7 +167,7 @@ leather in red and white colorways, touches of gold, and retro gum soles.   </p>
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="speedcat" class="tabPage">
                 <figure>
                     <img src="images/lnb_Col_02.png" alt="SPEEDCAT">
                     <figcaption>
@@ -177,7 +178,7 @@ Puma's Iconic Sneakers have established themselves as unique fashion items</p>
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="stewie" class="tabPage">
                 <figure>
                     <img src="images/lnb_Col_03.png" alt="STEWIE">
                     <figcaption>
@@ -188,7 +189,7 @@ the Stewie 2, celebrates the different areas of her life that drive her to be a 
                     </figcaption>
                 </figure>
             </li>
-            <li>
+            <li id="palermo" class="tabPage">
                 <figure>
                     <img src="images/lnb_Col_04.png" alt="PALERMO">
                     <figcaption>
