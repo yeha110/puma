@@ -831,7 +831,7 @@ label[for^="btn_colour_FasterY-B"]::before{
     }
     .lnbContainer > nav ul li button{
         font-size: 16px; font-weight: 400; color: #000000;
-        padding: 10px 20px; background-color: #f9fcf8; border: 2px solid #dbdeda;
+        padding: 12px 20px; background-color: #f9fcf8; border: 2px solid #dbdeda;
         border-radius: 30px; cursor: pointer;
     }
     .lnbContainer > nav ul li button.active{
@@ -1250,8 +1250,9 @@ label[for^="btn_colour_FasterY-B"]::before{
     }
     
     #deliveryPopup{
-        position: absolute; width: 80%; top: 250px; left: 200px;
-        background-color: #ffffff; margin: 0 auto; padding: 80px 0;
+        position: fixed; top: 50%; left: 50%; width: 80%;
+        transform: translate(-50%, -50%); box-sizing: border-box;
+        background: #fff; z-index: 20; padding: 5% 0;
     }
     #deliveryPopup::after{
         content: ''; display: block; clear: both;
@@ -1297,8 +1298,9 @@ label[for^="btn_colour_FasterY-B"]::before{
     }
     
     #returnPopup{
-        background-color: #ffffff; width: 80%; top: 250px; left: 200px;
-        padding: 80px 4%; box-sizing: border-box; position: absolute;
+        position: fixed; top: 50%; left: 50%; width: 80%;
+        transform: translate(-50%, -50%); box-sizing: border-box;
+        background: #fff; z-index: 20; padding: 4%;
     }
     #returnPopup::after{
         content: ''; display: block; clear: both;
@@ -1349,10 +1351,10 @@ label[for^="btn_colour_FasterY-B"]::before{
     .accountContainer > div [id^="txt"]{
         position: fixed; top: 50%; left: 50%; text-align: center;
         transform: translate(-50%, -50%); border: 1px solid #000000;
-        background: #fff; z-index: 20; padding: 5% 15%;
+        background: #fff; z-index: 20; padding: 8% 10%;
     }
     .accountContainer > div [id^="txt"] h3{
-        font-size: 30px; padding-top: 117px; font-weight: 500;
+        font-size: 30px; font-weight: 500;
         text-transform: uppercase; margin-bottom: 102px;
         white-space: nowrap;
     }
@@ -1365,7 +1367,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         text-transform: uppercase; font-size: 18px;
     }
     .accountContainer > div .tabPage{
-        float: left; width: 54%; margin-left: 4%;
+        float: left; width: 54%; margin-left: 4%; box-sizing: border-box;
         border-top: 1px solid #b1b4aa; padding-top: 20px;
     }
     .accountContainer > div .tabPage fieldset legend{
@@ -1435,7 +1437,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         font-size: 10px; margin-top: 5px;
     }
     #resetpw fieldset input[type="submit"]{
-        width: 80%; cursor: pointer;
+        width: 80%; cursor: pointer; font-weight: 400;
     }
     #order > h3{
         font-size: 24px; font-weight: 400; margin-bottom: 34px;
@@ -2500,15 +2502,20 @@ label[for^="btn_colour_FasterY-B"]::before{
         font-size: 20px; cursor: pointer; color: #000000;
     }
     
+    [id$="Popup"] .material-icons{
+        position: absolute; top: 36px; right: 38px;
+    }
+
     #deliveryPopup{
-        position: absolute; width: 80%; top: 200px; left: 44px;
-        background-color: #ffffff; padding: 30px 5%;
+        position: fixed; top: 50%; left: 50%; width: 80%;
+        transform: translate(-50%, -50%); box-sizing: border-box;
+        background: #fff; z-index: 20; padding: 5% 0;
     }
     #deliveryPopup::after{
         content: ''; display: block; clear: both;
     }
     #deliveryPopup h3{
-        display: block; font-size: 22px; font-weight: 500;
+        display: block; font-size: 22px; font-weight: 500; padding-left: 60px;
         margin-bottom: 40px; box-sizing: border-box;
     }
     #deliveryPopup dl{
@@ -2548,8 +2555,9 @@ label[for^="btn_colour_FasterY-B"]::before{
     }
     
     #returnPopup{
-        position: absolute; width: 80%; top: 200px; left: 44px;
-        padding: 30px 5%; box-sizing: border-box; background-color: #ffffff;
+        position: fixed; top: 50%; left: 50%; width: 80%;
+        transform: translate(-50%, -50%); box-sizing: border-box;
+        background: #fff; z-index: 20; padding: 4% 5%;
     }
     #returnPopup::after{
         content: ''; display: block; clear: both;
@@ -2597,30 +2605,30 @@ label[for^="btn_colour_FasterY-B"]::before{
         background-color: transparent; border: none;
     }
 
+    .accountContainer .popupbg.active{
+        position: fixed; inset: 0;
+        background: rgba(0,0,0,0.4); z-index: 10;
+    }
     .accountContainer > div [id^="txt"]{
-        width: 80%; background-color: #ffffff; top: 200px; left: 44px;
-        text-align: center; padding: 80px 0; border: 1px solid #000000;
-        margin: 0 auto; position: absolute;
+        position: fixed; top: 50%; left: 50%; text-align: center;
+        transform: translate(-50%, -50%); border: 1px solid #000000;
+        background: #fff; z-index: 20; padding: 10% 15%;
     }
     .accountContainer > div [id^="txt"] h3{
-        font-size: 26px; font-weight: 500;
+        font-size: 26px; font-weight: 500; white-space: nowrap;
         text-transform: uppercase; margin-bottom: 60px;
+    }
+    .accountContainer > div [id^="txt"] a{
+        text-transform: uppercase; font-size: 14px;
+        background-color: #000000; color: #ffffff; padding: 14px 20px;
     }
     .accountContainer > div [id^="txt"] input[type="button"]{
         background-color: #000000; color: #ffffff; padding: 12px 19px;
-        text-transform: uppercase; font-size: 18px;
-    }
-    .accountContainer > div [id^="txt"] a{
-        display: block; width: 6%; margin: 0 auto;
-        background-color: #000000; color: #ffffff; padding: 14px 20px;
-        text-transform: uppercase; font-size: 18px;
+        text-transform: uppercase; font-size: 14px;
     }
     .accountContainer > div .tabPage{
-        float: left; width: 56%; margin-left: 4%; display: none;
+        float: left; width: 56%; margin-left: 4%; box-sizing: border-box;
         border-top: 1px solid #b1b4aa; padding-top: 20px;
-    }
-    .accountContainer > div .tabPage.active{
-        display: block;
     }
     .accountContainer > div .tabPage fieldset legend{
         font-size: 20px; margin-bottom: 20px;
@@ -3676,10 +3684,10 @@ label[for^="btn_colour_FasterY-B"]::before{
 
 
     .accountContainer{
-        background-color: #edebdb; padding: 36px 3.5% 55px 3.5%;
+        background-color: #edebdb;
     }
     .accountContainer > div{
-        padding-top: 55px; position: relative;
+        padding: 91px 3.5% 55px 3.5%; box-sizing: border-box; position: relative;
     }
     .accountContainer > div h2{
         font-size: 30px; font-weight: 400; margin-bottom: 30px; text-align: center;
