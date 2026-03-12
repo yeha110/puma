@@ -595,7 +595,7 @@ label[for^="btn_colour_FasterY-B"]::before{
 
 @media screen and (min-width: 1280px) {
     .btn_ex{
-    font-family: 'inter'; font-weight: 400; text-align: center; display: block;
+    font-weight: 400; text-align: center; display: block;
     font-size: 14px; border: 1px solid #b9bbb8; color: #000000; padding: 22px 8%;
     box-sizing: border-box; max-width: 449px; margin: 0 auto; white-space: nowrap;
     }
@@ -1289,7 +1289,7 @@ label[for^="btn_colour_FasterY-B"]::before{
     #deliveryPopup dl:last-of-type dd{
         padding: 32px 0;
     }
-    #deliveryPopup dl :nth-of-type(1){
+    #deliveryPopup dd:first-of-type{
         border-bottom: 1px solid #b1b4aa;
     }
     #deliveryPopup input[type="button"]{
@@ -2525,7 +2525,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         width: 34%;
     }
     #deliveryPopup dl:last-of-type{
-        width: 66%;
+        width: 66%; margin-left:-1px;
     }
     #deliveryPopup dl dt{
         background-color: #004d7a; color: #ffffff; 
@@ -2546,7 +2546,7 @@ label[for^="btn_colour_FasterY-B"]::before{
     #deliveryPopup dl:last-of-type dd{
         padding: 31px 0;
     }
-    #deliveryPopup dl :nth-of-type(1){
+    #deliveryPopup dd:first-of-type{
         border-bottom: 1px solid #b1b4aa;
     }
     #deliveryPopup input[type="button"]{
@@ -2612,7 +2612,7 @@ label[for^="btn_colour_FasterY-B"]::before{
     .accountContainer > div [id^="txt"]{
         position: fixed; top: 50%; left: 50%; text-align: center;
         transform: translate(-50%, -50%); border: 1px solid #000000;
-        background: #fff; z-index: 20; padding: 10% 15%;
+        background: #fff; z-index: 20; padding: 8% 12%;
     }
     .accountContainer > div [id^="txt"] h3{
         font-size: 26px; font-weight: 500; white-space: nowrap;
@@ -3120,7 +3120,7 @@ label[for^="btn_colour_FasterY-B"]::before{
         padding-top: 36px;
     }
     .indexContainer > div:first-child{
-        margin-bottom: 126px;
+        margin-bottom: 30px;
     }
     .indexContainer .mainTopSlider li{
         margin-bottom: 30px;
@@ -3706,46 +3706,33 @@ label[for^="btn_colour_FasterY-B"]::before{
         background-color: transparent; border: none; padding: 0; font-size: 16px; cursor: pointer; color: #000000;
     }
     
+    [id$="Popup"] .material-icons{
+        position: absolute; top: 20px; right: 6px;
+    }
+
     #deliveryPopup{
-        position: absolute; width: 100%; top: 172px; left: 20px;
-        background-color: #ffffff; margin: 0 auto; padding: 36px 0;
+        position: fixed; top: 50%; left: 50%; width: 90%;
+        transform: translate(-50%, -50%); box-sizing: border-box;
+        background: #fff; z-index: 20; padding: 8% 0;
     }
     #deliveryPopup::after{
         content: ''; display: block; clear: both;
     }
     #deliveryPopup h3{
-        display: block; font-size: 24px; font-weight: 400; padding-left: 60px;
-        margin-bottom: 40px; box-sizing: border-box;
-    }
-    #deliveryPopup dl{
-        float: left; 
-    }
-    #deliveryPopup dl:first-of-type{
-        width: 34%;
-    }
-    #deliveryPopup dl:last-of-type{
-        width: 66%;
+        display: block; font-size: 22px; font-weight: 400; padding-left: 16px;
+        margin-bottom: 30px; box-sizing: border-box;
     }
     #deliveryPopup dl dt{
         background-color: #004d7a; color: #ffffff; 
-        font-size: 20px; 
-    }
-    #deliveryPopup dl:first-of-type dt{
-        padding: 20px 60px;
-    }
-    #deliveryPopup dl:last-of-type dt{
-        padding: 20px 0;
+        font-size: 18px; padding: 16px;
     }
     #deliveryPopup dl dd{
-        padding: 20px 60px; 
+        padding: 16px; font-size: 16px;
     }
     #deliveryPopup dl:first-of-type dd{
-        line-height: 20px; font-size: 18px;
+        line-height: 20px;
     }
-    #deliveryPopup dl:last-of-type dd{
-        padding: 32px 0;
-    }
-    #deliveryPopup dl :nth-of-type(1){
+    #deliveryPopup dd:first-of-type{
         border-bottom: 1px solid #b1b4aa;
     }
     #deliveryPopup input[type="button"]{
@@ -3754,59 +3741,66 @@ label[for^="btn_colour_FasterY-B"]::before{
     }
     
     #returnPopup{
-        background-color: #ffffff; width: 80%; top: 250px; left: 200px;
-        padding: 80px 4%; box-sizing: border-box; position: absolute;
+        position: fixed; top: 50%; left: 50%; width: 90%;
+        transform: translate(-50%, -50%); box-sizing: border-box;
+        background: #fff; z-index: 20; padding: 6%;
     }
     #returnPopup::after{
         content: ''; display: block; clear: both;
     }
     #returnPopup h3{
-        font-size: 24px; font-weight: 400; margin-bottom: 70px;
+        font-size: 22px; font-weight: 400; margin-bottom: 40px;
     }
-    #returnPopup article{
+    /* #returnPopup article{
         float: left; width: 44%;
-    }
+    } */
     #returnPopup article:nth-of-type(2){
-        background-color: #f1f1f1; padding: 20px 4%;
+        background-color: #f1f1f1; padding: 20px 4% 0 4%;
     }
     #returnPopup article strong{
         font-weight: 700; display: block; margin-bottom: 22px; font-size: 16px; 
     }
     #returnPopup article p{
-        font-weight: 400; font-size: 14px; 
+        font-weight: 400; font-size: 14px; margin-bottom: 30px;
     }
     #returnPopup article p:nth-of-type(1){
-        margin-bottom: 48px;
+        margin-bottom: 20px;
     }
     #returnPopup article em:not(:nth-of-type(2),:nth-of-type(4)){
         display: inline-block; width: 66%; margin-bottom: 20px;
     }
     #returnPopup article em:nth-of-type(2),
-    #returnPopup article em:nth-of-type(4){
+    #returnPopup article em:nth-of-type(4),
+    #returnPopup article mark{
         display: inline-block; width: 26%; text-align: right;
     }
     #returnPopup article em:nth-of-type(5){
-        padding-top: 10px; 
+        padding-top: 18px; 
     }
     #returnPopup article .line{
         border-top: 1px solid #b1b4aa;
-    }
-    #returnPopup article mark{
-        font-weight: 700; float: right; padding: 10px 7%; 
     }
     #returnPopup input[type="button"]{
         position: absolute; top: 36px; right: 38px;
         background-color: transparent; border: none;
     }
 
+    .accountContainer .popupbg.active{
+        position: fixed; inset: 0;
+        background: rgba(0,0,0,0.4); z-index: 10;
+    }
     .accountContainer > div [id^="txt"]{
-        width: 80%; background-color: #ffffff; 
-        text-align: center; padding: 34px 10px; border: 1px solid #000000;
-        position: absolute; top: 172px; left: 14px;
+        position: fixed; top: 50%; left: 50%; text-align: center;
+        transform: translate(-50%, -50%); border: 1px solid #000000;
+        background: #fff; z-index: 20; padding: 10% 20%;
     }
     .accountContainer > div [id^="txt"] h3{
         font-size: 20px; font-weight: 500;
         text-transform: uppercase; margin-bottom: 24px;
+    }
+    .accountContainer > div [id^="txt"] a{
+        background-color: #000000; color: #ffffff; padding: 10px 14px;
+        text-transform: uppercase; font-size: 12px;
     }
     .accountContainer > div [id^="txt"] input[type="button"]{
         background-color: #000000; color: #ffffff; padding: 12px 19px;
