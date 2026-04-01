@@ -24,11 +24,11 @@
                     <li><a href="list_best.html">BEST</a></li>
                     <li><a href="list_new.html">NEW</a></li>
                     <li><a href="list_sale.html">SALE</a></li>
-                    <li data-panel="gnb_wish">WISHLIST</li>
-                    <li data-panel="gnb_search">SEARCH</li>
-                    <li data-panel="gnb_cart">CART</li>
+                    <li data-panel="gnb_wish_Panel">WISHLIST</li>
+                    <li data-panel="gnb_search_Panel">SEARCH</li>
+                    <li data-panel="gnb_cart_Panel">CART</li>
                     <li><a href="account.html" class="material-icons-outlined">account_circle</a></li>
-                    <li><a href="signin.html" class="material-icons-outlined">lock_open</a></li>
+                    <li><a href="signin.html" class="material-icons-outlined">lock</a></li>
                 </ul>
                 <input type="button" value="drag_handle" class="material-icons" data-lnb="lnbContainer">
             </nav>
@@ -119,99 +119,101 @@
                 </li>
             </ul>
         </div>
-        <div id="gnb_wish">
-            <div class="Basic">
-                <h3>Your Wishlist is empty</h3>
-                <a href="list_best.html" class="btn_shop">shop all</a>
-            </div>
-            <h2>Wishlist<sup>1</sup></h2>
-            <ul>
-                <li>
-                    <a href="detail_spo_basketball_01.html">
-                        <img src="images/wish_in_content.png" alt="STEWIE HARRY POTTER™ Stewie 3 Women's Basketball Shoes">
-                    </a>
-                    <div>
-                        <em>Collaborations</em>
-                        <em>with Breanna Stewart</em>
-                        <em>7 Products</em>
-                    </div>
-                    <h3>
-                        <strong>Stewie</strong>
-                        <mark>HARRY POTTER™ Shadow Gray</mark>
-                    </h3>
-                    <div>
-                        <input type="button" value="Add To Cart" data-panel="gnb_cart">     
-                        <input type="reset" value="Remove">  
-                    </div>
-                </li>
-            </ul>
+        <div id="gnb_wish_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_wish_Panel">
             <div>
-                <input type="reset" value="clear all">     
-                <input type="button" value="Share Wishlist" data-popup="sharePopup">
-            </div>
-            <ol id="sharePopup">
-                <li class="instagram"><a href="https://www.instagram.com/puma/" target="_blank"></a></li>
-                <li class="pinterest"><a href="https://kr.pinterest.com/puma/" target="_blank"></a></li>
-                <li class="x"><a href="https://x.com/PUMA" target="_blank"></a></li>
-                <li class="youtube"><a href="https://www.youtube.com/puma" target="_blank"></a></li>
-                <li class="facebook"><a href="https://www.facebook.com/PUMA/" target="_blank"></a></li>
-            </ol>
-        </div>
-        <div id="gnb_search">
-            <input type="search" placeholder="search" title="search Field and press enter please">
-            <p>recent search terms</p>
-        </div>
-        <div id="gnb_cart">
-            <div>
-                <h3>Your Cart is empty</h3>
-                <a href="list_best.html" class="btn_shop">shop all</a>
-            </div>
-            <h2>Cart</h2>
-            <strong>01</strong>
-            <ul>
-                <li>
-                    <div>Product</div>
-                    <div>Specification</div>
-                    <div>Price</div>
-                </li>
-                <li>
-                    <div>
-                        <a href="detail_stewie_harrypoter.html">
-                            <img src="images/cart_in_content.png" alt="STEWIE HARRY POTTER™ Stewie 3 Women's Basketball Shoes">
+                <h2>Wishlist<sup>1</sup></h2>
+                <ul>
+                    <li>
+                        <a href="detail_spo_basketball_01.html">
+                            <img src="images/wish_in_content.png" alt="STEWIE HARRY POTTER™ Stewie 3 Women's Basketball Shoes">
                         </a>
-                        <p>
-                            <strong>Stewie</strong>Collaborations      
-                        </p>
-                    </div>
-                    <div>
-                        <mark>Colour</mark>
-                        <span>Shadow Gray</span>
-                        <mark>Size</mark>
-                        <span>240</span>
-                        <mark>Quantity</mark>
-                        <em>01</em>
-                    </div>
-                    <div>
-                        <span>$160.00 CAD</span>
-                    </div>
-                </li>
-            </ul>
-            <input type="button" value="close" class="material-icons" data-panel="cart_out">
+                        <div class="bot">
+                            <div>
+                                <em>Collaborations</em>
+                                <em>with Breanna Stewart</em>
+                                <em>7 Products</em>
+                            </div>
+                            <h3>
+                                <strong>Stewie</strong>
+                                <mark>HARRY POTTER™ Shadow Gray</mark>
+                            </h3>
+                            <div>
+                                <input type="button" value="Add To Cart" data-panel="gnb_cart_panel">     
+                                <input type="reset" value="Remove">  
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <input type="reset" value="clear all">     
+                    <input type="button" value="Share Wishlist" data-popup="sharePopup">
+                </div>
+                <ol id="sharePopup">
+                    <li class="instagram"><a href="https://www.instagram.com/puma/" target="_blank"></a></li>
+                    <li class="pinterest"><a href="https://kr.pinterest.com/puma/" target="_blank"></a></li>
+                    <li class="x"><a href="https://x.com/PUMA" target="_blank"></a></li>
+                    <li class="youtube"><a href="https://www.youtube.com/puma" target="_blank"></a></li>
+                    <li class="facebook"><a href="https://www.facebook.com/PUMA/" target="_blank"></a></li>
+                </ol>
+            </div>
+        </div>
+        <div id="gnb_search_Panel">
+            <input type="search" placeholder="Search" title="search Field and press enter please">
+            <p>recent search terms</p>
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_search_Panel">
+        </div>
+        <div id="gnb_cart_Panel">
+            <input type="button" value="close" class="material-icons closeBtn" data-panel="gnb_cart_Panel">
             <div>
-                <form action="checkout.html">
-                    <fieldset>
-                        <span>Subtotal:</span>
-                        <mark>$160.00 CAD</mark>
-                        <span>Total:</span>
-                        <em>$160.00 CAD</em>
-                        <p>
-                            Delivery for in stock items is 5 - 10 working
-        days. For itema on backorder please refer
-        to the product page.
-                        </p>
-                            <input type="submit" value="Checkout">
-                    </fieldset>
-                </form>
+                <h2>Cart</h2>
+                <strong>01</strong>
+                <ul>
+                    <li>
+                        <div>Product</div>
+                        <div>Specification</div>
+                        <div>Price</div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="detail_stewie_harrypoter.html">
+                                <img src="images/cart_in_content.png" alt="STEWIE HARRY POTTER™ Stewie 3 Women's Basketball Shoes">
+                            </a>
+                            <p>
+                                <strong>Stewie</strong>Collaborations      
+                            </p>
+                        </div>
+                        <div>
+                            <mark>Colour</mark>
+                            <span>Shadow Gray</span>
+                            <mark>Size</mark>
+                            <span>240</span>
+                            <mark>Quantity</mark>
+                            <em>01</em>
+                        </div>
+                        <div>
+                            <span>$160.00 CAD</span>
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <form action="checkout.html">
+                        <fieldset>
+                            <div>
+                                <span>Subtotal:</span>
+                                <mark>$160.00 CAD</mark>
+                                <span>Total:</span>
+                                <em>$160.00 CAD</em>
+                            </div>
+                            <p>
+                                Delivery for in stock items is 5 - 10 working
+            days. For itema on backorder please refer
+            to the product page.
+                            </p>
+                            <input type="submit" value="Checkout" class="btn_ex">
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -247,8 +249,8 @@
                 </div>
                 <div class="aside_buybtn">
                     <div id="priceCopy"></div>
-                    <button id="buybtn" data-panel="gnb_cart" data-price="$30.00">Add To Cart</button>
-                    <button id="likebtn" data-panel="gnb_wish">
+                    <button id="buybtn" data-panel="gnb_cart_Panel" data-price="$30.00">Add To Cart</button>
+                    <button id="likebtn" data-panel="gnb_wish_Panel">
                         <input type="button" value="add" class="material-icons" data-panel="lnbPanel">
                         Wishlist
                     </button>

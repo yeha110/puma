@@ -9,6 +9,7 @@ $(function(){
     checkmethod();
     checkPopup();
     accountPopup();
+    buyControl();
 });
 function lnbControl(){
     var lnb = $("#lnbContainer");
@@ -127,5 +128,15 @@ function accountPopup(){
             $popup.removeClass("active");
             $(activebg).removeClass("active");
         });
+    });
+}
+
+function buyControl(){
+    $(".aside_buybtn [data-panel]").click(function () {
+        var panelName = $(this).data("panel");
+        var paneltarget = $("#" + panelName);
+        console.log(paneltarget)
+
+        paneltarget.addClass("active");
     });
 }

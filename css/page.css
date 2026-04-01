@@ -10,7 +10,7 @@ label[for^="btn_colour_white"]::before{
     background-color: #cfcfcf; 
 }
 label[for^="btn_colour_YellowP"]::before{
-    background-color: #F7FD04; 
+    background-color: #eae099; 
 }
 label[for^="btn_colour_NewNavy-Y"]::before{
     background-color: #daef76;
@@ -42,7 +42,7 @@ label[for^="btn_colour_HauteC-W-EspressoB"]::before{
 label[for^="btn_colour_SunsetG"]::before{
     background-color: #fe4a6f; 
 }
-label[for^="btn_colour_SunS-SunsetG-PUMAW"]::before{
+label[for^="btn_colour_PUMAW-SunS-SunsetG"]::before{
     background-color: #f8872a; 
 }
 label[for^="btn_colour_SunS-SunsetG"]::before{
@@ -156,7 +156,7 @@ label[for^="btn_colour_ShadowG-SmokeyG"]::before{
 label[for^="btn_colour_White-S"]::before{
     background-color: #a8b1c0;
 }
-label[for^="btn_colour_GreenG-GalacticG"]::before{
+label[for^="btn_colour_GreeG-GalacticG"]::before{
     background-color: #bdf89e;
 }
 label[for^="btn_colour_White-ClydeR"]::before{
@@ -234,14 +234,20 @@ label[for^="btn_colour_MauvedO"]::before{
 label[for^="btn_colour_DesertD"]::before{
     background-color: #e0d9c6;
 }
+label[for^="btn_colour_VividV"]::before{
+    background-color: #ccb9d7;
+}
 label[for^="btn_colour_Gray"]::before{
-    background-color: #d8d8d8;
+    background-color: #78736f;
 }
 label[for^="btn_colour_Black-AS"]::before{
     background-color: #87827e;
 }
 label[for^="btn_colour_TurquoiseS"]::before{
     background-color: #b0c5ca;
+}
+label[for^="btn_colour_TotallyT"]::before{
+    background-color: #a5826c;
 }
 label[for^="btn_colour_CreamyV"]::before{
     background-color: #efe0c1;
@@ -282,21 +288,47 @@ label[for^="btn_colour_GalacticG"]::before{
 label[for^="btn_colour_FasterY-B"]::before{
     background-color: #e8d90c;
 }
-
+label[for^="btn_colour_FreshP"]::before{
+    background-color: #dabb09;
+}
+label[for^="btn_colour_Eucalyptus"]::before{
+    background-color: #82968d;
+}
+label[for^="btn_colour_OceanT"]::before{
+    background-color: #0d4564;
+}
+label[for^="btn_colour_PUMAW-SunsetG-SunS"]::before{
+    background-color: #fb878e;
+}
 
 
 
 .colour_Black{
     color: #000000;
 }
-.colour_white{
+.colour_White{
     color: #cfcfcf;
 }
 .colour_Gray{
-    color: #d8d8d8;
+    color: #78736f;
 }
 .colour_FasterY-B{
     color: #e8d90c;
+}
+.colour_VividV{
+    color: #ccb9d7;
+}
+.colour_Eucalyptus{
+    color: #82968d;
+}
+.colour_TotallyT{
+    color: #a5826c;
+}
+.colour_PUMAW-SunS-SunsetG{
+    color: #f8872a;
+}
+.colour_OceanT{
+    color: #0d4564;
 }
 .colour_Bluemazing-ElectricP{
     color: #3f82d0;
@@ -397,7 +429,7 @@ label[for^="btn_colour_FasterY-B"]::before{
 .colour_ArchiveG-G{
     color: #2f9165;
 }
-.colour_GreenG-GalacticG{
+.colour_GreeG-GalacticG{
     color: #bdf89e;
 }
 .colour_White-ClydeR{
@@ -487,9 +519,6 @@ label[for^="btn_colour_FasterY-B"]::before{
 .colour_HauteC-W-EB{
     color: #5a3c32;
 }
-.colour_ForATR-B{
-    color: #cf0124;
-}
 .colour_FlatDG-FA{
     color: #342e35;
 }
@@ -562,6 +591,9 @@ label[for^="btn_colour_FasterY-B"]::before{
 .colour_SunS-SunsetG{
     color: #ff9f40;
 }
+.colour_PUMAW-SunsetG-SunS{
+    color: #fb878e;
+}
 .colour_Pristine-PT{
     color: #e1d6c4;
 }
@@ -578,13 +610,16 @@ label[for^="btn_colour_FasterY-B"]::before{
     color: #ba021a;
 }
 .colour_YellowP{
-    color: #F7FD04;
+    color: #eae099;
 }
 .colour_ColdG{
     color: #04606f;
 }
 .colour_PaleP{
     color: #ac9bad;
+}
+.colour_FreshP{
+    color: #dabb09;
 }
 
 
@@ -931,6 +966,7 @@ label[for^="btn_colour_FasterY-B"]::before{
     }
     .listContainer > ul li h3 mark{
         font-weight: 400; float: left; width: 25%; text-align: right;
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     }
 
     .detailContainer{
