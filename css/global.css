@@ -41,6 +41,7 @@ footer > div:first-child > div form em,
 .checkoutContainer #summary > span,
 .detailContainer aside fieldset > div strong,
 .detailContainer aside fieldset > div label,
+.detailContainer aside fieldset > div a,
 .detailContainer figure figcaption,
 .detailContainer > div ul li span em,
 .onlyNumber,
@@ -224,6 +225,7 @@ header div input[type='button'].closeBtn{
     }
     #lnbContainer > li > h2{
         line-height: 71px; font-size: 65px; font-weight: 400; color: #000000;
+        margin-left: 10px;
     } 
     #lnbContainer > li > h2 > a:last-child{
         display: none;

@@ -1,304 +1,307 @@
-[for^="btn_colour_"]::before {
+[class^="btn_colour_"]::before {
     content: ""; display: inline-block; width: 24px; height: 24px;
     border-radius: 50%; margin-right: 8px; vertical-align: middle;
     border: 1px solid #414141;
 }
-label[for^="btn_colour_Black"]::before{
+a[class^="btn_colour_Black"]::before{
     background-color: #000000; 
 }
-label[for^="btn_colour_white"]::before{
+a[class^="btn_colour_white"]::before{
     background-color: #cfcfcf; 
 }
-label[for^="btn_colour_YellowP"]::before{
+a[class^="btn_colour_YellowP"]::before{
     background-color: #eae099; 
 }
-label[for^="btn_colour_NewNavy-Y"]::before{
+a[class^="btn_colour_NewNavy-Y"]::before{
     background-color: #daef76;
 }
-label[for^="btn_colour_ColdG"]::before{
+a[class^="btn_colour_ColdG"]::before{
     background-color: #04606f; 
 }
-label[for^="btn_colour_PaleP"]::before{
+a[class^="btn_colour_PaleP"]::before{
     background-color: #ac9bad;
 }
-label[for^="btn_colour_LapisL"]::before{
+a[class^="btn_colour_LapisL"]::before{
     background-color: #483581;
 }
-label[for^="btn_colour_StrawberryB-WoodV-G"]::before{
+a[class^="btn_colour_StrawberryB-WoodV-G"]::before{
     background-color: #662c38; 
 }
-label[for^="btn_colour_PUMAW-PUMAB-SpringL"]::before{
+a[class^="btn_colour_PUMAW-PUMAB-SpringL"]::before{
     background-color: #b5b4d4; 
 }
-label[for^="btn_colour_PUMAW-P"]::before{
+a[class^="btn_colour_PUMAW-P"]::before{
     background-color: #baac96; 
 }
-label[for^="btn_colour_PUMAW-PUMAB-MM"]::before{
+a[class^="btn_colour_PUMAW-PUMAB-MM"]::before{
     background-color: #cbb6b1; 
 }
-label[for^="btn_colour_HauteC-W-EspressoB"]::before{
+a[class^="btn_colour_HauteC-W-EspressoB"]::before{
     background-color: #1570c3; 
 }
-label[for^="btn_colour_SunsetG"]::before{
-    background-color: #fe4a6f; 
+a[class^="btn_colour_SunsetG"]::before{
+    background-color: #ffa7a3; 
 }
-label[for^="btn_colour_PUMAW-SunS-SunsetG"]::before{
+a[class^="btn_colour_PUMAW-SunS-SunsetG"]::before{
     background-color: #f8872a; 
 }
-label[for^="btn_colour_SunS-SunsetG"]::before{
+a[class^="btn_colour_SunS-SunsetG"]::before{
     background-color: #ff9f40; 
 }
-label[for^="btn_colour_HauteC-W-EB"]::before{
+a[class^="btn_colour_HauteC-W-EB"]::before{
     background-color: #5a3c32;
 }
-label[for^="btn_colour_HyperlinkB-CR-W"]::before{
+a[class^="btn_colour_HyperlinkB-CR-W"]::before{
     background-color: #0b84db;
 }
-label[for^="btn_colour_MauvedO-W-G"]::before{
+a[class^="btn_colour_MauvedO-W-G"]::before{
     background-color: #e9a6c9;
 }
-label[for^="btn_colour_Red-W"]::before{
+a[class^="btn_colour_Red-W"]::before{
     background-color: #ba021a;
 }
-label[for^="btn_colour_White-Black-SL"]::before{
+a[class^="btn_colour_White-Black-SL"]::before{
     background-color: #b5b4d4;
 }
-label[for^="btn_colour_PistachioG-WarmW"]::before{
+a[class^="btn_colour_PistachioG-WarmW"]::before{
     background-color: #bebe8b;
 }
-label[for^="btn_colour_White-FI"]::before{
+a[class^="btn_colour_White-FI"]::before{
     background-color: #d8d6ca;
 }
-label[for^="btn_colour_Pristine-PT"]::before{
+a[class^="btn_colour_Pristine-PT"]::before{
     background-color: #e1d6c4;
 }
-label[for^="btn_colour_FlatDG-FA"]::before{
+a[class^="btn_colour_FlatDG-FA"]::before{
     background-color: #342e35;
 }
-label[for^="btn_colour_MidnightP"]::before{
+a[class^="btn_colour_MidnightP"]::before{
     background-color: #3a1d33;
 }
-label[for^="btn_colour_EspressoB"]::before{
+a[class^="btn_colour_EspressoB"]::before{
     background-color: #4d2c25;
 }
-label[for^="btn_colour_IntenseR"]::before{
+a[class^="btn_colour_IntenseR"]::before{
     background-color: #891826;
 }
-label[for^="btn_colour_BlueH"]::before{
+a[class^="btn_colour_BlueH"]::before{
     background-color: #5f92c9;
 }
-label[for^="btn_colour_FrostedD"]::before{
+a[class^="btn_colour_FrostedD"]::before{
     background-color: #d9ebef;
 }
-label[for^="btn_colour_ClubR"]::before{
+a[class^="btn_colour_ClubR"]::before{
     background-color: #ba3840;
 }
-label[for^="btn_colour_WarmW"]::before{
+a[class^="btn_colour_WarmW"]::before{
     background-color: #d1cfc0;
 }
-label[for^="btn_colour_HauteC-FrostedI"]::before{
+a[class^="btn_colour_HauteC-FrostedI"]::before{
     background-color: #8b5e40;
 }
-label[for^="btn_colour_TeamLB-ClubN"]::before{
+a[class^="btn_colour_TeamLB-ClubN"]::before{
     background-color: #5d87af;
 }
-label[for^="btn_colour_MagentaG-FrostedI"]::before{
+a[class^="btn_colour_MagentaG-FrostedI"]::before{
     background-color: #8b0144;
 }
-label[for^="btn_colour_JadeF-FrostedI"]::before{
+a[class^="btn_colour_JadeF-FrostedI"]::before{
     background-color: #5eaf96;
 }
-label[for^="btn_colour_White-BlueH-G"]::before{
+a[class^="btn_colour_White-BlueH-G"]::before{
     background-color: #446387;
 }
-label[for^="btn_colour_HyperlinkB-Frostedi"]::before{
+a[class^="btn_colour_HyperlinkB-Frostedi"]::before{
     background-color: #0482d9;
 }
-label[for^="btn_colour_White-VaporG-G"]::before{
+a[class^="btn_colour_White-VaporG-G"]::before{
     background-color: #d9d6cf;
 }
-label[for^="btn_colour_WarmW-AlpineS-C"]::before{
+a[class^="btn_colour_WarmW-AlpineS-C"]::before{
     background-color: #c3b19d;
 }
-label[for^="btn_colour_AlpineS-W"]::before{
+a[class^="btn_colour_AlpineS-W"]::before{
     background-color: #bfb7a7;
 }
-label[for^="btn_colour_FreshM-FastP"]::before{
+a[class^="btn_colour_FreshM-FastP"]::before{
     background-color: #c8d7c0;
 }
-label[for^="btn_colour_GrapeM-PeachF"]::before{
+a[class^="btn_colour_GrapeM-PeachF"]::before{
     background-color: #d7c2c9;
 }
-label[for^="btn_colour_Redmazing-G"]::before{
+a[class^="btn_colour_Redmazing-G"]::before{
     background-color: #ea3322;
 }
-label[for^="btn_colour_HyperlinkB-G"]::before{
+a[class^="btn_colour_HyperlinkB-G"]::before{
     background-color: #087ed8;
 }
-label[for^="btn_colour_ArchiveG-G"]::before{
+a[class^="btn_colour_ArchiveG-G"]::before{
     background-color: #2f9165;
 }
-label[for^="btn_colour_WarmW-FrostedI-MauveM"]::before{
+a[class^="btn_colour_WarmW-FrostedI-MauveM"]::before{
     background-color: #d1cbbb;
 }
-label[for^="btn_colour_ClubN"]::before{
+a[class^="btn_colour_ClubN"]::before{
     background-color: #1b2640;
 }
-label[for^="btn_colour_BrightA-FluroPP-Black"]::before{
+a[class^="btn_colour_BrightA-FluroPP-Black"]::before{
     background-color: #02aedc;
 }
-label[for^="btn_colour_MagentaG"]::before{
+a[class^="btn_colour_MagentaG"]::before{
     background-color: #c62372;
 }
-label[for^="btn_colour_ShadowG-SmokeyG"]::before{
+a[class^="btn_colour_ShadowG-SmokeyG"]::before{
     background-color: #565462;
 }
-label[for^="btn_colour_White-S"]::before{
+a[class^="btn_colour_White-S"]::before{
     background-color: #a8b1c0;
 }
-label[for^="btn_colour_GreeG-GalacticG"]::before{
+a[class^="btn_colour_GreeG-GalacticG"]::before{
     background-color: #bdf89e;
 }
-label[for^="btn_colour_White-ClydeR"]::before{
+a[class^="btn_colour_White-ClydeR"]::before{
     background-color: #025cb4;
 }
-label[for^="btn_colour_MandarinO-B"]::before{
+a[class^="btn_colour_MandarinO-B"]::before{
     background-color: #fe6409;
 }
-label[for^="btn_colour_PoisonP-R"]::before{
+a[class^="btn_colour_PoisonP-R"]::before{
     background-color: #f689b2;
 }
-label[for^="btn_colour_Green"]::before{
+a[class^="btn_colour_Green"]::before{
     background-color: #087955;
 }
-label[for^="btn_colour_CourtY"]::before{
+a[class^="btn_colour_CourtY"]::before{
     background-color: #cfbc55;
 }
-label[for^="btn_colour_BlueH-W"]::before{
+a[class^="btn_colour_BlueH-W"]::before{
     background-color: #6686ad;
 }
-label[for^="btn_colour_MapleS-FrostedI"]::before{
+a[class^="btn_colour_MapleS-FrostedI"]::before{
     background-color: #da6038;
 }
-label[for^="btn_colour_ForATR"]::before{
+a[class^="btn_colour_ForATR"]::before{
     background-color: #a9161f;
 }
-label[for^="btn_colour_WarmW-SedateG-ArchiveG"]::before{
+a[class^="btn_colour_WarmW-SedateG-ArchiveG"]::before{
     background-color: #d6cebe;
 }
-label[for^="btn_colour_CaramelL-W"]::before{
+a[class^="btn_colour_CaramelL-W"]::before{
     background-color: #d08c53;
 }
-label[for^="btn_colour_TeamR-W"]::before{
+a[class^="btn_colour_TeamR-W"]::before{
     background-color: #044990;
 }
-label[for^="btn_colour_IslandG-FreshM-FrostedI"]::before{
+a[class^="btn_colour_IslandG-FreshM-FrostedI"]::before{
     background-color: #d6c1b6;
 }
-label[for^="btn_colour_VaporG"]::before{
+a[class^="btn_colour_VaporG"]::before{
     background-color: #cac7be;
 }
-label[for^="btn_colour_JadeF-G"]::before{
+a[class^="btn_colour_JadeF-G"]::before{
     background-color: #0b937a;
 }
-label[for^="btn_colour_SunsetG-G"]::before{
+a[class^="btn_colour_SunsetG-G"]::before{
     background-color: #f88482;
 }
-label[for^="btn_colour_Chamomile-SugaredA"]::before{
+a[class^="btn_colour_Chamomile-SugaredA"]::before{
     background-color: #594b31;
 }
-label[for^="btn_colour_Chamomile-CaramelL"]::before{
+a[class^="btn_colour_Chamomile-CaramelL"]::before{
     background-color: #4c2c0a;
 }
-label[for^="btn_colour_SandD"]::before{
+a[class^="btn_colour_SandD"]::before{
     background-color: #cfaf86;
 }
-label[for^="btn_colour_White-EspressoB"]::before{
+a[class^="btn_colour_White-EspressoB"]::before{
     background-color: #65493b;
 }
-label[for^="btn_colour_White-OakB"]::before{
+a[class^="btn_colour_White-OakB"]::before{
     background-color: #decdc6;
 }
-label[for^="btn_colour_MidnightP-P"]::before{
+a[class^="btn_colour_MidnightP-P"]::before{
     background-color: #e33477;
 }
-label[for^="btn_colour_ClubN-BlueH"]::before{
+a[class^="btn_colour_ClubN-BlueH"]::before{
     background-color: #1b2235;
 }
-label[for^="btn_colour_AlpineS"]::before{
+a[class^="btn_colour_AlpineS"]::before{
     background-color: #e6e4d8;
 }
-label[for^="btn_colour_MauvedO"]::before{
+a[class^="btn_colour_MauvedO"]::before{
     background-color: #ffb3cd;
 }
-label[for^="btn_colour_DesertD"]::before{
+a[class^="btn_colour_DesertD"]::before{
     background-color: #e0d9c6;
 }
-label[for^="btn_colour_VividV"]::before{
+a[class^="btn_colour_VividV"]::before{
     background-color: #ccb9d7;
 }
-label[for^="btn_colour_Gray"]::before{
+a[class^="btn_colour_Gray"]::before{
     background-color: #78736f;
 }
-label[for^="btn_colour_Black-AS"]::before{
+a[class^="btn_colour_Black-AS"]::before{
     background-color: #87827e;
 }
-label[for^="btn_colour_TurquoiseS"]::before{
+a[class^="btn_colour_TurquoiseS"]::before{
     background-color: #b0c5ca;
 }
-label[for^="btn_colour_TotallyT"]::before{
+a[class^="btn_colour_TotallyT"]::before{
     background-color: #a5826c;
 }
-label[for^="btn_colour_CreamyV"]::before{
+a[class^="btn_colour_CreamyV"]::before{
     background-color: #efe0c1;
 }
-label[for^="btn_colour_NitroB-GalacticG"]::before{
+a[class^="btn_colour_NitroB-GalacticG"]::before{
     background-color: #d7e2e6;
 }
-label[for^="btn_colour_FizzyA-LavenderA"]::before{
+a[class^="btn_colour_FizzyA-LavenderA"]::before{
     background-color: #8fcb46;
 }
-label[for^="btn_colour_WBR"]::before{
+a[class^="btn_colour_WBR"]::before{
     background-color: #d50d10;
 }
-label[for^="btn_colour_White-BrightA-B"]::before{
+a[class^="btn_colour_White-BrightA-B"]::before{
     background-color: #72bad3;
 }
-label[for^="btn_colour_White-multi"]::before{
+a[class^="btn_colour_White-multi"]::before{
     background-color: #bad7c5;
 }
-label[for^="btn_colour_White-Silver-PoisonP-BrightA"]::before{
+a[class^="btn_colour_White-Silver-PoisonP-BrightA"]::before{
     background-color: #f48ab2;
 }
-label[for^="btn_colour_White-ElectricBL"]::before{
+a[class^="btn_colour_White-ElectricBL"]::before{
     background-color: #0156a9;
 }
-label[for^="btn_colour_Bluemazing-ElectricP"]::before{
+a[class^="btn_colour_Bluemazing-ElectricP"]::before{
     background-color: #3f82d0;
 }
-label[for^="btn_colour_White-B-B"]::before{
+a[class^="btn_colour_White-B-B"]::before{
     background-color: #246eb7;
 }
-label[for^="btn_colour_White-SpeedG"]::before{
+a[class^="btn_colour_White-SpeedG"]::before{
     background-color: #aad58e;
 }
-label[for^="btn_colour_GalacticG"]::before{
+a[class^="btn_colour_GalacticG"]::before{
     background-color: #4e474e;
 }
-label[for^="btn_colour_FasterY-B"]::before{
+a[class^="btn_colour_FasterY-B"]::before{
     background-color: #e8d90c;
 }
-label[for^="btn_colour_FreshP"]::before{
+a[class^="btn_colour_FreshP"]::before{
     background-color: #dabb09;
 }
-label[for^="btn_colour_Eucalyptus"]::before{
+a[class^="btn_colour_Eucalyptus"]::before{
     background-color: #82968d;
 }
-label[for^="btn_colour_OceanT"]::before{
+a[class^="btn_colour_OceanT"]::before{
     background-color: #0d4564;
 }
-label[for^="btn_colour_PUMAW-SunsetG-SunS"]::before{
+a[class^="btn_colour_PUMAW-SunsetG-SunS"]::before{
     background-color: #fb878e;
+}
+a[class^="btn_colour_FizzyA-PUMAW-B"]::before{
+    background-color: #a9dd7b;
 }
 
 
@@ -311,6 +314,9 @@ label[for^="btn_colour_PUMAW-SunsetG-SunS"]::before{
 }
 .colour_Gray{
     color: #78736f;
+}
+.colour_FizzyA-PUMAW-B{
+    color: #a9dd7b;
 }
 .colour_FasterY-B{
     color: #e8d90c;
@@ -526,7 +532,7 @@ label[for^="btn_colour_PUMAW-SunsetG-SunS"]::before{
     color: #246eb7;
 }
 .colour_SunsetG{
-    color: #fe4a6f;
+    color: #ffa7a3;
 }
 .colour_GalacticG{
     color: #4e474e;
@@ -991,8 +997,8 @@ label[for^="btn_colour_PUMAW-SunsetG-SunS"]::before{
     .detailContainer aside div .emGroup em:nth-of-type(1){
         text-transform: uppercase;
     }
-    .detailContainer aside div .emGroup .margin{
-        display: flex; gap: 10px;
+    .detailContainer aside div .emGroup .margin:not(.price_red){
+        display: flex; gap: 8px;
     }
     .detailContainer aside div em{
         font-size: 10px; vertical-align: middle; 
@@ -1023,18 +1029,20 @@ label[for^="btn_colour_PUMAW-SunsetG-SunS"]::before{
     .detailContainer aside fieldset > div input[type="radio"] {
         display: none; 
     }
+    .detailContainer aside fieldset > div a.active,
     .detailContainer aside fieldset > div input[type="radio"]:checked + label{
         border: 1px solid #414141;
     }
-    .detailContainer aside fieldset > div label{
+    .detailContainer aside fieldset > div label,
+    .detailContainer aside fieldset > div a{
         line-height: 40px; font-size: 12px; box-sizing: border-box;
         border-radius: 18px; border: 1px solid #dbdeda; 
     }
-    .detailContainer aside fieldset > div:nth-of-type(1) label{
+    .detailContainer aside fieldset > div:nth-of-type(1) a{
         float: left; padding: 0 5px; box-sizing: border-box; 
         white-space: nowrap; vertical-align: middle;
     }
-    .detailContainer aside fieldset > div:nth-of-type(1) label:not(:last-of-type){
+    .detailContainer aside fieldset > div:nth-of-type(1) a:not(:last-of-type){
         margin: 0 8px 8px 0;
     }
     .detailContainer aside fieldset > div:nth-of-type(2) label{
