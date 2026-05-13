@@ -303,8 +303,21 @@ a[class^="btn_colour_PUMAW-SunsetG-SunS"]::before{
 a[class^="btn_colour_FizzyA-PUMAW-B"]::before{
     background-color: #a9dd7b;
 }
-
-
+a[class^="btn_colour_SunS-SunsetG-B"]::before{
+    background-color: #fdb95b;
+}
+a[class^="btn_colour_Red"]::before{
+    background-color: #db032a;
+}
+a[class^="btn_colour_MediumP"]::before{
+    background-color: #ef9fb5;
+}
+a[class^="btn_colour_CyanneB"]::before{
+    background-color: #00bdd0;
+}
+a[class^="btn_colour_Lime"]::before{
+    background-color: #9d9c1e;
+}
 
 .colour_Black{
     color: #000000;
@@ -315,8 +328,20 @@ a[class^="btn_colour_FizzyA-PUMAW-B"]::before{
 .colour_Gray{
     color: #78736f;
 }
+.colour_Lime{
+    color: #9d9c1e;
+}
 .colour_FizzyA-PUMAW-B{
     color: #a9dd7b;
+}
+.colour_CyanneB{
+    color: #00bdd0;
+}
+.colour_MediumP{
+    color: #ef9fb5;
+}
+.colour_SunS-SunsetG-B{
+    color: #fdb95b;
 }
 .colour_FasterY-B{
     color: #e8d90c;
@@ -1156,10 +1181,10 @@ a[class^="btn_colour_FizzyA-PUMAW-B"]::before{
         font-size: 12px; display: flex; justify-content: space-between;
     }
     .detailContainer > div ul li h3 strong{
-        font-weight: 700;
+        font-weight: 700; width: 75%;
     }
     .detailContainer > div ul li h3 mark{
-        font-weight: 400; text-align: right;
+        font-weight: 500; text-align: right; width: 25%;
     }
 
     .signinContainer{
