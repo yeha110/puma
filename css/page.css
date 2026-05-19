@@ -318,6 +318,30 @@ a[class^="btn_colour_CyanneB"]::before{
 a[class^="btn_colour_Lime"]::before{
     background-color: #9d9c1e;
 }
+a[class^="btn_colour_FlatDG"]::before{
+    background-color: #373536;
+}
+a[class^="btn_colour_BRIGHTB"]::before{
+    background-color: #2358A1;
+}
+a[class^="btn_colour_Sand"]::before{
+    background-color: #BB9C80;
+}
+a[class^="btn_colour_TANC"]::before{
+    background-color: #CBB8A7;
+}
+a[class^="btn_colour_DarkB"]::before{
+    background-color: #2C4560;
+}
+a[class^="btn_colour_Cream"]::before{
+    background-color: #ECE8E5;
+}
+a[class^="btn_colour_TurquoiseA"]::before{
+    background-color: #C2DDE4;
+}
+a[class^="btn_colour_BlueT"]::before{
+    background-color: #192847;
+}
 
 .colour_Black{
     color: #000000;
@@ -327,6 +351,30 @@ a[class^="btn_colour_Lime"]::before{
 }
 .colour_Gray{
     color: #78736f;
+}
+.colour_TANC{
+    color: #CBB8A7;
+}
+.colour_FlatDG{
+    color: #373536;
+}
+.colour_BRIGHTB{
+    color: #2358A1;
+}
+.colour_Sand{
+    color: #BB9C80;
+}
+.colour_DarkB{
+    color: #2C4560;
+}
+.colour_BlueT{
+    color: #192847;
+}
+.colour_TurquoiseA{
+    color: #C2DDE4;
+}
+.colour_Cream{
+    color: #ECE8E5;
 }
 .colour_Lime{
     color: #9d9c1e;
