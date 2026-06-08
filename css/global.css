@@ -259,7 +259,7 @@ header div input[type='button'].closeBtn{
     }
     [id^="gnb"] > span{
         width: 100%; display: block; text-align: center;
-        padding: 20% 0;
+        padding: 22% 0;
     }
     [id^="gnb"] > span > h3{
         line-height: 46px; font-size: 40px; font-weight: 400;
@@ -269,7 +269,7 @@ header div input[type='button'].closeBtn{
         color: #000000; border-bottom: 1px solid #000000;
     }
     #gnb_wish_Panel{
-        background-color: #eeeeee; padding: 2% 24px;
+        background-color: #eeeeee; padding: 1% 24px;
         width: 74%; box-sizing: border-box;
         /* overflow-y: scroll; */
     }
@@ -327,7 +327,7 @@ header div input[type='button'].closeBtn{
     }
     input[value="clear all"]{
         font-size: 12px; color: #000000;        
-        border: none; padding: 22px 40px;
+        border: none; padding: 22px 40px; background: transparent;
     }
     input[value="Share Wishlist"]{
         font-size: 12px; color: #000000;         
@@ -368,11 +368,11 @@ header div input[type='button'].closeBtn{
         font-size: 16px; text-transform: uppercase; margin-left: 40px;
     }
     #gnb_cart_Panel{
-        background-color: #eeeeee; padding: 4% 24px; box-sizing: border-box;
+        background-color: #eeeeee; padding: 1% 24px; box-sizing: border-box;
         width: 74%;
     }
     #gnb_cart_Panel > div{
-        width: 100%;
+        width: 100%; margin: 3% 0;
     }
     #gnb_cart_Panel > div > h2{
         font-size: 38px; font-weight: 400; float: left; width: 50%;
@@ -724,7 +724,7 @@ header div input[type='button'].closeBtn{
     }
     input[value="clear all"]{
         font-size: 12px; color: #000000;        
-        border: none; padding: 22px 40px;
+        border: none; padding: 22px 40px; background: transparent;
     }
     input[value="Share Wishlist"]{
         font-size: 12px; color: #000000;         
@@ -1038,7 +1038,7 @@ header div input[type='button'].closeBtn{
         color: #000000; border-bottom: 1px solid #000000; font-size: 12px;
     }
     #gnb_wish_Panel{
-        background-color: #eeeeee; padding: 50px 3.5%;
+        background-color: #eeeeee; padding: 10% 3.5%;
         box-sizing: border-box;
     }
     #gnb_wish_Panel > div{
@@ -1052,17 +1052,16 @@ header div input[type='button'].closeBtn{
         vertical-align: top;
     } 
     #gnb_wish_Panel > div ul li{
-        width: 100%; margin-bottom: 20px; 
-        position: relative;
+        width: 100%; margin-bottom: 20px; display: flex; align-items: flex-end;
     }
     #gnb_wish_Panel > div ul li a{
-        display: block; width: 40%;
+        width: 40%;
     }
     #gnb_wish_Panel > div ul li a img{
         width: 100%; display: block;
     }
     #gnb_wish_Panel > div ul li > .bot{
-        position: absolute; left: 42%; bottom: 0; width: 58%;
+        width: 56%; margin-left: 4%;
     }
     #gnb_wish_Panel > div ul li .bot div:nth-of-type(1){
         font-size: 10px; font-weight: 400; color: #000000; margin-bottom: 15px;
@@ -1095,7 +1094,7 @@ header div input[type='button'].closeBtn{
     }
     input[value="clear all"]{
         font-size: 12px; color: #000000;        
-        border: none; padding: 22px 40px;
+        border: none; padding: 22px 40px; background: transparent;
     }
     input[value="Share Wishlist"]{
         font-size: 12px; color: #000000;         
@@ -1138,77 +1137,66 @@ header div input[type='button'].closeBtn{
         width: 100%;
     }
     #gnb_cart_Panel > div > h2{
-        font-size: 18px; font-weight: 400; float: left; width: 50%;
+        font-size: 20px; font-weight: 400; float: left; width: 50%;
     }
     #gnb_cart_Panel > div > strong{
-        font-size: 18px; font-weight: 400; float: left; width: 50%;
-        margin-bottom: 30px; text-align: right;
+        font-size: 20px; font-weight: 400; float: left; width: 50%;
+        margin-bottom: 20px; text-align: right;
+    }
+    #gnb_cart_Panel ul{
+        border-top: 1px solid #999999;
+    }
+    #gnb_cart_Panel ul li:first-child{
+        display:none;
+    }
+    #gnb_cart_Panel ul li{
+        margin-top: 15px;
     }
     #gnb_cart_Panel > div ul{
-        width: 100%; position: relative; clear: both;
-    }
-    #gnb_cart_Panel > div ul li{
-        width: 100%; border-bottom: 1px solid #999999; 
+        width: 100%; clear: both;
     }
     #gnb_cart_Panel > div ul li::after{
         content: ''; display: block; clear: both;
     }
-    #gnb_cart_Panel > div ul li:first-child div{
-        font-size: 10px; font-weight: 400;
-        padding-bottom: 10px;
+    #gnb_cart_Panel > div ul li div{
+        float: left;
     }
-    #gnb_cart_Panel > div ul li div:not(:last-child){
-        float: left; 
+    #gnb_cart_Panel > div ul li:last-child div:not(:first-child){
+        width: 55%; margin-left: 5%; box-sizing: border-box;
     }
-    #gnb_cart_Panel > div ul li div:last-child{
-        float: right; width: 50%; position: relative;
-    }
-    #gnb_cart_Panel > div ul li div:nth-child(1){
-        width: 50%;
-    }
-    #gnb_cart_Panel > div ul li div:nth-child(2){
-        width: 45%; margin-left: 5%; box-sizing: border-box;
-    }
-    #gnb_cart_Panel > div ul li:first-child div:last-child{
-        position: absolute; top: 140px; left: 55%;
-    }
-    #gnb_cart_Panel > div ul li:last-child{
-        padding: 10px 0; 
-    }
-    #gnb_cart_Panel > div ul li:last-child div:last-child span{
-        position: absolute; top: 40px; left: 58px;
-        font-size: 10px;
-    }
-    #gnb_cart_Panel > div ul li:last-child div::after{
-        content: ''; display: block; clear: both;
-    }
-    #gnb_cart_Panel > div ul li:last-child div a{
-        width: 40%; display: block; float: left;
+    #gnb_cart_Panel > div ul li:last-child div:first-child{
+        width: 40%; 
     }
     #gnb_cart_Panel > div ul li:last-child div a img{
         width: 100%; display: block;
     }
     #gnb_cart_Panel > div ul li:last-child div p{
-        font-size: 10px; color: #b9bbb8; float: left; width: 55%; margin-top: 20%;
-        margin-left: 5%; box-sizing: border-box; vertical-align: middle;
+        font-size: 12px; color: #b9bbb8; box-sizing: border-box;
+        margin-top: 5px;
     }
     #gnb_cart_Panel > div ul li:last-child div p strong{
-        font-size: 12px; font-weight: 400; color: #000000; display: block;
-        margin-bottom: 5px;
+        font-size: 14px; font-weight: 500; color: #000000; margin-right: 10px;
     }
-    #gnb_cart_Panel > div ul li:last-child div mark:nth-of-type(1),
-    #gnb_cart_Panel > div ul li:last-child div:nth-child(2) span:nth-of-type(1){
-        margin-top: 16%;
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(2){
+        border-bottom: 1px solid #cccccc; margin-top: 15%;
     }
     #gnb_cart_Panel > div ul li:last-child div:nth-child(2) *{
-        font-size: 10px; font-weight: 400; float: left; margin-bottom: 5px;
+        font-weight: 400; float: left; margin-bottom: 8px;
     }
     #gnb_cart_Panel > div ul li:last-child div mark{
-        color: #b9bbb8; width: 30%;
+        color: #b9bbb8; width: 30%; font-size: 10px; 
     }
-    #gnb_cart_Panel > div ul li:last-child div span,
-    #gnb_cart_Panel > div ul li:last-child div em{
-        width: 60%; display: block; margin-left: 10%; box-sizing: border-box;
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(2) span,
+    #gnb_cart_Panel > div ul li:last-child div:nth-child(2) em{
+        width: 60%; margin-left: 10%; box-sizing: border-box; font-size: 12px; 
+    }
+    #gnb_cart_Panel > div ul li:last-child div:last-child{
+        font-size: 12px; text-align: right; margin-top: 8px;
+    }
+    #gnb_cart_Panel > div ul li:last-child div:last-child span::before{
+        content:"Price :"; font-size:10px; margin-top: 8px;
+        padding-right: 5px;
+        
     }
     #gnb_cart_Panel > div > div{
         padding-top: 50px; width: 100%;
@@ -1238,7 +1226,7 @@ header div input[type='button'].closeBtn{
         font-size: 10px; width: 40%; position: absolute; left: 0; top: 0; line-height: 16px;
     }
     #gnb_cart_Panel > div > div fieldset input{
-        width: 55%; float: right; padding: 2%;
+        width: 55%; float: right; padding: 2%; background: transparent;
     }
 
 

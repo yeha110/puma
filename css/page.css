@@ -756,7 +756,7 @@ a[class^="btn_colour_BlueT"]::before{
         width: 81%; font-size: 25px; margin: 0 auto; margin-bottom: 93px;
         text-align: center; line-height: 32px;
     }
-    .indexContainer > div:nth-of-type(2) a{
+    .indexContainer > div:nth-of-type(2) > a{
         margin-bottom: 126px;
     }
     .indexContainer > div > .index_list{
@@ -969,11 +969,11 @@ a[class^="btn_colour_BlueT"]::before{
         font-size: 66px; font-weight: 400; text-transform: uppercase;
     }
     .lnbContainer > ul li > figure figcaption p{
-        margin-top: 48px; font-size: 18px; font-weight: 400; line-height: 21px;
+        margin: 48px 0 50px 0; font-size: 18px; font-weight: 400; line-height: 21px;
     }
     .lnbContainer > ul li > figure figcaption a{
-        display: block; margin-top: 50px; font-size: 14px; font-weight: 400; color: #ffffff;
-        border-bottom: 1px solid #edebdb; width: 12%; padding-bottom: 5px;
+        font-size: 14px; font-weight: 400; color: #ffffff;
+        border-bottom: 1px solid #edebdb; padding-bottom: 5px;
     }  
 
     .listContainer{
@@ -1116,7 +1116,7 @@ a[class^="btn_colour_BlueT"]::before{
         white-space: nowrap; vertical-align: middle;
     }
     .detailContainer aside fieldset > div:nth-of-type(1) a:not(:last-of-type){
-        margin: 0 8px 8px 0;
+        margin: 0 2.5% 2.5% 0;
     }
     .detailContainer aside fieldset > div:nth-of-type(2) label{
         display: block; float: left; width: 18%; text-align: center;
@@ -1247,7 +1247,7 @@ a[class^="btn_colour_BlueT"]::before{
         content: ''; display: block; clear: both;
     }
     .signinContainer div:first-of-type fieldset{
-        float: left; max-width: 550px; width: 82%;
+        float: left; max-width: 550px; width: 80%; margin-right: 2%; box-sizing: border-box;
     }
     .signinContainer div:first-of-type fieldset ul::after{
         content: ''; display: block; clear: both;
@@ -1256,22 +1256,22 @@ a[class^="btn_colour_BlueT"]::before{
         display: block; overflow: hidden;
     }
     .signinContainer div:first-of-type fieldset ul li *{
-        line-height: 48px; text-align: left; font-size: 16px;
+        line-height: 48px; font-size: 16px;
         display: block; float: left;
     }
     .signinContainer div:first-of-type fieldset ul li:first-child{
         margin-bottom: 8px;
     }
     .signinContainer div:first-of-type fieldset ul li label{
-        width: 10%;
+        width: 23%;
     }
     .signinContainer div:first-of-type fieldset ul li input{
-        width: 70%; background-color: #eeeeee; border: none; margin-left: 18%;
+        width: 77%; background-color: #eeeeee; border: none; padding: 0;
         padding-left: 20px; box-sizing: border-box;
     }
     .signinContainer div:first-of-type input[type="submit"]{
-        width: 18%; display: block; line-height: 106px; border: none; margin-bottom: 24px;
-        font-size: 14px; color: #ffffff; background-color: #000000; float: left;
+        width: 18%; display: block; border: none; margin-bottom: 24px; line-height: 104px; padding: 0;
+        font-size: 14px; color: #ffffff; background-color: #000000;
     }
     .signinContainer div:first-of-type > a{
         text-align: center; display: block; border-bottom: 1px solid #dbdeda;
@@ -2033,7 +2033,7 @@ a[class^="btn_colour_BlueT"]::before{
         width: 100%; font-size: 14px; margin: 0 auto; margin-bottom: 60px;
         text-align: center; line-height: 20px;
     }
-    .indexContainer > div:nth-of-type(2) a{
+    .indexContainer > div:nth-of-type(2) > a{
         margin-bottom: 80px;
     }
     .indexContainer > div > .index_list{
@@ -2094,6 +2094,9 @@ a[class^="btn_colour_BlueT"]::before{
     .indexContainer > div:nth-of-type(2) > div > .speed dl dd{
         font-size: 12px; font-weight: 400; line-height: 18px;
     }
+    .indexContainer > div:nth-of-type(2) > div > .speed > a{
+        margin: 0;
+    }
     .indexContainer > div:nth-of-type(2) > div > a{
         float: left; width: 54%; display: block; margin-left: 14%; box-sizing: border-box;
     }
@@ -2139,7 +2142,7 @@ a[class^="btn_colour_BlueT"]::before{
         width: 100%;
     } 
     .indexContainer > div:nth-of-type(4) > div:nth-of-type(2) > div{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .indexContainer > div:nth-of-type(4) > div:nth-of-type(2) > div::after{
         content: ''; display: block; clear: both;
@@ -2230,11 +2233,11 @@ a[class^="btn_colour_BlueT"]::before{
         font-size: 34px; font-weight: 400; text-transform: uppercase;
     }
     .lnbContainer > ul li > figure figcaption p{
-        margin-top: 30px; font-size: 12px; font-weight: 400; line-height: 18px;
+        margin: 30px 0 20px 0; font-size: 12px; font-weight: 400; line-height: 18px;
     }
     .lnbContainer > ul li > figure figcaption a{
-        display: block; margin-top: 20px; font-size: 10px; font-weight: 400; color: #ffffff;
-        border-bottom: 1px solid #edebdb; width: 13%; padding-bottom: 5px;
+        font-size: 10px; font-weight: 400; color: #ffffff;
+        border-bottom: 1px solid #edebdb; padding-bottom: 5px;
     }  
 
     .listContainer{
@@ -2359,25 +2362,27 @@ a[class^="btn_colour_BlueT"]::before{
     .detailContainer aside fieldset > div input[type="radio"] {
         display: none; 
     }
+    .detailContainer aside fieldset > div a.active,
     .detailContainer aside fieldset > div input[type="radio"]:checked + label{
         border: 1px solid #414141;
     }
-    .detailContainer aside fieldset > div label{
+    .detailContainer aside fieldset > div label,
+    .detailContainer aside fieldset > div a{
         line-height: 40px; font-size: 12px; box-sizing: border-box;
         border-radius: 18px; border: 1px solid #dbdeda; 
     }
-    .detailContainer aside fieldset > div:nth-of-type(1) label{
+    .detailContainer aside fieldset > div:nth-of-type(1) a{
         float: left; padding: 0 5px; box-sizing: border-box; 
         white-space: nowrap; vertical-align: middle;
     }
-    .detailContainer aside fieldset > div:nth-of-type(1) label:not(:last-of-type){
-        margin: 0 8px 8px 0;
+    .detailContainer aside fieldset > div:nth-of-type(1) a:not(:last-of-type){
+        margin: 0 3% 3% 0;
     }
     .detailContainer aside fieldset > div:nth-of-type(2) label{
         display: block; float: left; width: 16%; text-align: center;
     }
     .detailContainer aside fieldset > div:nth-of-type(2) label:not(:nth-of-type(5n+1)){
-        margin-left: 2.5%;
+        margin-left: 3%;
     }
     .detailContainer aside fieldset > div:nth-of-type(2) label:nth-of-type(5n){
         margin-bottom: 8px;
@@ -2505,13 +2510,13 @@ a[class^="btn_colour_BlueT"]::before{
         content: ''; display: block; clear: both;
     }
     .signinContainer div:first-of-type fieldset{
-        float: left; width: 78%;
+        float: left; width: 80%; margin-right: 2%; box-sizing: border-box;
     }
     .signinContainer div:first-of-type fieldset ul::after{
         content: ''; display: block; clear: both;
     }
     .signinContainer div:first-of-type fieldset ul li{
-        display: block; overflow: hidden; margin-right: 4%; box-sizing: border-box;
+        display: block; overflow: hidden;
     }
     .signinContainer div:first-of-type fieldset ul li *{
         line-height: 42px; text-align: left; font-size: 14px;
@@ -2524,13 +2529,12 @@ a[class^="btn_colour_BlueT"]::before{
         width: 15%;
     }
     .signinContainer div:first-of-type fieldset ul li input{
-        width: 80%; background-color: #eeeeee; border: none; margin-left: 5%;
+        width: 80%; background-color: #eeeeee; border: none; margin-left: 5%; padding: 0;
         padding-left: 20px; box-sizing: border-box;
     }
     .signinContainer div:first-of-type input[type="submit"]{
-        width: 18%; display: block; border: none; margin-bottom: 30px; padding: 6.5% 0;
-        font-size: 14px; color: #ffffff; background-color: #000000; font-weight: 400;
-        float: left;
+        width: 18%; display: block; border: none; margin-bottom: 30px; line-height: 90px; padding: 0;
+        font-size: 14px; color: #ffffff; background-color: #000000;
     }
     .signinContainer div:first-of-type > a{
         text-align: center; display: block; border-bottom: 1px solid #dbdeda;
@@ -3249,9 +3253,9 @@ a[class^="btn_colour_BlueT"]::before{
         width: 100%; display: block;
     }
     .indexContainer .mainTopSlider li figure figcaption{
-        position: absolute; top: 20px; left: 50%; text-align: right;
-        transform: translateX(-50%); width: 120px; 
-        text-shadow: 0.2px 0.2px 1px rgba(0, 0, 0, 0.5);
+        position: absolute; top: 50%; left: 50%; text-align: right;
+        transform: translate(-50%, -50%); width: 120px; 
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     }
     .indexContainer .mainTopSlider li figure figcaption p{
         font-size: 14px; font-weight: 500; color: #ffffff;
@@ -3445,12 +3449,13 @@ a[class^="btn_colour_BlueT"]::before{
     }
     .lnbContainer > ul .tabPage{
         display: block;
+        height: 250px;
     }
     .lnbContainer > ul li > figure{
-        position: relative;
+        position: relative; height: 100%;
     }
     .lnbContainer > ul li > figure img{
-        width: 100%; display: block;
+        width: 100%; display: block; height: 100%; object-fit: cover;
     }
     .lnbContainer > ul li > figure figcaption{
         position: absolute; color: #ffffff; width: 95%;
@@ -3466,14 +3471,20 @@ a[class^="btn_colour_BlueT"]::before{
     }
     .lnbContainer > ul li > figure figcaption a{
         position: relative; padding-right: 15px; display: block; margin-top: 20px;
-        font-size: 10px; font-weight: 400; color: #006199; 
-        text-shadow: 0px 0px 1px rgb(0, 168, 255); width: 73px; margin-left: auto;
+        font-size: 10px; font-weight: 400; color: #ff9b17; 
+        text-shadow: 0 0 0.5px rgba(0,0,0,0.3); width: 73px; margin-left: auto;
     }  
     .lnbContainer > ul li > figure figcaption a::after{
+        content:"›"; position:absolute; right:0; color:#FF8C00;
+        top:48%; transform:translateY(-56%);
+        font-size:20px; line-height:1;
+        
+    }
+    /* .lnbContainer > ul li > figure figcaption a::after{
         content: ""; position: absolute; right: 0;
         top: 50%; transform: translateY(-50%); width: 12px; height: 12px;
         background: url(../images/list-lnb_btn.png) center/12px no-repeat;
-    }
+    } */
 
 
 
@@ -3593,22 +3604,27 @@ a[class^="btn_colour_BlueT"]::before{
     .detailContainer aside fieldset > div input[type="radio"] {
         display: none; 
     }
+    .detailContainer aside fieldset > div a.active,
     .detailContainer aside fieldset > div input[type="radio"]:checked + label{
         border: 1px solid #414141;
     }
-    .detailContainer aside fieldset > div label{
+    .detailContainer aside fieldset > div label,
+    .detailContainer aside fieldset > div a{
         line-height: 34px; font-size: 12px; box-sizing: border-box;
         border-radius: 17px; border: 1px solid #dbdeda; 
     }
-    .detailContainer aside fieldset > div:nth-of-type(1) label{
+    .detailContainer aside fieldset > div:nth-of-type(1) a{
         float: left; padding: 0 5px; box-sizing: border-box; 
         white-space: nowrap; vertical-align: middle;
+    }
+    .detailContainer aside fieldset > div:nth-of-type(1) a:not(:last-of-type){
+        margin: 0 3% 3% 0;
     }
     .detailContainer aside fieldset > div:nth-of-type(2) label{
         display: block; float: left; width: 20%; text-align: center;
     }
     .detailContainer aside fieldset > div:nth-of-type(2) label:not(:nth-of-type(4n+1)){
-        margin-left: 6%;
+        margin-left: 3%;
     }
     .detailContainer aside fieldset > div:nth-of-type(2) label:nth-of-type(4n){
         margin-bottom: 8px;
@@ -3665,7 +3681,7 @@ a[class^="btn_colour_BlueT"]::before{
         margin-bottom: 26px;
     }
     .detailContainer > ul li img{
-        display: block; width: 100%;
+        display: block; width: 100%; height: 437px; object-fit:cover;
     }
     .detailContainer > ul li .custom-video{
         width: 100%; height: 100%;
