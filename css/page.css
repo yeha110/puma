@@ -938,14 +938,14 @@ a[class^="btn_colour_BlueT"]::before{
         margin-top: 46px; margin-left: 25px;
     }
     .lnbContainer > nav ul li{
-        display: inline-block; line-height: 35px; margin-bottom: 116px;
+        display: inline-block; margin-bottom: 116px;
     }
     .lnbContainer > nav ul li:not(:first-child){
         margin-left: 1.3%;
     }
     .lnbContainer > nav ul li button{
         font-size: 16px; font-weight: 400; color: #000000;
-        padding: 12px 20px; background-color: #f9fcf8; border: 2px solid #dbdeda;
+        padding: 12px 20px; background-color: #f9fcf8; border: 2px solid #dbdeda; line-height: 21px;
         border-radius: 30px; cursor: pointer;
     }
     .lnbContainer > nav ul li button.active{
@@ -988,19 +988,18 @@ a[class^="btn_colour_BlueT"]::before{
     }
     .listContainer > div nav ul li{
         max-width: 448px; display: inline-block; margin-bottom: 124px; 
-        font-size: 16px;
     }
     .listContainer > div nav ul li:not(:first-child){
         margin-left: 1.3%;
     }
     .listContainer > div nav ul li a{
-        display: block; padding: 12px 20px;
+        display: block; padding: 12px 20px; font-size: 16px; line-height: 21px;
     }
     .listContainer > div nav ul li a:not(.active){
-        border: 2px solid #dbdeda; border-radius: 24px;
+        border: 2px solid #dbdeda; border-radius: 30px;
     }
     .listContainer > div nav ul li a.active{
-        border: 4px solid #007fc8; border-radius: 24px; 
+        border: 4px solid #007fc8; border-radius: 30px; 
     }
     .listContainer > div p{
         font-size: 24px; font-weight: 400; line-height: 36px;
@@ -1476,12 +1475,12 @@ a[class^="btn_colour_BlueT"]::before{
         white-space: nowrap;
     }
     .accountContainer > div [id^="txt"] a{
-        background-color: #000000; color: #ffffff; padding: 12px 19px;
+        display: block; background-color: #000000; color: #ffffff; padding: 3% 0; width: 30%; margin: 0 auto;
         text-transform: uppercase; font-size: 18px;
     }
     .accountContainer > div [id^="txt"] input[type="button"]{
-        background-color: #000000; color: #ffffff; padding: 12px 19px;
-        text-transform: uppercase; font-size: 18px;
+        background-color: #000000; color: #ffffff; padding: 3% 0;
+        text-transform: uppercase; font-size: 18px; display: block; width: 30%; margin: 0 auto;
     }
     .accountContainer > div .tabPage{
         float: left; width: 54%; margin-left: 4%; box-sizing: border-box;
@@ -1660,6 +1659,9 @@ a[class^="btn_colour_BlueT"]::before{
     #SPshippingPanel fieldset:first-of-type > label{
         font-size: 12px; margin-top: 15px;
         display: inline-block;
+    }
+    #SPshippingPanel fieldset:nth-of-type(2) span{
+        display: block;
     }
     #SPshippingPanel fieldset:last-of-type > label{
         font-size: 12px;
@@ -2201,19 +2203,21 @@ a[class^="btn_colour_BlueT"]::before{
     .lnbContainer > nav{
         margin-left: 24px;
     }
+    .lnbContainer > nav ul{
+        overflow-x: auto; white-space: nowrap;
+    }
     .lnbContainer > nav ul li{
-        display: inline-block; line-height: 24px; margin-bottom: 54px;
+        display: inline-block; margin-bottom: 54px; 
     }
     .lnbContainer > nav ul li:not(:first-child){
         margin-left: 1.3%;
     }
     .lnbContainer > nav ul li button{
-        font-size: 12px; font-weight: 400; color: #000000;
-        padding: 2px 10px; background-color: #f9fcf8; border: 2px solid #dbdeda;
-        border-radius: 20px;
+        font-size: 14px; font-weight: 400; color: #000000;
+        padding: 8px 24px; background-color: #f9fcf8; border: 2px solid #dbdeda; border-radius: 24px; line-height: 20px;
     }
     .lnbContainer > nav ul li button.active{
-        padding: 2px 10px; border: 4px solid #007fc8; border-radius: 20px;
+        padding: 8px 24px; border: 4px solid #007fc8; border-radius: 24px;
     }
     .lnbContainer > ul .tabPage{
         display: block;
@@ -2254,14 +2258,16 @@ a[class^="btn_colour_BlueT"]::before{
         margin-bottom: 60px;
     }
     .listContainer > div nav ul{
-        margin-left: -2%; width: 100%;
+        overflow-x: auto; white-space: nowrap;
     }
     .listContainer > div nav ul li{
-        display: inline-block; line-height: 38px; max-width: 196px;
-        margin-bottom: 10px; margin-left: 2%; box-sizing: border-box;
+        display: inline-block; margin-bottom: 10px; max-width: 196px; 
+    }
+    .listContainer > div nav ul li:not(:first-child) {
+        margin-left: 1.3%;
     }
     .listContainer > div nav ul li a{
-        display: block; font-size: 14px; padding: 2px 24px; 
+        display: block; font-size: 14px; padding: 8px 24px; line-height: 20px;
     }
     .listContainer > div nav ul li a:not(.active){
         border: 2px solid #dbdeda; border-radius: 24px;
@@ -2741,10 +2747,12 @@ a[class^="btn_colour_BlueT"]::before{
     }
     .accountContainer > div [id^="txt"] a{
         text-transform: uppercase; font-size: 14px;
-        background-color: #000000; color: #ffffff; padding: 14px 20px;
+        background-color: #000000; color: #ffffff; padding: 3% 0;
+        display: block; margin: 0 auto; width: 30%;
     }
     .accountContainer > div [id^="txt"] input[type="button"]{
-        background-color: #000000; color: #ffffff; padding: 12px 19px;
+        background-color: #000000; color: #ffffff; padding: 3% 0;
+        display: block; margin: 0 auto; width: 30%;
         text-transform: uppercase; font-size: 14px;
     }
     .accountContainer > div .tabPage{
@@ -2785,7 +2793,8 @@ a[class^="btn_colour_BlueT"]::before{
     [id^="SP"] fieldset ul li input::placeholder{
         color: #87767c;
     }
-    [id^="SP"] fieldset ul li #selectCountry{
+    [id^="SP"] fieldset ul li #selectCountry,
+    [id^="SP"] fieldset ul li #selectCountry2{
         background-color: transparent; border: none; font-size: 12px; color: #000000;
         appearance: none; cursor: pointer; width: 100%; line-height: 40px;
         position: relative;
@@ -2914,14 +2923,17 @@ a[class^="btn_colour_BlueT"]::before{
         text-align: center; padding: 12px 10px;
         height: 47px; font-size: 12px;
     }
-    #SPshippingPanel input[type="submit"]{
-        padding: 1.5% 2%; float: right; margin-top: 15px; 
+    #SPshippingPanel input[type="button"]{
+        margin-top: 15px; float: right; padding: 3% 8%; box-sizing: border-box;
     }
     #SPshippingPanel fieldset:first-of-type > input{
         accent-color: #000000;
     }
     #SPshippingPanel fieldset:first-of-type > label{
         font-size: 12px;
+    }
+    #SPshippingPanel fieldset:nth-of-type(2) span{
+        display: block;
     }
     #SPshippingPanel fieldset:last-of-type > label{
         font-size: 12px;
@@ -2988,11 +3000,11 @@ a[class^="btn_colour_BlueT"]::before{
         background: transparent; border: none; border: 1px solid #888888; 
         border-radius: 6px; margin-bottom: 15px;
     }
-    #paymentPanel fieldset input[type="submit"]{
+    #paymentPanel fieldset input[type="button"]{
         width: 100%; padding: 2%;
     }
     #summary{
-        float: left; width: 35%; margin-left: 8%; box-sizing: border-box;
+        float: left; width: 35%; margin-left: 8%; box-sizing: border-box; padding-bottom: 60px;
     }
     #summary > div:not(:first-child){
         border-bottom: 1px solid #b1b4aa; padding: 15px 0;
@@ -3434,18 +3446,18 @@ a[class^="btn_colour_BlueT"]::before{
         width: 100%; overflow-x: auto; white-space: nowrap;
     }
     .lnbContainer > nav ul li{
-        display: inline-block; line-height: 24px; margin-bottom: 50px;
+        display: inline-block; margin-bottom: 50px;
     }
     .lnbContainer > nav ul li:not(:first-child){
         margin-left: 2%;
     }
     .lnbContainer > nav ul li button{
-        font-size: 10px; font-weight: 400; color: #000000;
-        padding: 2px 10px; background-color: #f9fcf8; border: 2px solid #dbdeda;
-        border-radius: 20px;
+        font-size: 12px; font-weight: 400; color: #000000;
+        padding: 2px 10px; background-color: #f9fcf8; border: 2px solid #dbdeda; line-height: 18px;
+        border-radius: 18px;
     }
     .lnbContainer > nav ul li button.active{
-        padding: 2px 10px; border: 4px solid #007fc8; border-radius: 20px;
+        padding: 2px 10px; border: 4px solid #007fc8; border-radius: 18px;
     }
     .lnbContainer > ul .tabPage{
         display: block;
@@ -3455,8 +3467,10 @@ a[class^="btn_colour_BlueT"]::before{
         position: relative; height: 100%;
     }
     .lnbContainer > ul li > figure img{
-        width: 100%; display: block; height: 100%; object-fit: cover;
+        width: 100%; display: block; height: 100%; object-fit: cover; 
     }
+    .lnbContainer > ul .overimg > figure img{object-position: 30% center;}
+    .lnbContainer > ul .overimg2 > figure img{object-position: 3% center;}
     .lnbContainer > ul li > figure figcaption{
         position: absolute; color: #ffffff; width: 95%;
         left: 50%; top: 50%; transform: translate(-50%, -50%);
@@ -3502,20 +3516,22 @@ a[class^="btn_colour_BlueT"]::before{
         margin-bottom: 40px;
     }
     .listContainer > div nav ul{
-        width: 100%; overflow-x: auto; white-space: nowrap; margin-left: -2%;
+        width: 100%; overflow-x: auto; white-space: nowrap;
     }
     .listContainer > div nav ul li{
-        display: inline-block; line-height: 28px; max-width: 144px;
-        margin-left: 2%; box-sizing: border-box;
+        display: inline-block; max-width: 144px;
+    }
+    .listContainer > div nav ul li:not(:first-child){
+        margin-left: 2%;
     }
     .listContainer > div nav ul li a{
-        display: block; font-size: 12px; padding: 2px 10px; 
+        display: block; font-size: 12px; padding: 2px 10px;  line-height: 18px;
     }
     .listContainer > div nav ul li a:not(.active){
-        border: 2px solid #dbdeda; border-radius: 19px;
+        border: 2px solid #dbdeda; border-radius: 18px;
     }
     .listContainer > div nav ul li a.active{
-        border: 4px solid #007fc8; border-radius: 19px; 
+        border: 4px solid #007fc8; border-radius: 18px; 
     }
     .listContainer > div p{
         font-size: 10px; font-weight: 400; line-height: 16px;
@@ -3925,19 +3941,21 @@ a[class^="btn_colour_BlueT"]::before{
     .accountContainer > div [id^="txt"]{
         position: fixed; top: 50%; left: 50%; text-align: center;
         transform: translate(-50%, -50%); border: 1px solid #000000;
-        background: #fff; z-index: 20; padding: 10% 20%;
+        background: #fff; z-index: 20; padding: 15% 10%;
     }
     .accountContainer > div [id^="txt"] h3{
-        font-size: 20px; font-weight: 500;
+        font-size: 20px; font-weight: 500; min-width: 200px;
         text-transform: uppercase; margin-bottom: 24px;
     }
     .accountContainer > div [id^="txt"] a{
-        background-color: #000000; color: #ffffff; padding: 10px 14px;
-        text-transform: uppercase; font-size: 12px;
+        background-color: #000000; color: #ffffff;
+        text-transform: uppercase; font-size: 12px; padding: 5% 0;
+        display: block; margin: 0 auto; width: 50%;
     }
     .accountContainer > div [id^="txt"] input[type="button"]{
-        background-color: #000000; color: #ffffff; padding: 12px 19px;
-        text-transform: uppercase; font-size: 14px;
+        background-color: #000000; color: #ffffff;
+        text-transform: uppercase; font-size: 12px; padding: 3% 0;
+        display: block; margin: 0 auto; width: 50%;
     }
     .accountContainer > div .tabPage{
         padding-top: 30px;
@@ -4096,6 +4114,9 @@ a[class^="btn_colour_BlueT"]::before{
     }
     #SPshippingPanel fieldset:first-of-type > label{
         font-size: 12px;
+    }
+    #SPshippingPanel fieldset:nth-of-type(2) span{
+        display: block;
     }
     #SPshippingPanel fieldset:last-of-type > label{
         font-size: 10px;

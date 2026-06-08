@@ -59,6 +59,7 @@ function cartControl(){
     var cart = $("#gnb_cart_Panel");
     $("[data-panel='gnb_cart_panel']").click(function(){
         cart.toggleClass("active");
+        console.log(cart);
     });
 }
 
@@ -100,7 +101,14 @@ function checkmethod(){
    $("#SPshippingPanel fieldset ul input").on("input",function(){
         var inputVal = $(this).val();    
         var inputId = $(this).attr("id");
-        $("span[data-addr='" + inputId + "']").text(inputVal + "");
+        var labelText = $(this).siblings("label").text();
+        
+    if(inputVal === ""){
+        $("span[data-addr='" + inputId + "']").text("");
+    }else{
+        $("span[data-addr='" + inputId + "']")
+            .text(labelText + " : " + inputVal);
+    }
     }); 
 }
 

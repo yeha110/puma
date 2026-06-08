@@ -68,6 +68,7 @@ footer > div:first-child > div form em,
 .indexContainer > div > .subtit h2,
 .indexContainer > div:nth-of-type(4) > div:nth-of-type(2) > div dl dt,
 .indexContainer > div:nth-of-type(5) figure figcaption h2,
+[id^="gnb"] > span > h3,
 .listContainer > div h2,
 .listContainer > ul li h3,
 .detailContainer > div h2,
@@ -239,6 +240,9 @@ header div input[type='button'].closeBtn{
     #lnbContainer > li > div figure{
         position: absolute; top: 80px;
     }
+    #lnbContainer > li > div figure img{
+        width: 100vh; height: 100vh; display: block;
+    }
     #lnbContainer > li > div figure figcaption{
         position: absolute; color: #ffffff; top: 325px; left: 630px; width: 53%;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -258,11 +262,10 @@ header div input[type='button'].closeBtn{
         position: fixed; top: 98px; right: 0; bottom: 0; overflow: hidden;
     }
     [id^="gnb"] > span{
-        width: 100%; display: block; text-align: center;
-        padding: 22% 0;
+        position: absolute; top: 50%; left: 37%; transform: translateY(-50%); text-align: center;
     }
     [id^="gnb"] > span > h3{
-        line-height: 46px; font-size: 40px; font-weight: 400;
+        line-height: 46px; font-size: 40px; font-weight: 500;
         color: #000000; white-space: nowrap; margin-bottom: 50px;
     }
     [id^="gnb"] > span > a{
@@ -271,7 +274,6 @@ header div input[type='button'].closeBtn{
     #gnb_wish_Panel{
         background-color: #eeeeee; padding: 1% 24px;
         width: 74%; box-sizing: border-box;
-        /* overflow-y: scroll; */
     }
     #gnb_wish_Panel > div{
         width: 100%; height: 100%; max-height: 1080px;
@@ -326,11 +328,11 @@ header div input[type='button'].closeBtn{
         position: absolute; right: 24px; bottom: 2%;
     }
     input[value="clear all"]{
-        font-size: 12px; color: #000000;        
+        font-size: 14px; color: #000000;        
         border: none; padding: 22px 40px; background: transparent;
     }
     input[value="Share Wishlist"]{
-        font-size: 12px; color: #000000;         
+        font-size: 14px; color: #000000;         
         border: 1px solid #b9bbb8; padding: 22px 122px;
     }
     #sharePopup{
@@ -462,7 +464,7 @@ header div input[type='button'].closeBtn{
     }
     #gnb_cart_Panel > div > div fieldset input{
         float: left; width: 50%; margin-left: 10%; box-sizing: border-box;
-        margin-top: 50px;
+        margin-top: 50px; background: transparent;
     }
 
 
@@ -619,7 +621,7 @@ header div input[type='button'].closeBtn{
     #lnbContainer > li:nth-child(4):hover{z-index: 2; width: 133.6%;}
     #lnbContainer > li:nth-child(5):hover{z-index: 2; width: 153.6%;}
     #lnbContainer > li > h2{
-        line-height: 46px; font-size: 40px; font-weight: 400; color: #000000;
+        line-height: 46px; font-size: 40px; font-weight: 400; color: #000000; margin-left: 10px;
     }  
     #lnbContainer > li > h2::after{
         content: ''; display: block; clear: both;
@@ -639,6 +641,9 @@ header div input[type='button'].closeBtn{
     #lnbContainer > li > div figure{
         position: absolute; top: 75px;
     }
+    #lnbContainer > li > div figure img{
+        width: 100vh; height: 100vh; display: block;
+    }
     #lnbContainer > li > div figure figcaption{
         position: absolute; color: #ffffff; top: 325px; left: 630px; width: 53%;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -656,8 +661,7 @@ header div input[type='button'].closeBtn{
         position: fixed; top: 87px; right: 0; bottom: 0; width: 100%; overflow: hidden;
     }
     [id^="gnb"] > span{
-        width: 100%; display: block; text-align: center;
-        padding: 30% 0;
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;
     }
     [id^="gnb"] > span > h3{
         line-height: 46px; font-size: 40px; font-weight: 400;
@@ -667,17 +671,17 @@ header div input[type='button'].closeBtn{
         color: #000000; border-bottom: 1px solid #000000; font-size: 12px;
     }
     #gnb_wish_Panel{
-        background-color: #eeeeee; padding: 100px 24px;
+        background-color: #eeeeee; padding: 8% 24px;
         box-sizing: border-box;
     }
     #gnb_wish_Panel > div{
         width: 100%; height: 100%; max-height: 768px;
     }
     #gnb_wish_Panel > div h2{
-        font-size: 22px; margin-bottom: 20px; font-weight: 400; color: #000000;
+        font-size: 28px; margin-bottom: 20px; font-weight: 400; color: #000000;
     }
     #gnb_wish_Panel > div h2 > sup{
-        font-size: 12px; margin-left: 14px; font-weight: 400; color: #000000;
+        font-size: 18px; margin-left: 14px; font-weight: 400; color: #000000;
         vertical-align: top;
     } 
     #gnb_wish_Panel > div ul li{
@@ -724,11 +728,11 @@ header div input[type='button'].closeBtn{
     }
     input[value="clear all"]{
         font-size: 12px; color: #000000;        
-        border: none; padding: 22px 40px; background: transparent;
+        border: none; padding: 16px 30px; background: transparent;
     }
     input[value="Share Wishlist"]{
         font-size: 12px; color: #000000;         
-        border: 1px solid #b9bbb8; padding: 22px 122px;
+        border: 1px solid #b9bbb8; padding: 16px 100px;
     }
     #sharePopup{
         position: absolute; right: 3%; bottom: 100px;
@@ -760,17 +764,17 @@ header div input[type='button'].closeBtn{
         font-size: 12px; text-transform: uppercase; 
     }
     #gnb_cart_Panel{
-        background-color: #eeeeee; padding: 100px 24px; box-sizing: border-box;
+        background-color: #eeeeee; padding: 8% 24px; box-sizing: border-box;
         width: 100%;
     }
     #gnb_cart_Panel > div{
         width: 100%;
     }
     #gnb_cart_Panel > div > h2{
-        font-size: 22px; font-weight: 400; float: left; width: 50%;
+        font-size: 28px; font-weight: 400; float: left; width: 50%;
     }
     #gnb_cart_Panel > div > strong{
-        font-size: 22px; font-weight: 400; float: left; width: 50%;
+        font-size: 28px; font-weight: 400; float: left; width: 50%;
         margin-bottom: 68px; text-align: right;
     }
     #gnb_cart_Panel > div ul{
@@ -859,7 +863,7 @@ header div input[type='button'].closeBtn{
         clear: both; font-size: 12px; width: 30%; position: absolute; left: 24px; line-height: 18px;
     }
     #gnb_cart_Panel > div > div fieldset input{
-        margin-top: 50px; width: 100%;
+        margin-top: 70px; width: 100%; background: transparent;
     } 
 
 
