@@ -1567,8 +1567,11 @@ a[class^="btn_colour_BlueT"]::before{
     #order > ol li figure::after{
         content: ''; display: block; clear: both;
     }
-    #order > ol li figure img{
-        float: left; display: block; width: 36%;
+    #order > ol li figure a{
+        float: left; width: 36%;
+    }
+    #order > ol li figure a img{
+        display: block; width: 100%;
     }
     #order >  ol li figure figcaption{
         width: 60%; position: absolute; bottom: 0; right: 0;
@@ -1645,9 +1648,8 @@ a[class^="btn_colour_BlueT"]::before{
         content: ''; display: block; clear: both;
     }
     #SPshippingPanel fieldset > div{
-        background-color: #ffffff;
-        text-align: center; padding: 28px 10px;
-        height: 102px; font-size: 12px;
+        background-color: #ffffff; font-size: 12px; 
+        text-align: center; padding: 28px 10px; max-width: 650px; box-sizing: border-box;
     }
     #SPshippingPanel > input[type="button"]{
         float: right; cursor: pointer; padding: 2% 4%; box-sizing: border-box;
@@ -1661,7 +1663,7 @@ a[class^="btn_colour_BlueT"]::before{
         display: inline-block;
     }
     #SPshippingPanel fieldset:nth-of-type(2) span{
-        display: block;
+        display: inline-block; max-width: 100%; white-space: normal;word-break: break-all;
     }
     #SPshippingPanel fieldset:last-of-type > label{
         font-size: 12px;
@@ -1742,7 +1744,7 @@ a[class^="btn_colour_BlueT"]::before{
         font-size: 32px; font-weight: 500; margin-bottom: 50px;
     }
     #paymentPanel fieldset > #txtcheckPopup a{
-        background-color: #000; color: #fff; width: 30%; margin: 0 auto;
+        background-color: #000; color: #fff; width: 30%; margin: 0 auto; font-size: 14px;
         padding: 2%; box-sizing: border-box; display: block;
     }
     #summary{
@@ -1776,8 +1778,11 @@ a[class^="btn_colour_BlueT"]::before{
     #summary > .item > strong{
         font-size: 14px; font-weight: 400; display: block; margin-bottom: 24px;
     }
-    #summary > .item > img{
+    #summary > .item > a{
         float: left; width: 20%;
+    }
+    #summary > .item > a img{
+        width: 100%; display: block;
     }
     #summary > .item p *{
         font-size: 12px; font-weight: 400; margin-bottom: 10px;
@@ -2801,7 +2806,7 @@ a[class^="btn_colour_BlueT"]::before{
         background: url(../images/arrow_down_icon.svg) no-repeat right 20px top;
     }
     [id^="SP"] fieldset input[type="submit"]{
-        float: right; cursor: pointer; padding: 3% 8%; box-sizing: border-box;
+        float: right; cursor: pointer; padding: 2% 6%; box-sizing: border-box; font-size: 14px;
     }
     [id^="SP"] fieldset input[type="submit"]::after{
         content: ''; display: block; clear: both;
@@ -2836,8 +2841,11 @@ a[class^="btn_colour_BlueT"]::before{
     #order > ol li figure{
         width: 100%;
     }
-    #order > ol li figure img{
-        display: block; width: 100%; margin-bottom: 10px;
+    #order > ol li figure a{
+        margin-bottom: 10px;
+    }
+    #order > ol li figure a img{
+        display: block; width: 100%;
     }
     #order >  ol li figure figcaption{
         width: 100%;
@@ -2861,7 +2869,7 @@ a[class^="btn_colour_BlueT"]::before{
     }
     #order > ol li figure figcaption input[type="button"]{
         padding: 2% 3%; box-sizing: border-box; cursor: pointer;
-        margin-top: 26px;
+        margin-top: 26px; font-size: 14px;
     }
     #order > ol li figure figcaption input[type="button"]:first-of-type{
         float: left; width: 44%; 
@@ -2919,12 +2927,12 @@ a[class^="btn_colour_BlueT"]::before{
         font-size: 12px;
     }
     #SPshippingPanel fieldset > div{
-        background-color: #ffffff;
-        text-align: center; padding: 12px 10px;
-        height: 47px; font-size: 12px;
+        background-color: #ffffff; max-width: 590px; 
+        text-align: center; padding: 2% 4%;
+        font-size: 12px; box-sizing: border-box;
     }
     #SPshippingPanel input[type="button"]{
-        margin-top: 15px; float: right; padding: 3% 8%; box-sizing: border-box;
+        margin-top: 15px; float: right; padding: 2% 6%; box-sizing: border-box; font-size: 14px;
     }
     #SPshippingPanel fieldset:first-of-type > input{
         accent-color: #000000;
@@ -2933,7 +2941,7 @@ a[class^="btn_colour_BlueT"]::before{
         font-size: 12px;
     }
     #SPshippingPanel fieldset:nth-of-type(2) span{
-        display: block;
+        display: inline-block; max-width: 590px; white-space: normal;word-break: break-all;
     }
     #SPshippingPanel fieldset:last-of-type > label{
         font-size: 12px;
@@ -2964,6 +2972,9 @@ a[class^="btn_colour_BlueT"]::before{
         content: ''; position: absolute; top: 50%; left: 50%;
         width: 10px; height: 10px; background-color: #000000;
         border-radius: 50%; transform: translate(-50%, -50%);
+    }
+    #paymentPanel fieldset{
+        position: relative;
     }
     #paymentPanel fieldset > label{
         font-size: 12px; font-weight: 600; display: block;
@@ -3000,8 +3011,19 @@ a[class^="btn_colour_BlueT"]::before{
         background: transparent; border: none; border: 1px solid #888888; 
         border-radius: 6px; margin-bottom: 15px;
     }
-    #paymentPanel fieldset input[type="button"]{
-        width: 100%; padding: 2%;
+    #paymentPanel fieldset > input[type="button"]{
+        width: 100%; padding: 2%; font-size: 14px;
+    }
+    #paymentPanel fieldset > #txtcheckPopup{
+        position: absolute; top: 0; left: 0; width: 100%;
+        background-color: #fff; padding: 12% 0; text-align: center;
+    }
+    #paymentPanel fieldset > #txtcheckPopup h3{
+        font-size: 22px; font-weight: 500; margin-bottom: 50px;
+    }
+    #paymentPanel fieldset > #txtcheckPopup a{
+        background-color: #000; color: #fff; width: 30%; margin: 0 auto;
+        padding: 2%; box-sizing: border-box; display: block; font-size: 14px;
     }
     #summary{
         float: left; width: 35%; margin-left: 8%; box-sizing: border-box; padding-bottom: 60px;
@@ -3033,8 +3055,11 @@ a[class^="btn_colour_BlueT"]::before{
     #summary > .item > strong{
         font-size: 12px; font-weight: 400; display: block; margin-bottom: 10px;
     }
-    #summary > .item > img{
+    #summary > .item > a{
         float: left; width: 25%;
+    }
+    #summary > .item > a img{
+        width: 100%; display: block;
     }
     #summary > .item p *{
         font-size: 12px; font-weight: 400; margin-bottom: 10px;
@@ -3849,7 +3874,7 @@ a[class^="btn_colour_BlueT"]::before{
         overflow-x: scroll; padding-bottom: 20px;
     }
     .accountContainer > div aside ul li{
-        padding: 20px 26px 0 0; display: inline-block;
+        padding: 20px 32px 0 0; display: inline-block;
     }
     .accountContainer > div aside ul li button{
         background-color: transparent; border: none; padding: 0; font-size: 16px; cursor: pointer; color: #000000;
@@ -3868,15 +3893,15 @@ a[class^="btn_colour_BlueT"]::before{
         content: ''; display: block; clear: both;
     }
     #deliveryPopup h3{
-        display: block; font-size: 22px; font-weight: 400; padding-left: 16px;
+        display: block; font-size: 20px; font-weight: 400; padding-left: 16px;
         margin-bottom: 30px; box-sizing: border-box;
     }
     #deliveryPopup dl dt{
         background-color: #004d7a; color: #ffffff; 
-        font-size: 18px; padding: 16px;
+        font-size: 16px; padding: 16px;
     }
     #deliveryPopup dl dd{
-        padding: 16px; font-size: 16px;
+        padding: 16px; font-size: 14px;
     }
     #deliveryPopup dl:first-of-type dd{
         line-height: 20px;
@@ -3941,11 +3966,11 @@ a[class^="btn_colour_BlueT"]::before{
     .accountContainer > div [id^="txt"]{
         position: fixed; top: 50%; left: 50%; text-align: center;
         transform: translate(-50%, -50%); border: 1px solid #000000;
-        background: #fff; z-index: 20; padding: 15% 10%;
+        background: #fff; z-index: 20; padding: 14% 4%; width: 90%; box-sizing: border-box;
     }
     .accountContainer > div [id^="txt"] h3{
         font-size: 20px; font-weight: 500; min-width: 200px;
-        text-transform: uppercase; margin-bottom: 24px;
+        text-transform: uppercase; margin-bottom: 30px;
     }
     .accountContainer > div [id^="txt"] a{
         background-color: #000000; color: #ffffff;
@@ -3954,7 +3979,7 @@ a[class^="btn_colour_BlueT"]::before{
     }
     .accountContainer > div [id^="txt"] input[type="button"]{
         background-color: #000000; color: #ffffff;
-        text-transform: uppercase; font-size: 12px; padding: 3% 0;
+        text-transform: uppercase; font-size: 12px; padding: 4% 0;
         display: block; margin: 0 auto; width: 50%;
     }
     .accountContainer > div .tabPage{
@@ -3995,14 +4020,15 @@ a[class^="btn_colour_BlueT"]::before{
     [id^="SP"] fieldset ul li input::placeholder{
         color: #87767c;
     }
-    [id^="SP"] fieldset ul li #selectCountry{
+    [id^="SP"] fieldset ul li #selectCountry,
+    [id^="SP"] fieldset ul li #selectCountry2{
         background-color: transparent; border: none; font-size: 10px;
         appearance: none; cursor: pointer; width: 100%; line-height: 40px;
         position: relative; color: #000000;
         background: url(../images/arrow_down_icon.svg) no-repeat right 20px top;
     }
     [id^="SP"] fieldset input[type="submit"]{
-        float: right; cursor: pointer; padding: 3% 8%; box-sizing: border-box;
+        float: right; cursor: pointer; padding: 3% 8%; box-sizing: border-box; font-size: 12px;
     }
     #resetpw fieldset ul li{
         width: 80%; margin: 0 auto;
@@ -4037,8 +4063,11 @@ a[class^="btn_colour_BlueT"]::before{
     #order > ol li figure::after{
         content: ''; display: block; clear: both;
     }
-    #order > ol li figure img{
-        display: block; width: 100%; margin-bottom: 20px;
+    #order > ol li figure a{
+        margin-bottom: 20px;
+    }
+    #order > ol li figure a img{
+        display: block; width: 100%; 
     }
     #order >  ol li figure figcaption strong{
         background: url('../images/delivery_truck_icon.svg') no-repeat left center;
@@ -4054,8 +4083,8 @@ a[class^="btn_colour_BlueT"]::before{
         display: block; margin-bottom: 40px;
     }
     #order > ol li figure figcaption input[type="button"]{
-        padding: 10px 15px; box-sizing: border-box; cursor: pointer;
-        float: left; width: 48%; font-size: 10px;
+        width: 48%; padding: 3%; box-sizing: border-box; cursor: pointer;
+        float: left; font-size: 12px;
     }
     #order > ol li figure figcaption input[type="button"]:last-child{
         margin-left: 4%;
@@ -4102,12 +4131,12 @@ a[class^="btn_colour_BlueT"]::before{
         content: ''; display: block; clear: both;
     }
     #SPshippingPanel fieldset > div{
-        background-color: #ffffff;
-        text-align: center; padding: 10px;
-        height: 80px; font-size: 10px;
+        background-color: #ffffff; max-width: 370px;
+        text-align: center; padding: 2% 4%;
+        font-size: 10px; box-sizing: border-box;
     }
-    #SPshippingPanel input[type="submit"]{
-        padding: 2% 4%; float: right; margin-top: 15px; 
+    #SPshippingPanel input[type="button"]{
+        padding: 3% 8%; float: right; margin-top: 15px; font-size: 12px; box-sizing: border-box;
     }
     #SPshippingPanel fieldset:first-of-type > input{
         accent-color: #000000;
@@ -4116,7 +4145,7 @@ a[class^="btn_colour_BlueT"]::before{
         font-size: 12px;
     }
     #SPshippingPanel fieldset:nth-of-type(2) span{
-        display: block;
+        display: inline-block; max-width: 100%; white-space: normal;word-break: break-all;
     }
     #SPshippingPanel fieldset:last-of-type > label{
         font-size: 10px;
@@ -4147,6 +4176,9 @@ a[class^="btn_colour_BlueT"]::before{
         content: ''; position: absolute; top: 50%; left: 50%;
         width: 14px; height: 14px; background-color: #000000;
         border-radius: 50%; transform: translate(-50%, -50%);
+    }
+    #paymentPanel fieldset{
+        position: relative;
     }
     #paymentPanel fieldset > label{
         font-size: 14px; font-weight: 700; display: block;
@@ -4183,8 +4215,19 @@ a[class^="btn_colour_BlueT"]::before{
         background: transparent; border: none; border: 1px solid #888888; 
         border-radius: 6px; margin-bottom: 15px;
     }
-    #paymentPanel fieldset input[type="submit"]{
-        width: 100%; padding: 2%;
+    #paymentPanel fieldset input[type="button"]{
+        width: 100%; padding: 4% 2%; font-size: 12px;
+    }
+    #paymentPanel fieldset > #txtcheckPopup{
+        position: absolute; top: 0; left: 0; width: 100%;
+        background-color: #fff; padding: 25% 0; text-align: center;
+    }
+    #paymentPanel fieldset > #txtcheckPopup h3{
+        font-size: 18px; font-weight: 500; margin-bottom: 50px;
+    }
+    #paymentPanel fieldset > #txtcheckPopup a{
+        background-color: #000; color: #fff; width: 45%; margin: 0 auto;
+        padding: 3%; box-sizing: border-box; display: block; font-size: 12px;
     }
     #summary > div:not(:first-child){
         border-bottom: 1px solid #b1b4aa; padding: 15px 0;
@@ -4212,8 +4255,11 @@ a[class^="btn_colour_BlueT"]::before{
     #summary > .item > strong{
         font-size: 14px; font-weight: 400; display: block; margin-bottom: 20px;
     }
-    #summary > .item > img{
+    #summary > .item > a{
         float: left; width: 20%;
+    }
+    #summary > .item > a img{
+        width: 100%; display: block;
     }
     #summary > .item p *{
         font-size: 12px; font-weight: 400; margin-bottom: 10px;
@@ -4279,7 +4325,7 @@ a[class^="btn_colour_BlueT"]::before{
         white-space: nowrap; overflow-x: scroll; 
     }
     .footerContainer aside ul li:not(:first-child){
-        margin-left: 25px;
+        margin-left: 32px;
     }
     .footerContainer aside ul li{
         font-size: 14px; font-weight: 400; display: inline-block; 

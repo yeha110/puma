@@ -22,7 +22,7 @@ footer > div:first-child > div form em,
 .listContainer > ul li .sale_price .sale_center del,
 .listContainer > div nav ul li a,
 .lnbContainer > ul li > figure figcaption p,
-.lnbContainer > nav ul li a,
+.lnbContainer > nav ul li button,
 .lnbContainer > ul li > figure figcaption a,
 #lnbContainer > li > div figure figcaption p,
 #lnbContainer > li > div figure figcaption a,
@@ -216,17 +216,22 @@ header div input[type='button'].closeBtn{
         background-color: #ffffff; width: 12.5%;  overflow-x: hidden; overflow-y: hidden;
         transition: all .5s ease-out; padding-top: 125px;
     } 
-    #lnbContainer > li:nth-child(1){right: 50%;}
-    #lnbContainer > li:nth-child(2){right: 37.5%;}
-    #lnbContainer > li:nth-child(3){right: 25%;}
-    #lnbContainer > li:nth-child(4){right: 12.5%;}
-    #lnbContainer > li:nth-child(5){right: 0%;}
+    #lnbContainer > li:nth-child(1),
+    #lnbContainer > li:nth-child(2),
+    #lnbContainer > li:nth-child(3){
+        display: none;
+    }
+    #lnbContainer > li:nth-child(4){right: 50%;}
+    #lnbContainer > li:nth-child(5){right: 37.5%;}
+    #lnbContainer > li:nth-child(6){right: 25%;}
+    #lnbContainer > li:nth-child(7){right: 12.5%;}
+    #lnbContainer > li:nth-child(8){right: 0%;}
     #lnbContainer > li:hover{
         z-index: 2; width: 20%;
     }
     #lnbContainer > li > h2{
         line-height: 71px; font-size: 65px; font-weight: 400; color: #000000;
-        margin-left: 10px;
+        margin: 0 0 80px 10px; 
     } 
     #lnbContainer > li > h2 > a:last-child{
         display: none;
@@ -234,26 +239,23 @@ header div input[type='button'].closeBtn{
     #lnbContainer > li.active > h2 > a:last-child{
         display: inline-block;
     }
-    #lnbContainer > li > div{
+    #lnbContainer > li > figure{
         position: relative;
     }
-    #lnbContainer > li > div figure{
-        position: absolute; top: 80px;
-    }
-    #lnbContainer > li > div figure img{
+    #lnbContainer > li > figure img{
         width: 100vh; height: 100vh; display: block;
     }
-    #lnbContainer > li > div figure figcaption{
+    #lnbContainer > li > figure figcaption{
         position: absolute; color: #ffffff; top: 325px; left: 630px; width: 53%;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
-    #lnbContainer > li > div figure figcaption h2{
+    #lnbContainer > li > figure figcaption h2{
         font-size: 66px; font-weight: 400;
     }
-    #lnbContainer > li > div figure figcaption p{
+    #lnbContainer > li > figure figcaption p{
         margin-top: 48px; font-size: 16px; font-weight: 400; 
     }
-    #lnbContainer > li > div figure figcaption a{
+    #lnbContainer > li > figure figcaption a{
         display: block; margin-top: 38px; font-size: 10px; font-weight: 400; color: #ffffff;
     }  
 
@@ -603,25 +605,30 @@ header div input[type='button'].closeBtn{
     }
     #lnbContainer{
         position: fixed; height: 100%; top: 87px; right: 0;
-        width: 65%; transition: width .5s ease-out; padding: 0;
+        width: 100%; padding: 0;
     }
     #lnbContainer > li{
         position: absolute; height: 100%; z-index: 1; padding-top: 60px;
-        background-color: #ffffff; width: 20%; overflow-x: hidden; overflow-y: hidden;
-        transition: all .5s ease-out;
-    } 
-    #lnbContainer > li:nth-child(1){right: 80%;}
-    #lnbContainer > li:nth-child(2){right: 60%;}
-    #lnbContainer > li:nth-child(3){right: 40%;}
-    #lnbContainer > li:nth-child(4){right: 20%;}
-    #lnbContainer > li:nth-child(5){right: 0%;}
-    #lnbContainer > li:nth-child(1):hover{z-index: 2; width: 73.6%;} 
-    #lnbContainer > li:nth-child(2):hover{z-index: 2; width: 93.6%;}
-    #lnbContainer > li:nth-child(3):hover{z-index: 2; width: 113.6%;}
-    #lnbContainer > li:nth-child(4):hover{z-index: 2; width: 133.6%;}
-    #lnbContainer > li:nth-child(5):hover{z-index: 2; width: 153.6%;}
+        background-color: #ffffff; width: 13%; overflow: hidden;
+        transition: width 0.5s ease-out, z-index 0s;
+    }  
+    #lnbContainer > li:nth-child(1),
+    #lnbContainer > li:nth-child(2),
+    #lnbContainer > li:nth-child(3){
+        display: none;
+    }
+    #lnbContainer > li:nth-child(4){ right: 52%; } 
+    #lnbContainer > li:nth-child(5){ right: 39%; } 
+    #lnbContainer > li:nth-child(6){ right: 26%; } 
+    #lnbContainer > li:nth-child(7){ right: 13%; } 
+    #lnbContainer > li:nth-child(8){ right: 0%; }
+    #lnbContainer > li:nth-child(4):hover { z-index: 2; width: 48%; }  
+    #lnbContainer > li:nth-child(5):hover { z-index: 2; width: 61%; }  
+    #lnbContainer > li:nth-child(6):hover { z-index: 2; width: 74%; }  
+    #lnbContainer > li:nth-child(7):hover { z-index: 2; width: 87%; } 
+    #lnbContainer > li:nth-child(8):hover { z-index: 2; width: 100%; }
     #lnbContainer > li > h2{
-        line-height: 46px; font-size: 40px; font-weight: 400; color: #000000; margin-left: 10px;
+        line-height: 46px; font-size: 40px; font-weight: 400; color: #000000; margin: 0 0 75px 10px;
     }  
     #lnbContainer > li > h2::after{
         content: ''; display: block; clear: both;
@@ -635,26 +642,23 @@ header div input[type='button'].closeBtn{
     #lnbContainer > li:hover> h2 > a:last-child{
         display: inline-block;
     }
-    #lnbContainer > li > div{
+    #lnbContainer > li > figure{
         position: relative;
     }
-    #lnbContainer > li > div figure{
-        position: absolute; top: 75px;
+    #lnbContainer > li > figure img{
+        width: 1279px; object-fit: cover;
     }
-    #lnbContainer > li > div figure img{
-        width: 100vh; height: 100vh; display: block;
-    }
-    #lnbContainer > li > div figure figcaption{
+    #lnbContainer > li > figure figcaption{
         position: absolute; color: #ffffff; top: 325px; left: 630px; width: 53%;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
-    #lnbContainer > li > div figure figcaption h2{
+    #lnbContainer > li > figure figcaption h3{
         font-size: 66px; font-weight: 400;
     }
-    #lnbContainer > li > div figure figcaption p{
+    #lnbContainer > li > figure figcaption p{
         margin-top: 48px; font-size: 16px; font-weight: 400; 
     }
-    #lnbContainer > li > div figure figcaption a{
+    #lnbContainer > li > figure figcaption a{
         display: block; margin-top: 38px; font-size: 10px; font-weight: 400; color: #ffffff;
     }
     [id^="gnb"]{
@@ -1154,7 +1158,7 @@ header div input[type='button'].closeBtn{
         display:none;
     }
     #gnb_cart_Panel ul li{
-        margin-top: 15px;
+        margin-top: 15px; position: relative;
     }
     #gnb_cart_Panel > div ul{
         width: 100%; clear: both;
@@ -1167,6 +1171,7 @@ header div input[type='button'].closeBtn{
     }
     #gnb_cart_Panel > div ul li:last-child div:not(:first-child){
         width: 55%; margin-left: 5%; box-sizing: border-box;
+        position: absolute; right: 0;
     }
     #gnb_cart_Panel > div ul li:last-child div:first-child{
         width: 40%; 
@@ -1182,7 +1187,7 @@ header div input[type='button'].closeBtn{
         font-size: 14px; font-weight: 500; color: #000000; margin-right: 10px;
     }
     #gnb_cart_Panel > div ul li:last-child div:nth-child(2){
-        border-bottom: 1px solid #cccccc; margin-top: 15%;
+        border-bottom: 1px solid #cccccc; bottom: 22%;
     }
     #gnb_cart_Panel > div ul li:last-child div:nth-child(2) *{
         font-weight: 400; float: left; margin-bottom: 8px;
@@ -1195,7 +1200,7 @@ header div input[type='button'].closeBtn{
         width: 60%; margin-left: 10%; box-sizing: border-box; font-size: 12px; 
     }
     #gnb_cart_Panel > div ul li:last-child div:last-child{
-        font-size: 12px; text-align: right; margin-top: 8px;
+        font-size: 12px; text-align: right; margin-top: 8px; bottom: 10%;
     }
     #gnb_cart_Panel > div ul li:last-child div:last-child span::before{
         content:"Price :"; font-size:10px; margin-top: 8px;
