@@ -1388,22 +1388,16 @@ a[class^="btn_colour_BlueT"]::before{
     }
     #deliveryPopup dl dt{
         background-color: #004d7a; color: #ffffff; 
-        font-size: 20px; 
-    }
-    #deliveryPopup dl:first-of-type dt{
-        padding: 20px 60px;
-    }
-    #deliveryPopup dl:last-of-type dt{
-        padding: 20px 0;
+        font-size: 20px; padding: 20px 60px;
     }
     #deliveryPopup dl dd{
-        padding: 20px 60px; 
+        padding: 20px 60px; font-size: 18px;
     }
     #deliveryPopup dl:first-of-type dd{
-        line-height: 20px; font-size: 18px;
+        line-height: 20px;
     }
     #deliveryPopup dl:last-of-type dd{
-        padding: 32px 0;
+        line-height: 40px;
     }
     #deliveryPopup dd:first-of-type{
         border-bottom: 1px solid #b1b4aa;
@@ -1651,7 +1645,7 @@ a[class^="btn_colour_BlueT"]::before{
         background-color: #ffffff; font-size: 12px; 
         text-align: center; padding: 28px 10px; max-width: 650px; box-sizing: border-box;
     }
-    #SPshippingPanel > input[type="button"]{
+    #SPshippingPanel .Khaki{
         float: right; cursor: pointer; padding: 2% 4%; box-sizing: border-box;
         font-size: 14px; margin-top: 25px;
     }
@@ -1733,7 +1727,7 @@ a[class^="btn_colour_BlueT"]::before{
         background: transparent; border: none; border: 1px solid #888888; 
         border-radius: 6px; margin-bottom: 15px;
     }
-    #paymentPanel fieldset > input[type="button"]{
+    #paymentPanel fieldset > input[type="submit"]{
         width: 100%; margin-top: 25px; padding: 2% 0; font-size: 14px;
     }
     #paymentPanel fieldset > #txtcheckPopup{

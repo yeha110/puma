@@ -24,8 +24,8 @@ footer > div:first-child > div form em,
 .lnbContainer > ul li > figure figcaption p,
 .lnbContainer > nav ul li button,
 .lnbContainer > ul li > figure figcaption a,
-#lnbContainer > li > div figure figcaption p,
-#lnbContainer > li > div figure figcaption a,
+#lnbContainer > li > figure figcaption p,
+#lnbContainer > li > figure figcaption a,
 .signinContainer div,
 .inputBox label,
 .btn_cre,
@@ -95,7 +95,7 @@ footer > div:first-child > div form em,
 .lnbContainer h2,
 .lnbContainer > ul li > figure figcaption h2,
 #lnbContainer > li > h2,
-#lnbContainer > li > div figure figcaption h2,
+#lnbContainer > li > figure figcaption h3,
 .footerContainer > div,
 .footerContainer_se > div,
 .detailContainer aside div h2,
@@ -1017,7 +1017,7 @@ header div input[type='button'].closeBtn{
     }
     #lnbContainer > li{
         line-height: 35px; display: block; 
-        overflow-x: hidden; overflow-y: hidden; transition: all .5s ease-out;
+        overflow: hidden; transition: all .5s ease-out;
     } 
     #lnbContainer > li:hover h2 a{
         color: #D42E30;
@@ -1028,7 +1028,7 @@ header div input[type='button'].closeBtn{
     #lnbContainer > li > h2 a:last-of-type{
         display: none;
     }
-    #lnbContainer > li > div figure{
+    #lnbContainer > li > figure{
         display: none;
     }
     [id^="gnb"]{

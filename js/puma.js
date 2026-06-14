@@ -5,7 +5,6 @@ $(function(){
     wishControl();
     cartControl();
     tabUI();
-    // checknext();
     checkmethod();
     checkPopup();
     accountPopup();
@@ -13,11 +12,14 @@ $(function(){
 });
 function lnbControl(){
     var lnb = $("#lnbContainer");
-    var currentStatus = false;
     $("[data-lnb='lnbContainer']").click(function(){
-        currentStatus = !currentStatus;
         lnb.toggleClass("active");
-        if(currentStatus == true){
+
+        if (lnb.hasClass("active")){
+            $("[id$='Panel']").removeClass("active");
+        }
+
+        if(lnb.hasClass("active")){
             $(this).val("close");
         }else{
             $(this).val("drag_handle");
@@ -27,14 +29,32 @@ function lnbControl(){
 
 function panelControl(target){
     var currentPanel = null;
-    $(target).click(function(){
-        console.log(currentPanel);
-        if (currentPanel) {
+
+    $(target).click(function(e){
+        e.preventDefault();
+
+        $("#lnbContainer").removeClass("active");
+        $("[data-lnb='lnbContainer']").val("drag_handle");
+
+        var parentFormObj = $(this).closest('form');
+        if (parentFormObj.length > 0) {
+            var parentForm = parentFormObj[0];
+            if (!parentForm.checkValidity()) {
+                parentForm.reportValidity();
+                return false;
+            }
+        }
+        var nextPanel = "#" + $(this).attr("data-panel");
+
+        if (currentPanel && currentPanel !== nextPanel) {
             $(currentPanel).removeClass("active");
         }
-        currentPanel = "#" + $(this).attr("data-panel");
+        currentPanel = nextPanel;
         $(currentPanel).addClass("active");
     });
+    $("#paymentForm").submit(function(){
+        $("#txtcheckPopup").addClass("active"); 
+        });
     $(".closeBtn").click(function(){
         $(this).parents().removeClass("active");
     });
@@ -83,19 +103,6 @@ function tabUI(){
         $(activeTab).addClass('active');
     });
 }
-
-// function checknext(){
-//     $(".cotabPage input[type='submit']").click(function(){
-//         var findform = $(this).closest("form");
-//         var currentDiv = $(this).closest(".cotabPage");
-//         var nextDiv = currentDiv.nextAll(".cotabPage").first();
-//         console.log(nextDiv);
-        
-//         var nextDivid = nextDiv.attr("id");
-        
-//         findform.attr("action", nextDivid);
-//     });
-// }
 
 function checkmethod(){
    $("#SPshippingPanel fieldset ul input").on("input",function(){

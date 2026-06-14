@@ -205,85 +205,87 @@ Our classic PUMA backpacks come in a variety of patterns and colors, and will pu
                     <li>
                         <input type="button" value="Shipping" data-panel="SPshippingPanel">
                         <div id="SPshippingPanel" class="cotabPage">
-                            <fieldset>
-                                <legend>Shipping Address</legend>
-                                <ul>
-                                    <li>
-                                        <label for="userFname">First Name</label>
-                                        <input type="text" id="userFname" required>
-                                    </li>
-                                    <li>
-                                        <label for="userLname">Last Name</label>
-                                        <input type="text" id="userLname" required>
-                                    </li>
-                                    <li>
-                                        <label for="userphone">Phone Number</label>
-                                        <input type="tel" id="userphone" class="onlyNumber" required>
-                                    </li>
-                                    <li>
-                                        <label for="userAddress">Address</label>
-                                        <input type="text" id="userAddress" required>
-                                    </li>
-                                    <li>
-                                        <label for="userASB">
-                                            Apartment/Suite/Building
-                                            <em>(Optional)</em>
-                                        </label>
-                                        <input type="text" id="userASB">
-                                    </li>
-                                    <li>
-                                        <label for="userCity">City</label>
-                                        <input type="text" id="userCity" required>
-                                    </li>
-                                    <li>
-                                        <label for="userSP">
-                                            State/Province
-                                            <em>(Optional)</em>
-                                        </label>
-                                        <input type="text" id="userSP" placeholder="Please write your state">
-                                    </li>
-                                    <li>
-                                        <label for="userPostalcode">Postal Code</label>
-                                        <input type="text" id="userPostalcode" class="onlyNumber" required>
-                                    </li>
-                                    <li>
-                                        <label for="selectCountry">Country</label>
-                                        <select id="selectCountry">
-                                            <option selected>Korea, Republic of</option>
-                                            <option>China</option>
-                                            <option>Japan</option>
-                                            <option>Russia</option>
-                                            <option>Taiwan</option>
-                                            <option>Vietnam</option>
-                                            <option>Thailand</option>
-                                        </select>
-                                    </li>
-                                </ul>
-                                <input type="checkbox" id="shippingbox" checked>
-                                <label for="shippingbox">My billing address is the same as my shipping address.</label>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Shipping Method</legend>
-                                <div>
-                                    <address>
-                                        <span data-addr="userAddress"></span> 
-                                        <span data-addr="userASB"></span> 
-                                        <span data-addr="userCity"></span> 
-                                        <span data-addr="userSP"></span> 
-                                        <span data-addr="userPostalcode"></span> 
-                                        <span data-addr="selectCountry"></span> 
-                                        <span data-addr="userphone"></span> 
-                                        <span data-addr="userLname"></span> 
-                                        <span data-addr="userFname"></span> 
-                                    </address>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Comments</legend>
-                                <label for="usercomment">Order Comments</label>
-                                <input type="text" id="usercomment">
-                            </fieldset>
-                            <input type="button" value="Continue" class="Khaki" data-panel="SPbillingPanel">
+                            <form>
+                                <fieldset>
+                                    <legend>Shipping Address</legend>
+                                    <ul>
+                                        <li>
+                                            <label for="userFname">First Name</label>
+                                            <input type="text" id="userFname" required>
+                                        </li>
+                                        <li>
+                                            <label for="userLname">Last Name</label>
+                                            <input type="text" id="userLname" required>
+                                        </li>
+                                        <li>
+                                            <label for="userphone">Phone Number</label>
+                                            <input type="tel" id="userphone" class="onlyNumber" required>
+                                        </li>
+                                        <li>
+                                            <label for="userAddress">Address</label>
+                                            <input type="text" id="userAddress" required>
+                                        </li>
+                                        <li>
+                                            <label for="userASB">
+                                                Apartment/Suite/Building
+                                                <em>(Optional)</em>
+                                            </label>
+                                            <input type="text" id="userASB">
+                                        </li>
+                                        <li>
+                                            <label for="userCity">City</label>
+                                            <input type="text" id="userCity" required>
+                                        </li>
+                                        <li>
+                                            <label for="userSP">
+                                                State/Province
+                                                <em>(Optional)</em>
+                                            </label>
+                                            <input type="text" id="userSP" placeholder="Please write your state">
+                                        </li>
+                                        <li>
+                                            <label for="userPostalcode">Postal Code</label>
+                                            <input type="text" id="userPostalcode" class="onlyNumber" required>
+                                        </li>
+                                        <li>
+                                            <label for="selectCountry">Country</label>
+                                            <select id="selectCountry">
+                                                <option selected>Korea, Republic of</option>
+                                                <option>China</option>
+                                                <option>Japan</option>
+                                                <option>Russia</option>
+                                                <option>Taiwan</option>
+                                                <option>Vietnam</option>
+                                                <option>Thailand</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                    <input type="checkbox" id="shippingbox" checked>
+                                    <label for="shippingbox">My billing address is the same as my shipping address.</label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Shipping Method</legend>
+                                    <div>
+                                        <address>
+                                            <span data-addr="userAddress"></span> 
+                                            <span data-addr="userASB"></span> 
+                                            <span data-addr="userCity"></span> 
+                                            <span data-addr="userSP"></span> 
+                                            <span data-addr="userPostalcode"></span> 
+                                            <span data-addr="selectCountry"></span> 
+                                            <span data-addr="userphone"></span> 
+                                            <span data-addr="userLname"></span> 
+                                            <span data-addr="userFname"></span> 
+                                        </address>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Comments</legend>
+                                    <label for="usercomment">Order Comments</label>
+                                    <input type="text" id="usercomment">
+                                </fieldset>
+                                <input type="button" value="Continue" class="Khaki" data-panel="SPbillingPanel">
+                            </form>
                         </div>
                     </li>
                     <li>
@@ -352,32 +354,34 @@ Our classic PUMA backpacks come in a variety of patterns and colors, and will pu
                     <li>
                         <input type="button" value="Payment" data-panel="paymentPanel">
                         <div id="paymentPanel" class="cotabPage">
-                            <fieldset>
-                                <label for="Credit">
-                                    <input type="radio" name="Payment" id="Credit" checked>
-                                    <span class="radio_cus"></span>
-                                    Credit Card
-                                </label>
-                                <div>
-                                    <span>
-                                        <label for="cardnb">Card number</label>
-                                        <input type="text" id="cardnb" class="onlyNumber" placeholder="1234 1234 1234 1234" required>
+                            <form id="paymentForm">
+                                <fieldset>
+                                    <label for="Credit">
+                                        <input type="radio" name="Payment" id="Credit" checked>
+                                        <span class="radio_cus"></span>
+                                        Credit Card
+                                    </label>
+                                    <div>
+                                        <span>
+                                            <label for="cardnb">Card number</label>
+                                            <input type="text" id="cardnb" class="onlyNumber" placeholder="1234 1234 1234 1234" required>
+                                        </span>
+                                        <span>
+                                            <label for="carddate">Expiration date</label>
+                                            <input type="text" id="carddate" class="onlyNumber" placeholder="MM / YY" required>
+                                        </span>
+                                        <span>
+                                            <label for="cardcode">Security code</label>
+                                            <input type="text" id="cardcode" class="onlyNumber" placeholder="CVC" required>
+                                        </span>
+                                    </div>
+                                    <input type="submit" class="Khaki" value="Place Order">
+                                    <span id="txtcheckPopup">
+                                        <h3>Your order has been completed</h3>
+                                        <a href="list_best.html">Keep shopping</a>
                                     </span>
-                                    <span>
-                                        <label for="carddate">Expiration date</label>
-                                        <input type="text" id="carddate" class="onlyNumber" placeholder="MM / YY" required>
-                                    </span>
-                                    <span>
-                                        <label for="cardcode">Security code</label>
-                                        <input type="text" id="cardcode" class="onlyNumber" placeholder="CVC" required>
-                                    </span>
-                                </div>
-                                <input type="button" class="Khaki" value="Place Order">
-                                <span id="txtcheckPopup">
-                                    <h3>Your order has been completed</h3>
-                                    <a href="list_best.html">Keep shopping</a>
-                                </span>
-                            </fieldset>
+                                </fieldset>
+                            </form>
                         </div>
                     </li>
                 </ul>
