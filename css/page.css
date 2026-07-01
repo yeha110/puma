@@ -1141,10 +1141,10 @@ a[class^="btn_colour_BlueT"]::before{
         margin-top: 5px;
     }
     .detailContainer aside fieldset #likebtn{
-        border: 1px solid #aaaaaa; padding: 25px 0; width: 36.57%; 
+        border: 1px solid #aaaaaa; padding: 26px 0; width: 36.57%; 
     }
-    .detailContainer aside fieldset #likebtn input{
-        background: transparent; border: none; font-size: 15px; padding: 0; 
+    .detailContainer aside fieldset #likebtn span{
+        background: transparent; border: none; font-size: 15px; padding: 0; vertical-align: middle;
     }
     .detailContainer figure{
         width: 72.76%; float: right; margin-bottom: 90px;
@@ -1418,35 +1418,35 @@ a[class^="btn_colour_BlueT"]::before{
     #returnPopup h3{
         font-size: 24px; font-weight: 400; margin-bottom: 70px;
     }
-    #returnPopup article{
+    #returnPopup section{
         float: left; width: 44%;
     }
-    #returnPopup article:nth-of-type(2){
+    #returnPopup section:nth-of-type(2){
         background-color: #f1f1f1; padding: 20px 4%;
     }
-    #returnPopup article strong{
+    #returnPopup section strong{
         font-weight: 700; display: block; margin-bottom: 22px; font-size: 16px; 
     }
-    #returnPopup article p{
+    #returnPopup section p{
         font-weight: 400; font-size: 14px; 
     }
-    #returnPopup article p:nth-of-type(1){
+    #returnPopup section p:nth-of-type(1){
         margin-bottom: 48px;
     }
-    #returnPopup article em:not(:nth-of-type(2),:nth-of-type(4)){
+    #returnPopup section em:not(:nth-of-type(2),:nth-of-type(4)){
         display: inline-block; width: 66%; margin-bottom: 20px;
     }
-    #returnPopup article em:nth-of-type(2),
-    #returnPopup article em:nth-of-type(4){
+    #returnPopup section em:nth-of-type(2),
+    #returnPopup section em:nth-of-type(4){
         display: inline-block; width: 26%; text-align: right;
     }
-    #returnPopup article em:nth-of-type(5){
+    #returnPopup section em:nth-of-type(5){
         padding-top: 10px; 
     }
-    #returnPopup article .line{
+    #returnPopup section .line{
         border-top: 1px solid #b1b4aa;
     }
-    #returnPopup article mark{
+    #returnPopup section mark{
         font-weight: 700; float: right; padding: 10px 7%; 
     }
     #returnPopup input[type="button"]{
