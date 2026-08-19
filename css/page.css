@@ -2691,39 +2691,39 @@ a[class^="btn_colour_BlueT"]::before{
     #returnPopup h3{
         font-size: 22px; font-weight: 500; margin-bottom: 40px;
     }
-    #returnPopup article{
+    #returnPopup section{
         float: left; width: 48%;
     }
-    #returnPopup article:nth-of-type(2){
+    #returnPopup section:nth-of-type(2){
         background-color: #f1f1f1; padding: 20px 4%; margin-left: 4%;
         box-sizing: border-box;
     }
-    #returnPopup article strong{
+    #returnPopup section strong{
         font-weight: 600; display: block; margin-bottom: 16px; font-size: 14px; 
     }
-    #returnPopup article p{
+    #returnPopup section p{
         font-weight: 400; font-size: 12px; 
     }
-    #returnPopup article p:nth-of-type(1){
+    #returnPopup section p:nth-of-type(1){
         margin-bottom: 25px;
     }
-    #returnPopup article em{
+    #returnPopup section em{
         font-size: 12px;
     }
-    #returnPopup article em:not(:nth-of-type(2),:nth-of-type(4)){
+    #returnPopup section em:not(:nth-of-type(2),:nth-of-type(4)){
         display: inline-block; width: 66%; margin-bottom: 10px;
     }
-    #returnPopup article em:nth-of-type(2),
-    #returnPopup article em:nth-of-type(4){
+    #returnPopup section em:nth-of-type(2),
+    #returnPopup section em:nth-of-type(4){
         display: inline-block; width: 26%; text-align: right;
     }
-    #returnPopup article em:nth-of-type(5){
+    #returnPopup section em:nth-of-type(5){
         padding-top: 10px; 
     }
-    #returnPopup article .line{
+    #returnPopup section .line{
         border-top: 1px solid #b1b4aa;
     }
-    #returnPopup article mark{
+    #returnPopup section mark{
         font-weight: 600; float: right; padding: 10px 6%; font-size: 12px;
     }
     #returnPopup input[type="button"]{
@@ -3919,33 +3919,30 @@ a[class^="btn_colour_BlueT"]::before{
     #returnPopup h3{
         font-size: 22px; font-weight: 400; margin-bottom: 40px;
     }
-    /* #returnPopup article{
-        float: left; width: 44%;
-    } */
-    #returnPopup article:nth-of-type(2){
+    #returnPopup section:nth-of-type(2){
         background-color: #f1f1f1; padding: 20px 4% 0 4%;
     }
-    #returnPopup article strong{
+    #returnPopup section strong{
         font-weight: 700; display: block; margin-bottom: 22px; font-size: 16px; 
     }
-    #returnPopup article p{
+    #returnPopup section p{
         font-weight: 400; font-size: 14px; margin-bottom: 30px;
     }
-    #returnPopup article p:nth-of-type(1){
+    #returnPopup section p:nth-of-type(1){
         margin-bottom: 20px;
     }
-    #returnPopup article em:not(:nth-of-type(2),:nth-of-type(4)){
+    #returnPopup section em:not(:nth-of-type(2),:nth-of-type(4)){
         display: inline-block; width: 66%; margin-bottom: 20px;
     }
-    #returnPopup article em:nth-of-type(2),
-    #returnPopup article em:nth-of-type(4),
-    #returnPopup article mark{
+    #returnPopup section em:nth-of-type(2),
+    #returnPopup section em:nth-of-type(4),
+    #returnPopup section mark{
         display: inline-block; width: 26%; text-align: right;
     }
-    #returnPopup article em:nth-of-type(5){
+    #returnPopup section em:nth-of-type(5){
         padding-top: 18px; 
     }
-    #returnPopup article .line{
+    #returnPopup section .line{
         border-top: 1px solid #b1b4aa;
     }
     #returnPopup input[type="button"]{
