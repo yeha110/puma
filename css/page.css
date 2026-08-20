@@ -903,7 +903,7 @@ a[class^="btn_colour_BlueT"]::before{
         margin: 20px 0 140px 0; 
     }
     .indexContainer > div:nth-of-type(4) > div:nth-of-type(2) > div:not(:nth-child(2)) > div dl dt{
-        font-size: 20px; margin-bottom: 15px;
+        font-size: 20px; margin-bottom: 15px; font-weight: 500;
     }
     .indexContainer > div:nth-of-type(4) > div:nth-of-type(2) > div:not(:nth-child(2)) > div dl dd{
         font-size: 14px; line-height: 20px;
@@ -1134,14 +1134,14 @@ a[class^="btn_colour_BlueT"]::before{
         color: #5d5d5d; background-color: #f9fcf8;
     }
     .detailContainer aside fieldset #buybtn{
-        border: 1px solid #5d5d5d; padding: 16px 0; width: 63.43%;
+        border: 1px solid #5d5d5d; padding: 16px 0; width: 64%;
     }
     #buybtn::after {
         content: attr(data-price); display: block;
         margin-top: 5px;
     }
     .detailContainer aside fieldset #likebtn{
-        border: 1px solid #aaaaaa; padding: 26px 0; width: 36.57%; 
+        border: 1px solid #aaaaaa; padding: 26px 0; width: 36%; 
     }
     .detailContainer aside fieldset #likebtn span{
         background: transparent; border: none; font-size: 15px; padding: 0; vertical-align: middle;
@@ -2409,8 +2409,8 @@ a[class^="btn_colour_BlueT"]::before{
     .detailContainer aside fieldset #likebtn{
         border: 1px solid #aaaaaa; padding: 26px 0; width: 36%; 
     }
-    .detailContainer aside fieldset #likebtn input{
-        background: transparent; border: none; font-size: 14px; padding: 0; 
+    .detailContainer aside fieldset #likebtn span{
+        background: transparent; border: none; font-size: 14px; padding: 0; vertical-align: middle;
         color: #000000;
     }
     .detailContainer figure{
@@ -2462,7 +2462,7 @@ a[class^="btn_colour_BlueT"]::before{
         display: block; width: 100%;
     }
     .detailContainer > ul li .custom-video{
-        width: 100%; height: 100%; max-width: 350px;
+        width: 100%; height: 100%; object-fit: cover;
     }
     .detailContainer > div{
         clear: both;
@@ -3679,11 +3679,11 @@ a[class^="btn_colour_BlueT"]::before{
         margin-top: 5px;
     }
     .detailContainer aside fieldset #likebtn{
-        border: 1px solid #aaaaaa; padding: 25px 0; width: 36%; 
+        border: 1px solid #aaaaaa; padding: 26px 0; width: 36%; 
     }
-    .detailContainer aside fieldset #likebtn input{
+    .detailContainer aside fieldset #likebtn span{
         background: transparent; border: none; font-size: 14px; padding: 0; 
-        color: #000000;
+        color: #000000; vertical-align: middle;
     }
     .detailContainer figure{
         width: 100%; margin-bottom: 60px;
@@ -3731,7 +3731,7 @@ a[class^="btn_colour_BlueT"]::before{
         width: 100%;
     }
     .detailContainer > div ul li{
-        display: block; width: 100%; margin-bottom: 26px;
+        display: block; width: 100%; padding-bottom: 26px;
     }
     .detailContainer > div ul li a img{
         display: block; width: 100%; margin-bottom: 15px;
